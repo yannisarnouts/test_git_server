@@ -1,1 +1,1 @@
-{"id":"test1","name":"test1","path":"/upload/vodafone_beamforming/","storageType":"sftp","classifiers":{"vendor":"vodafone","tech":"beamforming"},"createdAt":"2022-11-14T13:26:38.791Z","updatedAt":"2022-11-14T13:32:32.616Z"}
+{"id":"test1","name":"test1","path":"/upload/vodafone_beamforming/","storageType":"sftp","classifiers":{"vendor":"vodafone2","tech":"beamforming"},"createdAt":"2022-11-14T13:26:38.791Z","updatedAt":"2022-11-14T13:37:34.747Z"}
