@@ -1,0 +1,62 @@
+{
+  "processor_type": "Hackathon Ingestion Launcher",
+  "capabilities": [],
+  "generated_events": [
+    {
+      "type": "HackathonIngestionLaunched",
+      "fields": [
+        "eventFields",
+        "topologyId",
+        "startDate",
+        "endDate"
+      ]
+    },
+    {
+      "type": "HackathonPipelineLaunched",
+      "fields": [
+        "eventFields",
+        "topologyId",
+        "startDate",
+        "endDate"
+      ]
+    }
+  ],
+  "meta_type": "EventGenerator",
+  "parameters": [
+    {
+      "name": "topologyId",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "startDate",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "endDate",
+      "type": "str",
+      "optional": true
+    }
+  ],
+  "version_id": "03c11c55-6004-4aa4-ade1-ad03f05e422c",
+  "virtual_adapter": {
+    "native_type": "SyntheticEventGenerator",
+    "parameter_mapping": {
+      "eventFields": "{}"
+    },
+    "event_mapping": {
+      "EventGenerated": {
+        "name": "HackathonPipelineLaunched",
+        "data": {
+          "eventFields": "{{event.eventFields}}",
+          "topologyId": "{{params.topologyId}}",
+          "startDate": "{{params.startDate}}",
+          "endDate": "{{params.endDate}}"
+        }
+      }
+    }
+  },
+  "docdb_id": "Hackathon Ingestion Launcher",
+  "createdAt": "2023-07-24T09:26:34.863Z"
+}

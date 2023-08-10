@@ -1,0 +1,15 @@
+{
+  "_id": "6447aded08669bf16e6b82b2",
+  "name": "topology_manu",
+  "path": "/datasources/topology_manu",
+  "storageType": "webdav",
+  "classifiers": {
+    "user": "manu"
+  },
+  "tagId": "WebdavManu",
+  "docdb_id": "6447aded08669bf16e6b82b2",
+  "createdAt": "2023-06-05T10:06:24.390Z",
+  "version_id": "94120336-6dc0-43ae-a49e-ff2c21dc62e0",
+  "type": "external",
+  "updatedAt": "2023-06-01T08:33:55.427Z"
+}

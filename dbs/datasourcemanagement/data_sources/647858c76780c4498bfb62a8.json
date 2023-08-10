@@ -1,0 +1,13 @@
+{
+  "_id": "647858c76780c4498bfb62a8",
+  "name": "instance_HACKATON",
+  "path": "",
+  "storageType": "wizard",
+  "type": "topology_instance",
+  "classifiers": {
+    "date": "20230601"
+  },
+  "docdb_id": "647858c76780c4498bfb62a8",
+  "createdAt": "2023-06-05T10:06:33.527Z",
+  "version_id": "6b2c3f3c-03ef-41d7-b23f-a855c49fc015"
+}

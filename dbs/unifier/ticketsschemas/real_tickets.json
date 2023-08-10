@@ -1,0 +1,89 @@
+{
+  "ticketType": "real_tickets",
+  "fields": [
+    {
+      "label": "Status",
+      "editable": false,
+      "type": "status",
+      "params": null,
+      "autoFillCreateValue": "initialStatus()",
+      "name": "status"
+    },
+    {
+      "sqlName": "created_by",
+      "label": "Created By",
+      "type": "user",
+      "params": null,
+      "editable": false,
+      "name": "createdBy"
+    },
+    {
+      "label": "Created Date",
+      "editable": false,
+      "type": "datetime",
+      "params": null,
+      "autoFillCreateValue": "now()",
+      "name": "createdDate"
+    },
+    {
+      "sqlName": "updated_by",
+      "label": "Updated By",
+      "type": "user",
+      "params": null,
+      "editable": false,
+      "name": "updatedBy"
+    },
+    {
+      "label": "Updated Date",
+      "editable": false,
+      "type": "datetime",
+      "params": null,
+      "autoFillCreateValue": "now()",
+      "name": "updatedDate"
+    },
+    {
+      "label": "KAKAKAKKAKAKAKA Date",
+      "editable": false,
+      "type": "datetime",
+      "params": null,
+      "autoFillCreateValue": "now()",
+      "name": "testdate"
+    },
+    {
+      "label": "HALLLOOOO Date",
+      "editable": false,
+      "type": "datetime",
+      "params": null,
+      "autoFillCreateValue": "now()",
+      "name": "hallodate"
+    },
+    {
+      "label": "HALLLOOOO Date",
+      "editable": false,
+      "type": "datetime",
+      "params": null,
+      "autoFillCreateValue": "now()",
+      "name": "lalalala"
+    }
+  ],
+  "actions": [],
+  "statuses": [],
+  "indexes": [
+    {
+      "fields": [
+        {
+          "field": "id",
+          "ascendent": false
+        }
+      ],
+      "options": {
+        "name": "Index by ID",
+        "unique": true
+      }
+    }
+  ],
+  "counter": 0,
+  "docdb_id": "real_tickets",
+  "createdAt": "2023-08-07T12:37:59.433Z",
+  "version_id": "aea57f13-2ed3-462e-a136-50043063cd81"
+}

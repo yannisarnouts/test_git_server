@@ -1,0 +1,59 @@
+{
+  "id": "314f81dc-5f60-4825-8a89-d3a59b41a9b6",
+  "label": "Prediction",
+  "type": "PredictionLauncher",
+  "settings": {
+    "trigger_events": [
+      {
+        "condition": "False",
+        "parameters": [
+          {
+            "name": "startDate",
+            "value": "{{event.startDate}}"
+          },
+          {
+            "name": "endDate",
+            "value": "{{event.endDate}}"
+          },
+          {
+            "name": "globalModelId",
+            "value": ""
+          },
+          {
+            "name": "user",
+            "value": ""
+          },
+          {
+            "name": "projectId",
+            "value": ""
+          },
+          {
+            "name": "datasource",
+            "value": "{{event.datasource}}"
+          },
+          {
+            "name": "classifiers",
+            "value": "{{event.classifiers}}"
+          }
+        ],
+        "processor_id": "ea0b97cf-2b07-49c7-84c5-c010b308fa46",
+        "event_type": "IncidencesExecuted"
+      }
+    ],
+    "parameters": [],
+    "cron_info": null
+  },
+  "metadata": {},
+  "version_id": "b38e85fe-9ea0-45c2-9062-74f1b3facc34",
+  "registration_timestamp": "2023-06-26T14:44:55.119Z",
+  "flow_id": "4c92fb67-239c-4d29-b015-b256281224e7",
+  "state": "active",
+  "processing_status": {
+    "failing": 0,
+    "in_progress": 0,
+    "waiting": 0,
+    "succeeded": 0
+  },
+  "docdb_id": "314f81dc-5f60-4825-8a89-d3a59b41a9b6",
+  "createdAt": "2023-07-24T10:25:27.274Z"
+}

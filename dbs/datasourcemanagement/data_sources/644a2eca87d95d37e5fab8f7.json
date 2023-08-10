@@ -1,0 +1,15 @@
+{
+  "_id": "644a2eca87d95d37e5fab8f7",
+  "name": "HACKATON",
+  "path": "/topology/",
+  "storageType": "webdav",
+  "classifiers": {
+    "team": "dev"
+  },
+  "tagId": "WebdavDev",
+  "docdb_id": "644a2eca87d95d37e5fab8f7",
+  "createdAt": "2023-06-05T10:06:24.390Z",
+  "version_id": "1be04971-14be-46f1-9d84-f83b67c0dc61",
+  "type": "external",
+  "updatedAt": "2023-06-01T08:31:35.077Z"
+}

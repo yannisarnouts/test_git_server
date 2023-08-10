@@ -1,0 +1,80 @@
+{
+  "uuid": "649c13f8c19ac427ee58a1f9",
+  "version": "v1",
+  "name": "testFeatureConfig_1",
+  "application": "yannisApp",
+  "sqlFeatures": [],
+  "rangeFeatures": [
+    {
+      "name": "forecastfeature",
+      "enabled": null,
+      "thresholds": [],
+      "featureType": "double",
+      "formula": null,
+      "variable": null,
+      "description": null,
+      "metadata": {
+        "other": {
+          "validated": "false"
+        }
+      }
+    }
+  ],
+  "timeFeatures": [],
+  "forecastFeatures": [
+    {
+      "name": "forecastfeature",
+      "parsingConfig": {
+        "timeSeriesField": "4g_dl_prb_utilization",
+        "timestampStart": "2023062610:22:10",
+        "timestampEnd": "2023062614:22:10",
+        "timestampFormat": "%Y%m%d%X",
+        "timestampFrequency": "MINUTE",
+        "fieldToSplitBy": "cell"
+      },
+      "forecastingConfig": {
+        "regressor": "RandomForestRegressor",
+        "slidingWindowLength": 0,
+        "strategy": "recursive",
+        "forecastingHorizon": null
+      },
+      "imputerConfig": {
+        "method": "mean"
+      },
+      "description": null,
+      "metadata": {
+        "other": {
+          "validated": "false"
+        }
+      }
+    },
+    {
+      "name": "forecastFeature2",
+      "parsingConfig": {
+        "timeSeriesField": "4g_avg_pdcch_usage_rate",
+        "timestampStart": "20230626",
+        "timestampEnd": "",
+        "timestampFormat": "%Y%m%d",
+        "timestampFrequency": "thisisatest",
+        "fieldToSplitBy": "cell"
+      },
+      "forecastingConfig": {
+        "regressor": "RandomForestRegressor",
+        "slidingWindowLength": 0,
+        "strategy": "recursive",
+        "forecastingHorizon": null
+      },
+      "imputerConfig": {
+        "method": "mean"
+      },
+      "description": "",
+      "metadata": {}
+    }
+  ],
+  "defaultValues": {},
+  "alias": "testFeatureConfig_1_yannisApp",
+  "schemaVersion": "v1",
+  "docdb_id": "649c13f8c19ac427ee58a1f9",
+  "createdAt": "2023-08-01T06:56:56.725Z",
+  "version_id": "09e061e6-60b9-41dd-bae0-aeabe554cbe9"
+}

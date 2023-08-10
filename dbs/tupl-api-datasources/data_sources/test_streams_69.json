@@ -1,0 +1,14 @@
+{
+  "name": "test_streams_69",
+  "path": "sftp/test_streams_69",
+  "storageType": "sftp",
+  "type": "external",
+  "classifiers": {
+    "tech": "4G"
+  },
+  "metadata": null,
+  "tagId": null,
+  "docdb_id": "test_streams_69",
+  "createdAt": "2023-07-24T08:49:33.309Z",
+  "version_id": "f5a3945e-fdec-423c-94eb-d182f575c67f"
+}

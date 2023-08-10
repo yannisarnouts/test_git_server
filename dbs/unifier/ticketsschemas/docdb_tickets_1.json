@@ -1,0 +1,102 @@
+{
+  "ticketType": "docdb_tickets_1",
+  "actions": [
+    {
+      "id": "docdbAction",
+      "actionName": "docdbAction",
+      "currentStatusId": "initStatus",
+      "nextStatusId": "endStatus",
+      "hidden": false,
+      "fields": {
+        "status": ""
+      },
+      "autofillFields": {},
+      "handler": {},
+      "noSchemaFields": {}
+    }
+  ],
+  "counter": 0,
+  "fields": [
+    {
+      "label": "Status",
+      "editable": false,
+      "type": "status",
+      "params": {},
+      "autoFillCreateValue": "initialStatus()",
+      "name": "status"
+    },
+    {
+      "sqlName": "created_by",
+      "label": "Created By",
+      "type": "user",
+      "params": {},
+      "editable": false,
+      "name": "createdBy"
+    },
+    {
+      "label": "Created Date",
+      "editable": false,
+      "type": "datetime",
+      "params": {},
+      "autoFillCreateValue": "now()",
+      "name": "createdDate"
+    },
+    {
+      "sqlName": "updated_by",
+      "label": "Updated By",
+      "type": "user",
+      "params": {},
+      "editable": false,
+      "name": "updatedBy"
+    },
+    {
+      "label": "Updated Date",
+      "editable": false,
+      "type": "datetime",
+      "params": {},
+      "autoFillCreateValue": "now()",
+      "name": "updatedDate"
+    },
+    {
+      "label": "Metadata",
+      "sourcePath": "",
+      "defaultValue": "",
+      "editable": false,
+      "type": "text",
+      "params": {},
+      "autoFillUpdateValue": "",
+      "autoFillCreateValue": "",
+      "sqlName": "metadata",
+      "name": "metadata"
+    }
+  ],
+  "indexes": [
+    {
+      "fields": [
+        {
+          "field": "id",
+          "ascendent": false
+        }
+      ],
+      "options": {
+        "name": "Index by ID",
+        "unique": true
+      }
+    }
+  ],
+  "statuses": [
+    {
+      "id": "initStatus",
+      "name": "initStatus",
+      "isInitial": true
+    },
+    {
+      "id": "endStatus",
+      "name": "endStatus",
+      "isInitial": false
+    }
+  ],
+  "docdb_id": "docdb_tickets_1",
+  "createdAt": "2023-08-07T12:37:59.433Z",
+  "version_id": "948f16d2-5f84-49b3-8722-e386685376f8"
+}

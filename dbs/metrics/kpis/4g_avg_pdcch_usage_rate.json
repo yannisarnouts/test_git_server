@@ -1,0 +1,68 @@
+{
+  "formulas": [
+    {
+      "formula": "100*DIVSAFE(SUM[('L_ChMeas_CCE_Avail')],SUM[('L_ChMeas_CCE_Avail_Max')],-0.01)",
+      "id": "4g_avg_pdcch_usage_rate",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "HUAWEI"
+        }
+      }
+    },
+    {
+      "formula": "100 - DECODE(SUM['M8011C90'+'M8011C91'+'M8011C92'+'M8011C93'+'M8011C94'+'M8011C95'],0.0,-101.0,DIVIDE(SUM[10.0*'M8011C91'+30.0*'M8011C92'+50.0*'M8011C93'+70.0*'M8011C94'+90.0*'M8011C95'],SUM['M8011C90'+'M8011C91'+'M8011C92'+'M8011C93'+'M8011C94'+'M8011C95']))",
+      "id": "4g_avg_pdcch_usage_rate",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "NOKIA"
+        }
+      }
+    },
+    {
+      "formula": "DIVSAFE(SUM['pmpdcchcceutil_0'*2.5+'pmpdcchcceutil_1'*7.5+'pmpdcchcceutil_2'*12.5+'pmpdcchcceutil_3'*17.5+'pmpdcchcceutil_4'*22.5+'pmpdcchcceutil_5'*27.5+'pmpdcchcceutil_6'*32.5+'pmpdcchcceutil_7'*37.5+'pmpdcchcceutil_8'*42.5+'pmpdcchcceutil_9'*47.5+'pmpdcchcceutil_10'*52.5+'pmpdcchcceutil_11'*57.5+'pmpdcchcceutil_12'*62.5+'pmpdcchcceutil_13'*67.5+'pmpdcchcceutil_14'*72.5+'pmpdcchcceutil_15'*77.5+'pmpdcchcceutil_16'*82.5+'pmpdcchcceutil_17'*87.5+'pmpdcchcceutil_18'*92.5+'pmpdcchcceutil_19'*97.5],SUM['pmpdcchcceutil_0'+'pmpdcchcceutil_1'+'pmpdcchcceutil_2'+'pmpdcchcceutil_3'+'pmpdcchcceutil_4'+'pmpdcchcceutil_5'+'pmpdcchcceutil_6'+'pmpdcchcceutil_7'+'pmpdcchcceutil_8'+'pmpdcchcceutil_9'+'pmpdcchcceutil_10'+'pmpdcchcceutil_11'+'pmpdcchcceutil_12'+'pmpdcchcceutil_13'+'pmpdcchcceutil_14'+'pmpdcchcceutil_15'+'pmpdcchcceutil_16'+'pmpdcchcceutil_17'+'pmpdcchcceutil_18'+'pmpdcchcceutil_19'],-1.0)",
+      "id": "4g_avg_pdcch_usage_rate",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "ERICSSON"
+        }
+      }
+    }
+  ],
+  "id": "4g_avg_pdcch_usage_rate",
+  "metadata": {
+    "accessControl": {
+      "effectivePermissions": [
+        "read",
+        "write"
+      ],
+      "permissions": {
+        "group": [],
+        "other": [
+          "read"
+        ],
+        "owner": [
+          "read",
+          "write"
+        ]
+      }
+    },
+    "labels": {
+      "domain": "RAN",
+      "element-type": "cell",
+      "technology": "LTE",
+      "type": "regular",
+      "datasource": "pm"
+    },
+    "ownership": {
+      "group": "",
+      "owner": "manuel.estepa@tupl.com"
+    }
+  },
+  "name": "LTE AVG PDCCH Usage Rate",
+  "docdb_id": "4g_avg_pdcch_usage_rate",
+  "createdAt": "2023-08-07T12:41:16.477Z",
+  "version_id": "80651d50-4d15-4f53-ba33-623945afbafa"
+}

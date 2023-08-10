@@ -1,0 +1,27 @@
+{
+  "type": "KPI",
+  "classifiers": {
+    "source": "KPIS",
+    "category": "KPI",
+    "domain": "RAN",
+    "element-type": "cell",
+    "technology": "LTE",
+    "datasource": "pm"
+  },
+  "legend": {
+    "type": "dynamic",
+    "ascending": true,
+    "size": true,
+    "border": true,
+    "fill": true,
+    "range": []
+  },
+  "additionalFields": {},
+  "preferred": false,
+  "uuid": "4g_ul_rssi_pusch",
+  "name": "4g_ul_rssi_pusch",
+  "label": "LTE UL RSSI PUSCH",
+  "docdb_id": "cda7cb9d-8f07-4705-815a-05a6bff88e16",
+  "createdAt": "2023-07-07T09:11:02.134Z",
+  "version_id": "7fc9c54e-d42d-4df9-931b-28328a3e1e87"
+}

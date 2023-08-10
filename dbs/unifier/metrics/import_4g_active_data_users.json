@@ -1,0 +1,28 @@
+{
+  "type": "KPI",
+  "classifiers": {
+    "source": "KPIS",
+    "category": "KPI",
+    "domain": "RAN",
+    "element-type": "cell",
+    "technology": "LTE",
+    "datasource": "pm",
+    "test": "test"
+  },
+  "legend": {
+    "type": "dynamic",
+    "ascending": true,
+    "size": true,
+    "border": true,
+    "fill": true,
+    "range": []
+  },
+  "additionalFields": {},
+  "preferred": false,
+  "uuid": "IMPORT_4g_active_data_users",
+  "name": "IMPORT_4g_active_data_users",
+  "label": "IMPORT_LTE Active Data Users",
+  "docdb_id": "IMPORT_4g_active_data_users",
+  "createdAt": "2023-08-08T08:08:10.095Z",
+  "version_id": "c4bc9728-4126-4654-975a-3a3c099975fc"
+}

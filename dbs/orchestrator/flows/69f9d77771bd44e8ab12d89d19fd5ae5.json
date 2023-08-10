@@ -1,0 +1,12 @@
+{
+  "id": "69f9d77771bd44e8ab12d89d19fd5ae5",
+  "label": "testYannisFlow",
+  "version_id": "54116774-3078-41d2-bd6b-7165c90e3296",
+  "access_control": {
+    "type": "public",
+    "owner": null,
+    "group": null
+  },
+  "docdb_id": "69f9d77771bd44e8ab12d89d19fd5ae5",
+  "createdAt": "2023-07-24T09:58:41.304Z"
+}

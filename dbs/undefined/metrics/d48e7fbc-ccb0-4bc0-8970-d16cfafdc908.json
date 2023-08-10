@@ -1,0 +1,15 @@
+{
+  "uuid": "counter2Test",
+  "name": null,
+  "label": "counter2Test",
+  "classifiers": {
+    "source": "KPIS",
+    "technology": "UMTS",
+    "domain": "RAN",
+    "category": "Counter"
+  },
+  "type": "GENERIC",
+  "docdb_id": "d48e7fbc-ccb0-4bc0-8970-d16cfafdc908",
+  "createdAt": "2023-07-07T09:14:16.354Z",
+  "version_id": "1c40bab4-5610-43eb-81d5-9d849eef8f60"
+}

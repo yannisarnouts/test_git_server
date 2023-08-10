@@ -1,0 +1,68 @@
+{
+  "formulas": [
+    {
+      "formula": "100.0 * DIVSAFE(SUM['L_ChMeas_PRB_DL_Used_Avg'],  SUM['L_ChMeas_PRB_DL_Avail'], -0.01)",
+      "id": "4g_dl_prb_utilization",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "HUAWEI"
+        }
+      }
+    },
+    {
+      "formula": "AVG['M8011C37'] / 10",
+      "id": "4g_dl_prb_utilization",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "NOKIA"
+        }
+      }
+    },
+    {
+      "formula": "DIVSAFE(SUM['pmprbutildl_0'*10+'pmprbutildl_1'*20+'pmprbutildl_2'*30+'pmprbutildl_3'*40+'pmprbutildl_4'*50+'pmprbutildl_5'*60+'pmprbutildl_6'*70+'pmprbutildl_7'*80+'pmprbutildl_8'*90+'pmprbutildl_9'*100], SUM['pmprbutildl_0'+'pmprbutildl_1'+'pmprbutildl_2'+'pmprbutildl_3'+'pmprbutildl_4'+'pmprbutildl_5'+'pmprbutildl_6'+'pmprbutildl_7'+'pmprbutildl_8'+'pmprbutildl_9'],-1.0)",
+      "id": "4g_dl_prb_utilization",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "ERICSSON"
+        }
+      }
+    }
+  ],
+  "id": "4g_dl_prb_utilization",
+  "metadata": {
+    "accessControl": {
+      "effectivePermissions": [
+        "read",
+        "write"
+      ],
+      "permissions": {
+        "group": [],
+        "other": [
+          "read"
+        ],
+        "owner": [
+          "read",
+          "write"
+        ]
+      }
+    },
+    "labels": {
+      "domain": "RAN",
+      "element-type": "cell",
+      "technology": "LTE",
+      "type": "regular",
+      "datasource": "pm"
+    },
+    "ownership": {
+      "group": "",
+      "owner": "manuel.estepa@tupl.com"
+    }
+  },
+  "name": "LTE DL PRB Utilization Rate",
+  "docdb_id": "4g_dl_prb_utilization",
+  "createdAt": "2023-08-07T12:41:16.476Z",
+  "version_id": "a2e1acd9-4890-472a-a0f1-758e7f09ae9e"
+}

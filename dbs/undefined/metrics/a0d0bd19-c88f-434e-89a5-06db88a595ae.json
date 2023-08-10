@@ -1,0 +1,27 @@
+{
+  "type": "KPI",
+  "classifiers": {
+    "source": "KPIS",
+    "category": "KPI",
+    "domain": "RAN",
+    "element-type": "cell",
+    "technology": "LTE",
+    "datasource": "pm"
+  },
+  "legend": {
+    "type": "dynamic",
+    "ascending": true,
+    "size": true,
+    "border": true,
+    "fill": true,
+    "range": []
+  },
+  "additionalFields": {},
+  "preferred": false,
+  "uuid": "4g_ul_active_users",
+  "name": "4g_ul_active_users",
+  "label": "Active Users UL",
+  "docdb_id": "a0d0bd19-c88f-434e-89a5-06db88a595ae",
+  "createdAt": "2023-07-07T09:10:00.094Z",
+  "version_id": "f234578d-9536-4a5b-97e5-575a0b598a5c"
+}

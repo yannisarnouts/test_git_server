@@ -1,0 +1,27 @@
+{
+  "type": "KPI",
+  "classifiers": {
+    "source": "KPIS",
+    "category": "KPI",
+    "domain": "RAN",
+    "element-type": "cell",
+    "technology": "LTE",
+    "datasource": "pm"
+  },
+  "legend": {
+    "type": "dynamic",
+    "ascending": true,
+    "size": true,
+    "border": true,
+    "fill": true,
+    "range": []
+  },
+  "additionalFields": {},
+  "preferred": false,
+  "uuid": "4g_avg_pdcch_usage_rate",
+  "name": "4g_avg_pdcch_usage_rate",
+  "label": "LTE AVG PDCCH Usage Rate",
+  "docdb_id": "84a1b353-76c2-4cf7-b4bb-d7f6c86309db",
+  "createdAt": "2023-07-07T09:09:39.714Z",
+  "version_id": "d611207a-a17a-4755-8fc1-509038de2cc5"
+}

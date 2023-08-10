@@ -1,0 +1,107 @@
+{
+  "id": "ui-unifier",
+  "ancestorToShowInMapWhenSearching": {
+    "cell": -2
+  },
+  "appDomains": [
+    {
+      "id": "RAN",
+      "filter": {
+        "domain": "RAN",
+        "technology": null
+      }
+    }
+  ],
+  "baseEndpoints": {
+    "topologyApi": "/topology/v2/topology/"
+  },
+  "csvExport": {
+    "separator": ",",
+    "filename": "export.csv",
+    "decimalDot": "."
+  },
+  "defaults": {
+    "RAN": {
+      "dateRange": {
+        "startDate@date": "-3 days",
+        "endDate@date": "-0 day"
+      },
+      "timeAggregation": "DAY"
+    }
+  },
+  "editableMetricTypes": [
+    "KPI",
+    "GENERIC"
+  ],
+  "externalHosts": {},
+  "hiddenWidgets": [],
+  "i18n": {
+    "availableLanguages": [
+      "en"
+    ]
+  },
+  "layers": [],
+  "maxNumberOfElementsInAGroup": 2000,
+  "nodeTypesShapes": {
+    "site": "CIRCLE",
+    "cell": "SECTOR"
+  },
+  "reports": [],
+  "shareMetricGroupsTopologies": true,
+  "timeAggregations": {
+    "HOUR": "HOUR",
+    "DAY": "DAY"
+  },
+  "topology": {
+    "visibleNodeTypes": [
+      "vendor",
+      "region",
+      "market",
+      "tac",
+      "nc",
+      "bsc",
+      "rnc",
+      "site",
+      "cell",
+      "oblast",
+      "district"
+    ]
+  },
+  "topologyFields": {
+    "LTE": [
+      {
+        "id": "Equipment",
+        "label": "Equipment"
+      },
+      {
+        "id": "Height (m)",
+        "label": "Height (m)"
+      },
+      {
+        "id": "Pattern_Electrical_Tilt(°)",
+        "label": "E-Tilt (deg)"
+      },
+      {
+        "id": "Mechanical Downtilt (°)",
+        "label": "M-Tilt (deg)"
+      }
+    ]
+  },
+  "topologyLevelsConstrains": {
+    "site": -1,
+    "cell": -2
+  },
+  "zoomToElements": {
+    "region": 5,
+    "market": 5,
+    "nc": 7,
+    "bsc": 7,
+    "tac": 7,
+    "rnc": 7,
+    "site": 10,
+    "cell": 10
+  },
+  "docdb_id": "ui-unifier",
+  "createdAt": "2023-07-24T08:28:28.820Z",
+  "version_id": "5b281951-a75f-4960-8515-53bafd2e76e0"
+}

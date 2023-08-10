@@ -1,0 +1,27 @@
+{
+  "type": "KPI",
+  "classifiers": {
+    "source": "KPIS",
+    "category": "KPI",
+    "domain": "RAN",
+    "element-type": "cell",
+    "technology": "LTE",
+    "datasource": "pm"
+  },
+  "legend": {
+    "type": "dynamic",
+    "ascending": true,
+    "size": true,
+    "border": true,
+    "fill": true,
+    "range": []
+  },
+  "additionalFields": {},
+  "preferred": false,
+  "uuid": "4g_dl_traffic_volume_mb",
+  "name": "4g_dl_traffic_volume_mb",
+  "label": "LTE DL Traffic Volume",
+  "docdb_id": "ba7f04e3-9206-4f8a-984f-8ca2df8dc71b",
+  "createdAt": "2023-07-07T09:14:16.355Z",
+  "version_id": "dfaae54f-7df4-4f48-be11-b8c5fc45ac08"
+}

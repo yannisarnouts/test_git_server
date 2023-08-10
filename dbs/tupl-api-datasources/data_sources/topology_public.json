@@ -1,0 +1,26 @@
+{
+  "name": "topology_public",
+  "path": "",
+  "storageType": "sftp",
+  "type": "external",
+  "classifiers": {
+    "user": "yannis"
+  },
+  "metadata": {
+    "ownership": {
+      "owner": "Public",
+      "group": ""
+    },
+    "permissions": {
+      "owner": [
+        "read",
+        "write"
+      ],
+      "group": [],
+      "other": []
+    }
+  },
+  "docdb_id": "topology_public",
+  "createdAt": "2023-07-24T08:49:33.307Z",
+  "version_id": "ab839db2-a35c-412e-8123-f19907645b8d"
+}

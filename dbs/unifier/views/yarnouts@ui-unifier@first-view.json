@@ -1,0 +1,31 @@
+{
+  "createdAt": "2023-07-24T08:28:28.801Z",
+  "widgets": [],
+  "layouts": {},
+  "minimizedWidgets": [],
+  "title": "first_view",
+  "priority": 1,
+  "icon": "fa fa-file",
+  "userMenu": false,
+  "id": "first-view",
+  "appDomain": "RAN",
+  "type": "dynamic-view",
+  "visibility": "Private",
+  "owner": "yarnouts",
+  "_accessInfo": {
+    "owner": "yarnouts",
+    "share": [],
+    "sharedGroups": [
+      ".*"
+    ],
+    "sharedRoles": [
+      ".*"
+    ]
+  },
+  "application": "ui-unifier",
+  "version": "2.124.0-DOCDB-SNAPSHOT",
+  "key": "yarnouts@ui-unifier@first-view",
+  "updatedAt": "2023-03-24T11:16:31.077Z",
+  "docdb_id": "yarnouts@ui-unifier@first-view",
+  "version_id": "9becdf94-ac8a-4d9a-8298-5b8e42b873ee"
+}

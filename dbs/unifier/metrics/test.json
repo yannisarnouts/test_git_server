@@ -1,0 +1,25 @@
+{
+  "type": "KPI",
+  "classifiers": {
+    "source": "KPIS",
+    "category": "KPI",
+    "element-type": "cell",
+    "test": "---"
+  },
+  "legend": {
+    "type": "dynamic",
+    "ascending": true,
+    "size": true,
+    "border": true,
+    "fill": true,
+    "range": []
+  },
+  "additionalFields": {},
+  "preferred": false,
+  "uuid": "test",
+  "name": "test",
+  "label": "test",
+  "docdb_id": "test",
+  "createdAt": "2023-08-08T08:08:19.162Z",
+  "version_id": "9b132ba8-b0c4-441f-83e8-859930cca42f"
+}

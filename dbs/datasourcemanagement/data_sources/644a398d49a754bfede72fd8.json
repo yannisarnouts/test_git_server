@@ -1,0 +1,33 @@
+{
+  "_id": "644a398d49a754bfede72fd8",
+  "name": "topology_yannis",
+  "path": "/datasources/topology_yannis",
+  "storageType": "webdav",
+  "classifiers": {
+    "user": "yannis"
+  },
+  "tagId": "WebdavYannis",
+  "docdb_id": "644a398d49a754bfede72fd8",
+  "createdAt": "2023-06-05T10:06:24.391Z",
+  "version_id": "a1c4a6c6-b3b7-4d4a-8b82-8a3885e33044",
+  "type": "external",
+  "updatedAt": "2023-06-26T09:01:09.819Z",
+  "metadata": {
+    "ownership": {
+      "owner": "yarnouts",
+      "group": "admins",
+      "type": "group"
+    },
+    "permissions": {
+      "owner": [
+        "read",
+        "write"
+      ],
+      "group": [
+        "read",
+        "write"
+      ],
+      "other": []
+    }
+  }
+}

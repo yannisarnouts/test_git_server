@@ -1,0 +1,100 @@
+{
+  "id": "TicketsTable@NetworkTicketsTable",
+  "baseWidgetId": "TicketsTable",
+  "wrappedWidgetId": "NetworkTicketsTable",
+  "fixedInputs": {
+    "baseTicketType": "network_tickets",
+    "baseColumns": [
+      {
+        "uuid": "id",
+        "title": "id"
+      },
+      {
+        "uuid": "problemDate",
+        "title": "Problem date"
+      },
+      {
+        "uuid": "priority",
+        "title": "Priority"
+      },
+      {
+        "uuid": "status",
+        "title": "Status"
+      },
+      {
+        "uuid": "assigneeFullName",
+        "title": "Assignee"
+      },
+      {
+        "uuid": "modelName",
+        "title": "Model name"
+      },
+      {
+        "uuid": "symptomDesc",
+        "title": "Symptom Desc."
+      },
+      {
+        "uuid": "label",
+        "title": "Cause Desc."
+      },
+      {
+        "uuid": "market",
+        "title": "Market"
+      },
+      {
+        "uuid": "elements",
+        "title": "Elements"
+      },
+      {
+        "uuid": "lastOcurrenceDate",
+        "title": "Last Occurrence"
+      },
+      {
+        "uuid": "ocurrenceCounter",
+        "title": "#Occurrences"
+      },
+      {
+        "uuid": "description",
+        "title": "Description"
+      },
+      {
+        "uuid": "incidenceId",
+        "title": "Incidence ID"
+      }
+    ],
+    "baseFilter": [
+      {
+        "type": "datetime",
+        "field": "problemDate",
+        "operator": ">=",
+        "dateToFilter": "startDate"
+      },
+      {
+        "type": "datetime",
+        "field": "problemDate",
+        "operator": "<=",
+        "dateToFilter": "endDate"
+      },
+      {
+        "type": "search",
+        "excludeFields": [
+          "id"
+        ]
+      }
+    ],
+    "baseRowFieldId": "id",
+    "baseHiddenColumns": [
+      "description",
+      "incidenceId",
+      "ocurrenceCounter"
+    ]
+  },
+  "options": {
+    "title": "Network Tickets",
+    "description": "Network Tickets",
+    "labels": {}
+  },
+  "createdAt": "2023-07-24T08:28:28.798Z",
+  "docdb_id": "TicketsTable@NetworkTicketsTable",
+  "version_id": "fd88a4ac-8a14-4df0-bd03-e8f560ad27db"
+}

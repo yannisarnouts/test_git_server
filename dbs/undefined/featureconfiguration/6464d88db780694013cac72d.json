@@ -1,0 +1,16 @@
+{
+  "uuid": "6464d88db780694013cac72d",
+  "version": "v5",
+  "name": "test",
+  "application": "test",
+  "sqlFeatures": [],
+  "rangeFeatures": [],
+  "timeFeatures": [],
+  "forecastFeatures": [],
+  "defaultValues": {},
+  "alias": "test_test",
+  "schemaVersion": "v5",
+  "docdb_id": "6464d88db780694013cac72d",
+  "createdAt": "2023-08-01T06:59:38.377Z",
+  "version_id": "b52ea901-ef6a-41af-8a98-7ca58b041b4b"
+}

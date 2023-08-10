@@ -1,0 +1,81 @@
+{
+  "id": "TicketsTable@CustomerTicketsTable",
+  "baseWidgetId": "TicketsTable",
+  "wrappedWidgetId": "CustomerTicketsTable",
+  "fixedInputs": {
+    "baseTicketType": "customer_tickets",
+    "encoded": true,
+    "baseColumns": [
+      {
+        "uuid": "id",
+        "title": "id"
+      },
+      {
+        "uuid": "original_tt_id",
+        "title": "TTID"
+      },
+      {
+        "uuid": "original_created_date",
+        "title": "Created Date"
+      },
+      {
+        "uuid": "original_msisdn",
+        "title": "MSISDN"
+      },
+      {
+        "uuid": "status",
+        "title": "Status"
+      },
+      {
+        "uuid": "original_tt_site",
+        "title": "TT Site"
+      },
+      {
+        "uuid": "original_most_freq_site",
+        "title": "Most Frequent Site"
+      },
+      {
+        "uuid": "original_top_offender_site",
+        "title": "Top Offender Site"
+      },
+      {
+        "uuid": "original_service_category",
+        "title": "Service Category"
+      },
+      {
+        "uuid": "original_region",
+        "title": "Region"
+      }
+    ],
+    "baseFilter": [
+      {
+        "type": "datetime",
+        "field": "original_created_date",
+        "operator": ">=",
+        "dateToFilter": "startDate"
+      },
+      {
+        "type": "datetime",
+        "field": "original_created_date",
+        "operator": "<=",
+        "dateToFilter": "endDate"
+      },
+      {
+        "type": "search",
+        "excludeFields": [
+          "id"
+        ]
+      }
+    ],
+    "baseRowFieldId": "id",
+    "baseHiddenColumns": []
+  },
+  "options": {
+    "title": "Customer Tickets Table",
+    "description": "Customer Tickets",
+    "labels": {}
+  },
+  "createdAt": "2023-07-24T08:28:28.798Z",
+  "docdb_id": "TicketsTable@CustomerTicketsTable",
+  "version_id": "7069174f-1e70-44a0-b04c-34a67f550ec8"
+}

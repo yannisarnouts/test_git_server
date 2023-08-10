@@ -1,0 +1,137 @@
+{
+  "uuid": "6492ccaed2f78d0971d86bae",
+  "version": "v1",
+  "name": "testFeatureConfig3",
+  "application": "yannisApp",
+  "sqlFeatures": [],
+  "anomalyFeatures": [
+    {
+      "name": "testAnomaly",
+      "parsingConfig": {
+        "timeSeriesField": "4g_average_cqi",
+        "timestampStart": "20201010",
+        "timestampEnd": "",
+        "timestampFormat": "%Y%m%d",
+        "timestampFrequency": "DAY",
+        "fieldToSplitBy": ""
+      },
+      "forecastingConfig": {
+        "regressor": "RandomForestRegressor",
+        "slidingWindowLength": 2,
+        "strategy": "recursive",
+        "forecastingHorizon": [
+          "1"
+        ],
+        "mode": "anomalyDetection",
+        "modeConfig": {
+          "anomalyDetectionConfig": {
+            "errorDetectionMethod": "percentageError",
+            "errorTreshold": 0,
+            "outputFeatureValue": 0
+          }
+        }
+      },
+      "imputerConfig": {
+        "method": "mean"
+      },
+      "description": "",
+      "metadata": {}
+    }
+  ],
+  "rangeFeatures": [
+    {
+      "name": "forecastfeature",
+      "enabled": null,
+      "thresholds": [],
+      "featureType": "double",
+      "formula": null,
+      "variable": null,
+      "description": null,
+      "metadata": {
+        "other": {
+          "validated": "false"
+        }
+      }
+    }
+  ],
+  "timeFeatures": [
+    {
+      "name": "testFeature-2",
+      "classes": [
+        {
+          "condition": "kpis_topology_telco_cell_day__4g_active_data_users > 1",
+          "color": "#000",
+          "frequency": {
+            "count": "",
+            "period": ""
+          },
+          "class": "1.0"
+        }
+      ],
+      "type": "double",
+      "allowOverlappingConditions": true,
+      "description": "",
+      "metadata": {
+        "other": {
+          "validated": "false"
+        }
+      }
+    }
+  ],
+  "forecastFeatures": [
+    {
+      "name": "forecastfeature",
+      "parsingConfig": {
+        "timeSeriesField": "4g_dl_prb_utilization",
+        "timestampStart": "2023062610:22:10",
+        "timestampEnd": "2023062614:22:10",
+        "timestampFormat": "%Y%m%d%X",
+        "timestampFrequency": "MINUTE",
+        "fieldToSplitBy": "cell"
+      },
+      "forecastingConfig": {
+        "regressor": "RandomForestRegressor",
+        "slidingWindowLength": 0,
+        "strategy": "recursive",
+        "forecastingHorizon": null
+      },
+      "imputerConfig": {
+        "method": "mean"
+      },
+      "description": null,
+      "metadata": {
+        "other": {
+          "validated": "false"
+        }
+      }
+    },
+    {
+      "name": "forecastFeature2",
+      "parsingConfig": {
+        "timeSeriesField": "4g_avg_pdcch_usage_rate",
+        "timestampStart": "20230626",
+        "timestampEnd": "",
+        "timestampFormat": "%Y%m%d",
+        "timestampFrequency": "thisisatest",
+        "fieldToSplitBy": "cell"
+      },
+      "forecastingConfig": {
+        "regressor": "RandomForestRegressor",
+        "slidingWindowLength": 0,
+        "strategy": "recursive",
+        "forecastingHorizon": null
+      },
+      "imputerConfig": {
+        "method": "mean"
+      },
+      "description": "",
+      "metadata": {}
+    }
+  ],
+  "defaultValues": {},
+  "alias": "testFeatureConfig3_yannisApp",
+  "schemaVersion": "v1",
+  "docdb_id": "6492ccaed2f78d0971d86bae",
+  "createdAt": "2023-08-01T06:56:56.724Z",
+  "version_id": "df614c7f-9f33-4dd7-802b-5a523caa4c9d"
+}

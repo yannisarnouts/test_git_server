@@ -1,0 +1,59 @@
+{
+  "id": "8c80b127-ca83-4406-8dfe-de142d4d472c",
+  "label": "Ticket Generator",
+  "type": "TicketsGenerator",
+  "settings": {
+    "trigger_events": [
+      {
+        "condition": "False",
+        "parameters": [
+          {
+            "name": "globalModelId",
+            "value": "{{event.globalModelId}}"
+          },
+          {
+            "name": "startDate",
+            "value": "{{event.startDate}}"
+          },
+          {
+            "name": "endDate",
+            "value": "{{event.endDate}}"
+          },
+          {
+            "name": "projectId",
+            "value": "{{event.projectId}}"
+          },
+          {
+            "name": "modelName",
+            "value": ""
+          },
+          {
+            "name": "ticketsDaysBack",
+            "value": ""
+          },
+          {
+            "name": "user",
+            "value": "{{event.user}}"
+          }
+        ],
+        "processor_id": "314f81dc-5f60-4825-8a89-d3a59b41a9b6",
+        "event_type": "PredictionExecuted"
+      }
+    ],
+    "parameters": [],
+    "cron_info": null
+  },
+  "metadata": {},
+  "version_id": "7cef09ea-8ab6-4330-904b-db0ad1ec9ecb",
+  "registration_timestamp": "2023-06-26T14:44:55.119Z",
+  "flow_id": "4c92fb67-239c-4d29-b015-b256281224e7",
+  "state": "active",
+  "processing_status": {
+    "failing": 0,
+    "in_progress": 0,
+    "waiting": 0,
+    "succeeded": 0
+  },
+  "docdb_id": "8c80b127-ca83-4406-8dfe-de142d4d472c",
+  "createdAt": "2023-07-24T10:25:27.274Z"
+}

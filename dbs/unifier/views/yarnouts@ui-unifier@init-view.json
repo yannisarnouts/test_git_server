@@ -1,0 +1,51 @@
+{
+  "createdAt": "2023-07-24T08:28:28.802Z",
+  "widgets": [
+    {
+      "type": "GitLog",
+      "buttons": [],
+      "title": "Git log",
+      "inputs": {}
+    }
+  ],
+  "layouts": {
+    "md": [],
+    "lg": [
+      {
+        "w": 12,
+        "h": 13,
+        "x": 0,
+        "y": 0,
+        "moved": false,
+        "static": false,
+        "i": "0"
+      }
+    ]
+  },
+  "minimizedWidgets": [],
+  "title": "init_view",
+  "priority": 1,
+  "icon": "fa fa-file",
+  "userMenu": false,
+  "id": "init-view",
+  "appDomain": "RAN",
+  "type": "dynamic-view",
+  "visibility": "Private",
+  "owner": "yarnouts",
+  "_accessInfo": {
+    "owner": "yarnouts",
+    "share": [],
+    "sharedGroups": [
+      ".*"
+    ],
+    "sharedRoles": [
+      ".*"
+    ]
+  },
+  "application": "ui-unifier",
+  "version": "2.124.0-DOCDB-SNAPSHOT",
+  "key": "yarnouts@ui-unifier@init-view",
+  "updatedAt": "2023-03-24T15:27:00.700Z",
+  "docdb_id": "yarnouts@ui-unifier@init-view",
+  "version_id": "69ce4fcf-b591-4f56-8f36-bc97ab9aeef4"
+}

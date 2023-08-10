@@ -1,0 +1,68 @@
+{
+  "formulas": [
+    {
+      "formula": "DIVSAFE(SUM[('L_UL_SINR_PUSCH_Index0'*-5)+('L_UL_SINR_PUSCH_Index1'*-3.5)+('L_UL_SINR_PUSCH_Index2'*0)+('L_UL_SINR_PUSCH_Index3'*4)+('L_UL_SINR_PUSCH_Index4'*8)+('L_UL_SINR_PUSCH_Index5'*12)+('L_UL_SINR_PUSCH_Index6'*15.5)+('L_UL_SINR_PUSCH_Index7'*17)],SUM[('L_UL_SINR_PUSCH_Index0')+('L_UL_SINR_PUSCH_Index1')+('L_UL_SINR_PUSCH_Index2')+('L_UL_SINR_PUSCH_Index3')+('L_UL_SINR_PUSCH_Index4')+('L_UL_SINR_PUSCH_Index5')+('L_UL_SINR_PUSCH_Index6')+('L_UL_SINR_PUSCH_Index7')],-100)",
+      "id": "4g_ul_sinr_pusch",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "HUAWEI"
+        }
+      }
+    },
+    {
+      "formula": "DIVIDE(SUM[('M8005C118')*-10+('M8005C119'* -9)+('M8005C120'* -7)+('M8005C121'* -5)+('M8005C122' * -3)+('M8005C123' * -1)+('M8005C124' *1)+('M8005C125' *3)+('M8005C126' *5)+('M8005C127' *7)+('M8005C128' *9)+('M8005C129' * 11)+('M8005C130' * 13)+('M8005C131' * 15)+('M8005C132' * 17)+('M8005C133' * 19)+('M8005C134' * 21)+('M8005C135' * 23)+('M8005C136' * 25)+('M8005C137' * 27)+('M8005C138' * 29)+('M8005C139' * 30)],SUM[('M8005C118')+('M8005C119') +('M8005C120') +('M8005C121') +('M8005C122')+('M8005C123')+('M8005C124')+('M8005C125')+('M8005C126')+('M8005C127')+('M8005C128')+('M8005C129')+('M8005C130')+('M8005C131')+('M8005C132')+('M8005C133')+('M8005C134')+('M8005C135')+('M8005C136')+('M8005C137')+('M8005C138')+('M8005C139') ])",
+      "id": "4g_ul_sinr_pusch",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "NOKIA"
+        }
+      }
+    },
+    {
+      "formula": "DIVSAFE(SUM['pmsinrpuschdistr_0'*(-5)+'pmsinrpuschdistr_1'*(-3.5)+'pmsinrpuschdistr_2'*(0)+'pmsinrpuschdistr_3'*(4)+'pmsinrpuschdistr_4'*(8)+'pmsinrpuschdistr_5'*(12)+'pmsinrpuschdistr_6'*(15.5)+'pmsinrpuschdistr_7'*(17)],SUM['pmsinrpuschdistr_0'+'pmsinrpuschdistr_1'+'pmsinrpuschdistr_2'+'pmsinrpuschdistr_3'+'pmsinrpuschdistr_4'+'pmsinrpuschdistr_5'+'pmsinrpuschdistr_6'+'pmsinrpuschdistr_7'],-100.0)",
+      "id": "4g_ul_sinr_pusch",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "ERICSSON"
+        }
+      }
+    }
+  ],
+  "id": "4g_ul_sinr_pusch",
+  "metadata": {
+    "accessControl": {
+      "effectivePermissions": [
+        "read",
+        "write"
+      ],
+      "permissions": {
+        "group": [],
+        "other": [
+          "read"
+        ],
+        "owner": [
+          "read",
+          "write"
+        ]
+      }
+    },
+    "labels": {
+      "domain": "RAN",
+      "element-type": "cell",
+      "technology": "LTE",
+      "type": "regular",
+      "datasource": "pm"
+    },
+    "ownership": {
+      "group": "",
+      "owner": "manuel.estepa@tupl.com"
+    }
+  },
+  "name": "LTE UL SINR PUSCH",
+  "docdb_id": "4g_ul_sinr_pusch",
+  "createdAt": "2023-07-21T09:12:30.463Z",
+  "version_id": "5c3092ae-2bf1-4966-ba9d-20c7ceb6c975"
+}

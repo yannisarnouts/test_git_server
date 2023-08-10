@@ -1,0 +1,68 @@
+{
+  "formulas": [
+    {
+      "formula": "10.0 * Log10(DIVSAFE(SUM['L_UL_RSSI_PUSCH_Index0' *0.0001 + 'L_UL_RSSI_PUSCH_Index1' *0.000125892541179416 + 'L_UL_RSSI_PUSCH_Index2' *0.000199526231496888 + 'L_UL_RSSI_PUSCH_Index3' *0.000316227766016837 + 'L_UL_RSSI_PUSCH_Index4' *0.000501187233627269 + 'L_UL_RSSI_PUSCH_Index5' *0.000794328234724281 + 'L_UL_RSSI_PUSCH_Index6' *0.00125892541179416 + 'L_UL_RSSI_PUSCH_Index7' *0.00199526231496888 + 'L_UL_RSSI_PUSCH_Index8' *0.00316227766016837 + 'L_UL_RSSI_PUSCH_Index9' *0.0050118723362727 + 'L_UL_RSSI_PUSCH_Index10' *0.00794328234724279 + 'L_UL_RSSI_PUSCH_Index11' *0.0125892541179417 + 'L_UL_RSSI_PUSCH_Index12' *0.0199526231496888 + 'L_UL_RSSI_PUSCH_Index13' *0.0316227766016837 + 'L_UL_RSSI_PUSCH_Index14' *0.050118723362727 + 'L_UL_RSSI_PUSCH_Index15' *0.079432823472428 + 'L_UL_RSSI_PUSCH_Index16' *0.125892541179416 + 'L_UL_RSSI_PUSCH_Index17' *0.199526231496888 + 'L_UL_RSSI_PUSCH_Index18' *0.316227766016838 + 'L_UL_RSSI_PUSCH_Index19' *0.501187233627271 + 'L_UL_RSSI_PUSCH_Index20' *0.794328234724281 + 'L_UL_RSSI_PUSCH_Index21']/100000000, SUM['L_UL_RSSI_PUSCH_Index0' +'L_UL_RSSI_PUSCH_Index1' +'L_UL_RSSI_PUSCH_Index2' +'L_UL_RSSI_PUSCH_Index3' +'L_UL_RSSI_PUSCH_Index4' +'L_UL_RSSI_PUSCH_Index5' +'L_UL_RSSI_PUSCH_Index6' +'L_UL_RSSI_PUSCH_Index7' +'L_UL_RSSI_PUSCH_Index8' +'L_UL_RSSI_PUSCH_Index9' +'L_UL_RSSI_PUSCH_Index10' +'L_UL_RSSI_PUSCH_Index11' +'L_UL_RSSI_PUSCH_Index12' +'L_UL_RSSI_PUSCH_Index13' +'L_UL_RSSI_PUSCH_Index14' +'L_UL_RSSI_PUSCH_Index15' +'L_UL_RSSI_PUSCH_Index16' +'L_UL_RSSI_PUSCH_Index17' +'L_UL_RSSI_PUSCH_Index18' +'L_UL_RSSI_PUSCH_Index19' +'L_UL_RSSI_PUSCH_Index20' +'L_UL_RSSI_PUSCH_Index21'], 1))",
+      "id": "4g_ul_rssi_pusch",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "HUAWEI"
+        }
+      }
+    },
+    {
+      "formula": "10.0 * Log10(DIVIDE(SUM[(('M8005C234' * POWER(10.0 , -120.0/10.0)) +('M8005C235' * POWER(10.0 , -119.0/10.0)) +('M8005C236' * POWER(10.0 , -117.0/10.0)) +('M8005C237' * POWER(10.0 , -115.0/10.0)) +('M8005C238' * POWER(10.0 , -113.0/10.0)) +('M8005C239' * POWER(10.0 , -111.0/10.0)) +('M8005C240' * POWER(10.0 , -109.0/10.0)) +('M8005C241' * POWER(10.0 , -107.0/10.0)) +('M8005C242' * POWER(10.0 , -105.0/10.0)) +('M8005C243' * POWER(10.0 , -103.0/10.0)) +('M8005C244' * POWER(10.0 , -101.0/10.0)) +('M8005C245' * POWER(10.0 , -99.0/10.0)) +('M8005C246' * POWER(10.0 , -97.0/10.0)) +('M8005C247' * POWER(10.0 , -95.0/10.0)) +('M8005C248' * POWER(10.0 , -93.0/10.0)) +('M8005C249' * POWER(10.0 , -91.0/10.0)) +('M8005C250' * POWER(10.0 , -89.0/10.0)) +('M8005C251' * POWER(10.0 , -87.0/10.0)) +('M8005C252' * POWER(10.0 , -85.0/10.0)) +('M8005C253' * POWER(10.0 , -83.0/10.0)) +('M8005C254' * POWER(10.0 , -81.0/10.0)) +('M8005C255' * POWER(10.0 , -80.0/10.0)))],SUM[('M8005C234'    +'M8005C235'    +'M8005C236'    +'M8005C237'    +'M8005C238'    +'M8005C239'    +'M8005C240'    +'M8005C241'    +'M8005C242'    +'M8005C243'    +'M8005C244'    +'M8005C245'    +'M8005C246'    +'M8005C247'    +'M8005C248'    +'M8005C249'    +'M8005C250'    +'M8005C251'    +'M8005C252'    +'M8005C253'    +'M8005C254'    +'M8005C255')]))",
+      "id": "4g_ul_rssi_pusch",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "NOKIA"
+        }
+      }
+    },
+    {
+      "formula": "-120.0 + 10.0 * Log10(DIVSAFE(SUM[0.794328235*'pmradiorecinterferencepwr_0' + 1.0*'pmradiorecinterferencepwr_1' + 1.258925412*'pmradiorecinterferencepwr_2' + 1.584893192*'pmradiorecinterferencepwr_3' + 1.995262315*'pmradiorecinterferencepwr_4' + 2.511886432*'pmradiorecinterferencepwr_5' + 3.16227766*'pmradiorecinterferencepwr_6' + 3.981071706*'pmradiorecinterferencepwr_7' + 5.011872336*'pmradiorecinterferencepwr_8' + 6.309573445*'pmradiorecinterferencepwr_9' + 10.0*'pmradiorecinterferencepwr_10' + 25.11886432*'pmradiorecinterferencepwr_11' + 63.09573445*'pmradiorecinterferencepwr_12' + 158.4893192*'pmradiorecinterferencepwr_13' + 398.1071706 * 'pmradiorecinterferencepwr_14' + 630.9573445 *  'pmradiorecinterferencepwr_15'], SUM['pmradiorecinterferencepwr_0' + 'pmradiorecinterferencepwr_1' + 'pmradiorecinterferencepwr_2' + 'pmradiorecinterferencepwr_3' + 'pmradiorecinterferencepwr_4' + 'pmradiorecinterferencepwr_5' + 'pmradiorecinterferencepwr_6' + 'pmradiorecinterferencepwr_7' + 'pmradiorecinterferencepwr_8' + 'pmradiorecinterferencepwr_9' + 'pmradiorecinterferencepwr_10' + 'pmradiorecinterferencepwr_11' + 'pmradiorecinterferencepwr_12' + 'pmradiorecinterferencepwr_13' + 'pmradiorecinterferencepwr_14' + 'pmradiorecinterferencepwr_15'],0.0))",
+      "id": "4g_ul_rssi_pusch",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "ERICSSON"
+        }
+      }
+    }
+  ],
+  "id": "4g_ul_rssi_pusch",
+  "metadata": {
+    "accessControl": {
+      "effectivePermissions": [
+        "read",
+        "write"
+      ],
+      "permissions": {
+        "group": [],
+        "other": [
+          "read"
+        ],
+        "owner": [
+          "read",
+          "write"
+        ]
+      }
+    },
+    "labels": {
+      "domain": "RAN",
+      "element-type": "cell",
+      "technology": "LTE",
+      "type": "regular",
+      "datasource": "pm"
+    },
+    "ownership": {
+      "group": "",
+      "owner": "manuel.estepa@tupl.com"
+    }
+  },
+  "name": "LTE UL RSSI PUSCH",
+  "docdb_id": "4g_ul_rssi_pusch",
+  "createdAt": "2023-07-21T09:12:30.463Z",
+  "version_id": "d5a8ec6c-5908-4464-9d00-c95b2bc14c71"
+}

@@ -1,0 +1,38 @@
+{
+  "application": null,
+  "id": "builtinview",
+  "_accessInfo": {
+    "owner": null,
+    "share": [],
+    "sharedGroups": [
+      "admins",
+      "unifier",
+      "unifier_admins"
+    ],
+    "sharedRoles": [
+      ".*"
+    ]
+  },
+  "appDomain": "RAN",
+  "builtIn": true,
+  "description": "this is a builtinview test",
+  "icon": "fa fa-file",
+  "key": "builtinview-undefined",
+  "layouts": {},
+  "minimizedWidgets": [],
+  "priority": 1,
+  "sharedGroups": [
+    "admins",
+    "unifier",
+    "unifier_admins"
+  ],
+  "sharedRoles": [],
+  "title": "builtinView",
+  "type": "dynamic-view",
+  "userMenu": false,
+  "version": null,
+  "widgets": [],
+  "docdb_id": "builtinview-undefined",
+  "createdAt": "2023-07-24T08:28:28.811Z",
+  "version_id": "9b865c84-69a7-4721-9bc6-bfe10436b2e0"
+}

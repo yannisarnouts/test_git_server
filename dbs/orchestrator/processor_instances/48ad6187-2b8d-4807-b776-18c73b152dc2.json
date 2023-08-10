@@ -1,0 +1,76 @@
+{
+  "id": "48ad6187-2b8d-4807-b776-18c73b152dc2",
+  "label": "FeatureProcessor",
+  "type": "HackathonFeatureProcessor",
+  "settings": {
+    "trigger_events": [
+      {
+        "condition": "eventExists({\"data.endDate\": \"2022-11-19\"}) and eventExists({\"data.endDate\": \"2022-11-20\"}) and eventExists({\"data.endDate\": \"2022-11-21\"}) and eventExists({\"data.endDate\": \"2022-11-22\"}) and eventExists({\"data.endDate\": \"2022-11-23\"}) and eventExists({\"data.endDate\": \"2022-11-24\"}) and eventExists({\"data.endDate\": \"2022-11-25\"})",
+        "parameters": [
+          {
+            "name": "topologyId",
+            "value": "{{event.topologyId}}"
+          },
+          {
+            "name": "startDate",
+            "value": "2022-11-18"
+          },
+          {
+            "name": "endDate",
+            "value": "2022-11-25"
+          },
+          {
+            "name": "featureEditorApplication",
+            "value": "nwadvisor"
+          },
+          {
+            "name": "featureEditorConfiguration",
+            "value": "ran_4g_net_cell_kpis_hour_day"
+          }
+        ],
+        "processor_id": "4304ea2b-bd5a-43a2-96f0-a91065b28db4",
+        "event_type": "HourKpisCalculated"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "topologyId",
+        "value": ""
+      },
+      {
+        "name": "startDate",
+        "value": ""
+      },
+      {
+        "name": "endDate",
+        "value": ""
+      },
+      {
+        "name": "featureEditorApplication",
+        "value": ""
+      },
+      {
+        "name": "featureEditorConfiguration",
+        "value": ""
+      }
+    ],
+    "cron_info": null
+  },
+  "metadata": {
+    "layout": {
+      "x": 630,
+      "y": -420
+    }
+  },
+  "version_id": "aedf3920-c8d4-47c3-a49c-3c0ce11cca5f",
+  "registration_timestamp": "2023-04-04T07:24:06.319Z",
+  "flow_id": "553b97c5-5a0d-406f-b092-27a5af0069af",
+  "state": "active",
+  "processing_status": {
+    "failing": 0,
+    "in_progress": 0,
+    "succeeded": 0
+  },
+  "docdb_id": "48ad6187-2b8d-4807-b776-18c73b152dc2",
+  "createdAt": "2023-07-24T10:25:27.270Z"
+}

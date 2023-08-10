@@ -1,0 +1,24 @@
+{
+  "type": "KPI",
+  "classifiers": {
+    "source": "KPIS",
+    "category": "KPI",
+    "element-type": "country"
+  },
+  "legend": {
+    "type": "dynamic",
+    "ascending": true,
+    "size": true,
+    "border": true,
+    "fill": true,
+    "range": []
+  },
+  "additionalFields": {},
+  "preferred": false,
+  "uuid": "yannis_private_kpi",
+  "name": "yannis_private_kpi",
+  "label": "yannis private kpi",
+  "docdb_id": "yannis_private_kpi",
+  "createdAt": "2023-08-08T08:08:19.163Z",
+  "version_id": "5cd66ecb-f6b0-4b03-9125-2e54eeaa8caa"
+}

@@ -1,0 +1,36 @@
+{
+  "_id": "648b3c76ef89ba89c0c1f6a0",
+  "name": "topology_new_yannis",
+  "path": "/datasources/topology_new_yannis",
+  "storageType": "webdav",
+  "type": "external",
+  "classifiers": {
+    "user": "yannis",
+    "test": "test"
+  },
+  "metadata": {
+    "ownership": {
+      "owner": "yarnouts",
+      "group": "public",
+      "type": "public"
+    },
+    "permissions": {
+      "owner": [
+        "read",
+        "write"
+      ],
+      "group": [
+        "read",
+        "write"
+      ],
+      "other": [
+        "read",
+        "write"
+      ]
+    }
+  },
+  "tagId": "WebdavTestYannis",
+  "docdb_id": "648b3c76ef89ba89c0c1f6a0",
+  "updatedAt": "2023-06-26T09:39:59.462Z",
+  "version_id": "e0098931-ea7b-4ea5-a943-063aabdedced"
+}

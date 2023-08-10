@@ -1,0 +1,59 @@
+{
+  "id": "5e1b6cda-3669-48c4-86ff-e710cadf68ee",
+  "label": "KPIs",
+  "type": "KPIProcessor",
+  "settings": {
+    "trigger_events": [
+      {
+        "condition": "False",
+        "parameters": [
+          {
+            "name": "datasource",
+            "value": "{{event.datasource}}"
+          },
+          {
+            "name": "classifiers",
+            "value": "{{event.classifiers}}"
+          },
+          {
+            "name": "topology",
+            "value": "{{event.topology}}"
+          },
+          {
+            "name": "timeframe",
+            "value": "all"
+          },
+          {
+            "name": "element",
+            "value": ""
+          },
+          {
+            "name": "day",
+            "value": "{{event.day}}"
+          },
+          {
+            "name": "hour",
+            "value": "{{event.hour}}"
+          }
+        ],
+        "processor_id": "a68dc7c6-54a0-4fa4-9ebc-27c8654c5724",
+        "event_type": "IngestionExecuted"
+      }
+    ],
+    "parameters": [],
+    "cron_info": null
+  },
+  "metadata": {},
+  "version_id": "018b9b78-8210-4f94-981c-fb71eb8e6377",
+  "registration_timestamp": "2023-06-26T14:47:43.968Z",
+  "flow_id": "64becd36-bd5e-475d-8e80-71714d90eae8",
+  "state": "active",
+  "processing_status": {
+    "failing": 0,
+    "in_progress": 0,
+    "waiting": 0,
+    "succeeded": 0
+  },
+  "docdb_id": "5e1b6cda-3669-48c4-86ff-e710cadf68ee",
+  "createdAt": "2023-07-24T10:25:27.274Z"
+}

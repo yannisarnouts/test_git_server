@@ -1,0 +1,127 @@
+{
+  "docdb_id": "FeaturesProcessor",
+  "processor_type": "FeaturesProcessor",
+  "createdAt": "2023-04-04T08:10:28.764Z",
+  "meta_type": "InputOutput",
+  "parameters": [
+    {
+      "name": "topology",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "datasource",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "classifiers",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "configName",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "appName",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "timeWindow",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "element",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "day",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "timeAggregation",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "nowMillis",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "startDate",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "endDate",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "datePattern",
+      "type": "str",
+      "optional": true
+    }
+  ],
+  "generated_events": [
+    {
+      "type": "FeatureGenerated",
+      "fields": [
+        "configPaths",
+        "variables",
+        "topology",
+        "datasource",
+        "classifiers",
+        "configName",
+        "appName",
+        "timeWindow",
+        "element",
+        "day",
+        "timeAggregation",
+        "nowMillis",
+        "datePattern",
+        "startDate",
+        "endDate"
+      ]
+    }
+  ],
+  "virtual_adapter": {
+    "native_type": "PipelineProcessor",
+    "parameter_mapping": {
+      "configPaths": "[\n\"es-requests/features/calculate-features.conf\",\n\"es-requests/features/execution-service-request.conf\"\n]",
+      "variables": "{\n\"DATE\": \"{{params.day}}\",\n\"APP_NAME\": \"{{params.appName}}\",\n\"CONFIG_NAME\": \"{{params.configName}}\",\n\"TOPOLOGY_ID\": \"{{params.topology.upper()}}\",\n\"TIME_AGGREGATION\": \"{{params.timeAggregation}}\",\n\"FEATURES_TIME_WINDOW\": {% if params.timeWindow %}\"{{params.timeWindow}}\"{% else %}\"{{(datetime.strptime(params.endDate, \"%Y%m%d\") - datetime.strptime(params.startDate, \"%Y%m%d\")).days}}d\"{% endif %},\n\"HBASE_WRITER_TABLE_NAME\":\"FEATURES_{{params.topology.upper()}}_{{params.element.upper()}}_{{params.timeAggregation.upper()}}\",\n\"ELEMENT_LEVEL\": \"{{params.element}}\",\n\"FEATURE_NOW_MILLISECONDS\": {% if params.nowMillis %}\"{{params.nowMillis}}\"{% else %}\"{{int(datetime.strptime(params.endDate, \"%Y%m%d\").timestamp())*1000}}\"{% endif %},\n\"FEATURES_DATE_PATTERN\": \"{{params.datePattern}}\"\n}"
+    },
+    "event_mapping": {
+      "PipelineExecuted": {
+        "name": "FeatureGenerated",
+        "data": {
+          "configPaths": "{{event.configPaths}}",
+          "variables": "{{event.variables}}",
+          "topology": "{{params.topology}}",
+          "datasource": "{{params.datasource}}",
+          "classifiers": "{{params.classifiers}}",
+          "configName": "{{params.configName}}",
+          "appName": "{{params.appName}}",
+          "timeWindow": "{{params.timeWindow}}",
+          "element": "{{params.element}}",
+          "day": "{{params.day}}",
+          "timeAggregation": "{{params.timeAggregation}}",
+          "nowMillis": "{{params.nowMillis}}",
+          "datePattern": "{{params.datePattern}}",
+          "startDate": "{{params.startDate}}",
+          "endDate": "{{params.endDate}}"
+        }
+      }
+    }
+  },
+  "capabilities": [],
+  "version_id": "63864bd1-5afb-4565-a8b1-c9ccec090fad",
+  "updatedAt": "2023-04-04T08:18:33.520Z"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "topology--demo",
+  "datasourceId": "demo",
+  "name": "demo",
+  "sourceFileUrlTemplate": "",
+  "sources": [],
+  "type": "topology",
+  "uuid": "d85907ac-7336-4cf5-9ae8-7a177a0cbf83",
+  "docdb_id": "topology--demo",
+  "createdAt": "2023-07-24T08:41:32.448Z",
+  "version_id": "93c4a2ee-9432-47dc-82ae-0f86bc9225f6"
+}

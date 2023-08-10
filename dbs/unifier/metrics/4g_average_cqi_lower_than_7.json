@@ -1,0 +1,42 @@
+{
+  "type": "KPI",
+  "classifiers": {
+    "source": "KPIS",
+    "category": "KPI",
+    "domain": "RAN",
+    "element-type": "cell",
+    "technology": "LTE",
+    "datasource": "pm"
+  },
+  "legend": {
+    "type": "dynamic",
+    "ascending": true,
+    "size": true,
+    "border": true,
+    "fill": true,
+    "range": []
+  },
+  "additionalFields": {
+    "selectedTopologies": [
+      {
+        "id": "HACKATON",
+        "label": "HACKATON",
+        "value": "HACKATON"
+      }
+    ]
+  },
+  "preferred": false,
+  "uuid": "4g_average_cqi_lower_than_7",
+  "name": "4g_average_cqi_lower_than_7",
+  "label": "LTE AVG CQI Lower Than 7",
+  "docdb_id": "4g_average_cqi_lower_than_7",
+  "createdAt": "2023-08-07T12:35:43.692Z",
+  "version_id": "091e0e64-3938-4e34-a528-71a1e401cdd8",
+  "source": "KPIS",
+  "category": "KPI",
+  "domain": "RAN",
+  "element-type": "cell",
+  "technology": "LTE",
+  "datasource": "pm",
+  "updatedAt": "2023-08-08T08:42:33.533Z"
+}

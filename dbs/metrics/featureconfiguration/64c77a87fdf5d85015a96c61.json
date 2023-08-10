@@ -1,0 +1,79 @@
+{
+  "uuid": "64c77a87fdf5d85015a96c61",
+  "version": "v1",
+  "name": "testFeatureConfig_2",
+  "application": "yannisApp",
+  "sqlFeatures": [],
+  "anomalyFeatures": [
+    {
+      "name": "forecastfeature",
+      "parsingConfig": {
+        "timeSeriesField": "4g_dl_prb_utilization",
+        "timestampStart": "2023062610:22:10",
+        "timestampEnd": "2023062614:22:10",
+        "timestampFormat": "%Y%m%d%X",
+        "timestampFrequency": "MINUTE",
+        "fieldToSplitBy": "cell"
+      },
+      "forecastingConfig": {
+        "regressor": "RandomForestRegressor",
+        "slidingWindowLength": 0,
+        "strategy": "recursive",
+        "forecastingHorizon": null,
+        "mode": "anomalyDetection",
+        "modeConfig": {
+          "anomalyDetectionConfig": {
+            "errorDetectionMethod": "absolute_error",
+            "errorTreshold": 25,
+            "outputFeatureValue": 1
+          }
+        }
+      },
+      "imputerConfig": {
+        "method": "mean"
+      },
+      "description": null,
+      "metadata": {
+        "other": {
+          "validated": "false"
+        }
+      }
+    }
+  ],
+  "rangeFeatures": [],
+  "timeFeatures": [],
+  "forecastFeatures": [
+    {
+      "name": "forecastfeature",
+      "parsingConfig": {
+        "timeSeriesField": "4g_dl_prb_utilization",
+        "timestampStart": "2023062610:22:10",
+        "timestampEnd": "2023062614:22:10",
+        "timestampFormat": "%Y%m%d%X",
+        "timestampFrequency": "MINUTE",
+        "fieldToSplitBy": "cell"
+      },
+      "forecastingConfig": {
+        "regressor": "RandomForestRegressor",
+        "slidingWindowLength": 0,
+        "strategy": "recursive",
+        "forecastingHorizon": null
+      },
+      "imputerConfig": {
+        "method": "mean"
+      },
+      "description": null,
+      "metadata": {
+        "other": {
+          "validated": "false"
+        }
+      }
+    }
+  ],
+  "defaultValues": {},
+  "alias": "testFeatureConfig_2_yannisApp",
+  "schemaVersion": "v1",
+  "docdb_id": "64c77a87fdf5d85015a96c61",
+  "createdAt": "2023-08-01T07:00:03.052Z",
+  "version_id": "159ed8ec-1e21-455d-bbd6-e1d9344f2590"
+}

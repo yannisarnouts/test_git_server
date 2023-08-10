@@ -1,0 +1,17 @@
+{
+  "id": "eventSelectionList@EventSelector",
+  "baseWidgetId": "eventSelectionList",
+  "wrappedWidgetId": "EventSelector",
+  "fixedInputs": {
+    "baseMetricFilters": {
+      "source": "KPIS"
+    }
+  },
+  "options": {
+    "title": "Event Selector",
+    "description": "Selectable List of events"
+  },
+  "createdAt": "2023-07-24T08:28:28.798Z",
+  "docdb_id": "eventSelectionList@EventSelector",
+  "version_id": "605feef9-c012-4f94-a7f0-1d81d2e57b83"
+}

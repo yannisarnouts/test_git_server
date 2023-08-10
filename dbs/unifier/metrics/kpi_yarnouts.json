@@ -1,0 +1,24 @@
+{
+  "type": "KPI",
+  "classifiers": {
+    "source": "KPIS",
+    "category": "KPI",
+    "element-type": "cell"
+  },
+  "legend": {
+    "type": "dynamic",
+    "ascending": true,
+    "size": true,
+    "border": true,
+    "fill": true,
+    "range": []
+  },
+  "additionalFields": {},
+  "preferred": false,
+  "uuid": "kpi_yarnouts",
+  "name": "kpi_yarnouts",
+  "label": "test",
+  "docdb_id": "kpi_yarnouts",
+  "createdAt": "2023-08-08T08:08:19.162Z",
+  "version_id": "7ace5eff-6dbd-4bfe-b84c-79c650d3b6c1"
+}

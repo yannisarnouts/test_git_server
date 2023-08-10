@@ -1,0 +1,76 @@
+{
+  "ticketType": "docdb_tickets",
+  "fields": [
+    {
+      "label": "Status",
+      "editable": false,
+      "type": "status",
+      "params": {},
+      "autoFillCreateValue": "initialStatus()",
+      "name": "status"
+    },
+    {
+      "sqlName": "created_by",
+      "label": "Created By",
+      "type": "user",
+      "params": {},
+      "editable": false,
+      "name": "createdBy"
+    },
+    {
+      "label": "Created Date",
+      "editable": false,
+      "type": "datetime",
+      "params": {},
+      "autoFillCreateValue": "now()",
+      "name": "createdDate"
+    },
+    {
+      "sqlName": "updated_by",
+      "label": "Updated By",
+      "type": "user",
+      "params": {},
+      "editable": false,
+      "name": "updatedBy"
+    },
+    {
+      "label": "Updated Date",
+      "editable": false,
+      "type": "datetime",
+      "params": {},
+      "autoFillCreateValue": "now()",
+      "name": "updatedDate"
+    },
+    {
+      "name": "metadata",
+      "label": "Metadata",
+      "sourcePath": "",
+      "defaultValue": "",
+      "editable": false,
+      "type": "text",
+      "params": {},
+      "autoFillUpdateValue": "",
+      "autoFillCreateValue": ""
+    }
+  ],
+  "actions": [],
+  "statuses": [],
+  "indexes": [
+    {
+      "fields": [
+        {
+          "field": "id",
+          "ascendent": false
+        }
+      ],
+      "options": {
+        "name": "Index by ID",
+        "unique": true
+      }
+    }
+  ],
+  "counter": 12,
+  "version_id": "62f05284-5fa8-4c52-98b2-db99ac627caf",
+  "docdb_id": "docdb_tickets",
+  "createdAt": "2023-08-07T12:37:59.433Z"
+}

@@ -1,0 +1,27 @@
+{
+  "type": "KPI",
+  "classifiers": {
+    "source": "KPIS",
+    "category": "KPI",
+    "domain": "RAN",
+    "element-type": "cell",
+    "technology": "LTE",
+    "datasource": "pm"
+  },
+  "legend": {
+    "type": "dynamic",
+    "ascending": true,
+    "size": true,
+    "border": true,
+    "fill": true,
+    "range": []
+  },
+  "additionalFields": {},
+  "preferred": false,
+  "uuid": "4g_average_cqi",
+  "name": "4g_average_cqi",
+  "label": "LTE Average CQI",
+  "docdb_id": "17acf85b-39c6-4b6f-887a-6dfb3df4c2ca",
+  "createdAt": "2023-07-07T09:11:02.134Z",
+  "version_id": "03b31fd1-765f-477f-8a19-83b30a9434c3"
+}

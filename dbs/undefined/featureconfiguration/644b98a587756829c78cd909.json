@@ -1,0 +1,38 @@
+{
+  "uuid": "644b98a587756829c78cd909",
+  "version": "v69",
+  "name": "testconfig2",
+  "application": "yannisApp",
+  "sqlFeatures": [],
+  "rangeFeatures": [],
+  "timeFeatures": [
+    {
+      "name": "testFeature-2",
+      "classes": [
+        {
+          "condition": "kpis_topology_telco_cell_day__4g_active_data_users > 1",
+          "color": "#000",
+          "frequency": {
+            "count": "",
+            "period": ""
+          },
+          "class": "1.0"
+        }
+      ],
+      "type": "double",
+      "allowOverlappingConditions": true,
+      "description": "",
+      "metadata": {
+        "other": {
+          "validated": "false"
+        }
+      }
+    }
+  ],
+  "defaultValues": {},
+  "alias": "testconfig2_yannisApp",
+  "schemaVersion": "v69",
+  "docdb_id": "644b98a587756829c78cd909",
+  "createdAt": "2023-08-01T06:59:38.382Z",
+  "version_id": "43565e0b-9739-464b-8260-0205935ba6b3"
+}

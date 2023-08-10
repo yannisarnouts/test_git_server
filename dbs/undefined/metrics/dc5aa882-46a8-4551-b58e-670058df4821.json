@@ -1,0 +1,27 @@
+{
+  "type": "KPI",
+  "classifiers": {
+    "source": "KPIS",
+    "category": "KPI",
+    "domain": "RAN",
+    "element-type": "cell",
+    "technology": "LTE",
+    "datasource": "pm"
+  },
+  "legend": {
+    "type": "dynamic",
+    "ascending": true,
+    "size": true,
+    "border": true,
+    "fill": true,
+    "range": []
+  },
+  "additionalFields": {},
+  "preferred": false,
+  "uuid": "4g_dl_user_throughput_kbps",
+  "name": "4g_dl_user_throughput_kbps",
+  "label": "LTE DL User Throughput (Kbps)",
+  "docdb_id": "dc5aa882-46a8-4551-b58e-670058df4821",
+  "createdAt": "2023-07-07T09:09:39.713Z",
+  "version_id": "0a04273e-34dd-4f76-8ce7-94d7e9ac72fb"
+}

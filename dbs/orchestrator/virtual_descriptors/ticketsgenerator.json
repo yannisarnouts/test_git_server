@@ -1,0 +1,103 @@
+{
+  "docdb_id": "TicketsGenerator",
+  "processor_type": "TicketsGenerator",
+  "createdAt": "2023-04-04T08:10:28.812Z",
+  "meta_type": "InputOutput",
+  "parameters": [
+    {
+      "name": "globalModelId",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "startDate",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "endDate",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "projectId",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "modelName",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "ticketsDaysBack",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "user",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "datasource",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "classifiers",
+      "type": "str",
+      "optional": true
+    }
+  ],
+  "generated_events": [
+    {
+      "type": "TicketsGenerated",
+      "fields": [
+        "payload",
+        "url",
+        "response",
+        "globalModelId",
+        "startDate",
+        "endDate",
+        "projectId",
+        "modelName",
+        "ticketsDaysBack",
+        "user",
+        "datasource",
+        "classifiers"
+      ]
+    }
+  ],
+  "virtual_adapter": {
+    "native_type": "HttpProcessor",
+    "parameter_mapping": {
+      "url": "http://dl-ticket-generation.datix:8080/run",
+      "method": "post",
+      "headers": "{ \"Content-Type\": \"application/json\" }",
+      "payload": "{\n\"username\": \"{{params.user}}\",\n\"projectId\": \"{{params.projectId}}\",\n\"globalModelId\": \"{{params.globalModelId}}\",\n\"sampleType\": \"processed\",\n\"startDateSamples\": \"{{params.startDate}}\",\n\"endDateSamples\": \"{{params.endDate}}\",\n\"endDateTickets\": \"{{params.endDate}}\",\n\"ticketsDaysBack\": \"{{params.ticketsDaysBack}}\",\n\"modelName\": \"{{params.modelName}}\"\n}"
+    },
+    "event_mapping": {
+      "HttpRequestCompleted": {
+        "name": "TicketsGenerated",
+        "data": {
+          "payload": "{{event.payload}}",
+          "url": "{{event.url}}",
+          "response": "{{event.response}}",
+          "globalModelId": "{{params.globalModelId}}",
+          "startDate": "{{params.startDate}}",
+          "endDate": "{{params.endDate}}",
+          "projectId": "{{params.projectId}}",
+          "modelName": "{{params.modelName}}",
+          "ticketsDaysBack": "{{params.ticketsDaysBack}}",
+          "user": "{{params.user}}",
+          "datasource": "{{params.datasource}}",
+          "classifiers": "{{params.classifiers}}"
+        }
+      }
+    }
+  },
+  "capabilities": [],
+  "version_id": "78862b43-8bc1-4250-899c-c9dba692cf2e",
+  "updatedAt": "2023-04-04T08:18:33.564Z"
+}

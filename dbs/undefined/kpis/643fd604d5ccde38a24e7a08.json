@@ -1,0 +1,439 @@
+{
+  "uuid": "643fd604d5ccde38a24e7a08",
+  "version": "v1",
+  "name": "ran_4g_net_cell_kpis_hour_hour",
+  "application": "nwAdvisor",
+  "sqlFeatures": [
+    {
+      "name": "testsql",
+      "stages": [
+        {
+          "sql": [
+            "kpis_topology_telco_cell_day__4g_active_data_users "
+          ]
+        }
+      ],
+      "metadata": {}
+    }
+  ],
+  "rangeFeatures": [],
+  "timeFeatures": [
+    {
+      "name": "feat_low_user_throughput_persistent",
+      "enabled": true,
+      "classes": [
+        {
+          "condition": "kpis_4g_cell_hour__4g_dl_user_throughput_kbps >0.0 and kpis_4g_cell_hour__4g_dl_user_throughput_kbps < LOW_DL_USER_THROUGHPUT_THREHOLD ",
+          "color": "#ff0000",
+          "frequency": {
+            "count": "times >= 12",
+            "period": "48h"
+          },
+          "class": "2.0"
+        },
+        {
+          "condition": "kpis_4g_cell_hour__4g_dl_user_throughput_kbps >0.0 and kpis_4g_cell_hour__4g_dl_user_throughput_kbps < LOW_DL_USER_THROUGHPUT_THREHOLD ",
+          "color": "#ffff00",
+          "frequency": {
+            "count": "times >= 5",
+            "period": "48h"
+          },
+          "class": "1.0"
+        },
+        {
+          "condition": "kpis_4g_cell_hour__4g_dl_user_throughput_kbps >0.0 and kpis_4g_cell_hour__4g_dl_user_throughput_kbps < LOW_DL_USER_THROUGHPUT_THREHOLD ",
+          "color": "#00ff00",
+          "frequency": {
+            "count": "times < 5",
+            "period": "48h"
+          },
+          "class": "0.0"
+        },
+        {
+          "condition": "otherwise",
+          "color": "#000",
+          "class": "-1.0"
+        }
+      ],
+      "type": "double",
+      "allowOverlappingConditions": true,
+      "metadata": {
+        "other": {
+          "validated": "true"
+        }
+      }
+    },
+    {
+      "name": "feat_cce_4_and_8_aggs_usage_rate_persistent",
+      "enabled": true,
+      "classes": [
+        {
+          "condition": "kpis_4g_cell_hour__4g_cce_4_and_8_aggs_usage_rate >= 80.0",
+          "color": "#ff0000",
+          "frequency": {
+            "count": "times >= 5",
+            "period": "48h"
+          },
+          "class": "2.0"
+        },
+        {
+          "condition": "kpis_4g_cell_hour__4g_cce_4_and_8_aggs_usage_rate >= 70.0",
+          "color": "#ffff00",
+          "frequency": {
+            "count": "times >= 2",
+            "period": "48h"
+          },
+          "class": "1.0"
+        },
+        {
+          "condition": "kpis_4g_cell_hour__4g_cce_4_and_8_aggs_usage_rate >= 70.0",
+          "color": "#00ff00",
+          "frequency": {
+            "count": "times < 2",
+            "period": "48h"
+          },
+          "class": "0.0"
+        },
+        {
+          "condition": "otherwise",
+          "color": "#000",
+          "class": "-1.0"
+        }
+      ],
+      "type": "double",
+      "allowOverlappingConditions": true,
+      "metadata": {
+        "other": {
+          "validated": "true"
+        }
+      }
+    },
+    {
+      "name": "feat_high_dl_prb_utilisation_persistent",
+      "enabled": true,
+      "classes": [
+        {
+          "condition": "(topology_4g__bw == 3 and kpis_4g_cell_hour__4g_dl_prb_utilization > 50) or (topology_4g__bw == 5 and kpis_4g_cell_hour__4g_dl_prb_utilization > 60) or (topology_4g__bw == 10 and kpis_4g_cell_hour__4g_dl_prb_utilization > 80) or (topology_4g__bw >= 15 and kpis_4g_cell_hour__4g_dl_prb_utilization > 90)",
+          "color": "#ff0000",
+          "frequency": {
+            "count": "times >= 5",
+            "period": "48h"
+          },
+          "class": "2.0"
+        },
+        {
+          "condition": "(topology_4g__bw == 3 and kpis_4g_cell_hour__4g_dl_prb_utilization > 40) or (topology_4g__bw == 5 and kpis_4g_cell_hour__4g_dl_prb_utilization > 50) or (topology_4g__bw == 10 and kpis_4g_cell_hour__4g_dl_prb_utilization > 70) or (topology_4g__bw >= 15 and kpis_4g_cell_hour__4g_dl_prb_utilization > 80)",
+          "color": "#ffff00",
+          "frequency": {
+            "count": "times >= 5",
+            "period": "48h"
+          },
+          "class": "1.0"
+        },
+        {
+          "condition": "(topology_4g__bw == 3 and kpis_4g_cell_hour__4g_dl_prb_utilization > 40) or (topology_4g__bw == 5 and kpis_4g_cell_hour__4g_dl_prb_utilization > 50) or (topology_4g__bw == 10 and kpis_4g_cell_hour__4g_dl_prb_utilization > 70) or (topology_4g__bw >= 15 and kpis_4g_cell_hour__4g_dl_prb_utilization > 80)",
+          "color": "#00ff00",
+          "frequency": {
+            "count": "times < 5",
+            "period": "48h"
+          },
+          "class": "0.0"
+        },
+        {
+          "condition": "otherwise",
+          "color": "#000",
+          "class": "-1.0"
+        }
+      ],
+      "type": "double",
+      "allowOverlappingConditions": true,
+      "metadata": {
+        "other": {
+          "validated": "true"
+        }
+      }
+    },
+    {
+      "name": "feat_high_ul_interference_on_pucch",
+      "enabled": true,
+      "classes": [
+        {
+          "condition": "kpis_4g_cell_hour__4g_pucch_interference_index_avg > -100 and kpis_4g_cell_hour__4g_pucch_interference_index_avg < -50.0",
+          "color": "#ff0000",
+          "frequency": {
+            "count": "times >= 5",
+            "period": "48h"
+          },
+          "class": "2.0"
+        },
+        {
+          "condition": "kpis_4g_cell_hour__4g_pucch_interference_index_avg > -100 and kpis_4g_cell_hour__4g_pucch_interference_index_avg < -50.0",
+          "color": "#ffff00",
+          "frequency": {
+            "count": "times >= 2",
+            "period": "48h"
+          },
+          "class": "1.0"
+        },
+        {
+          "condition": "kpis_4g_cell_hour__4g_pucch_interference_index_avg > -100 and kpis_4g_cell_hour__4g_pucch_interference_index_avg < -50.0",
+          "color": "#00ff00",
+          "frequency": {
+            "count": "times < 2",
+            "period": "48h"
+          },
+          "class": "0.0"
+        },
+        {
+          "condition": "otherwise",
+          "color": "#000",
+          "class": "-1.0"
+        }
+      ],
+      "type": "double",
+      "allowOverlappingConditions": true,
+      "metadata": {
+        "other": {
+          "validated": "true"
+        }
+      }
+    },
+    {
+      "name": "feat_high_ul_rssi_persistent",
+      "enabled": true,
+      "classes": [
+        {
+          "condition": "kpis_4g_cell_hour__4g_ul_rssi_pusch > -100.0 and kpis_4g_cell_hour__4g_ul_rssi_pusch < -1.0",
+          "color": "#ff0000",
+          "frequency": {
+            "count": "times >= 5",
+            "period": "48h"
+          },
+          "class": "2.0"
+        },
+        {
+          "condition": "kpis_4g_cell_hour__4g_ul_rssi_pusch > -100.0 and kpis_4g_cell_hour__4g_ul_rssi_pusch < -1.0",
+          "color": "#ffff00",
+          "frequency": {
+            "count": "times >= 2",
+            "period": "48h"
+          },
+          "class": "1.0"
+        },
+        {
+          "condition": "kpis_4g_cell_hour__4g_ul_rssi_pusch > -100.0 and kpis_4g_cell_hour__4g_ul_rssi_pusch < -1.0",
+          "color": "#00ff00",
+          "frequency": {
+            "count": "times < 2",
+            "period": "48h"
+          },
+          "class": "0.0"
+        },
+        {
+          "condition": "otherwise",
+          "color": "#000",
+          "class": "-1.0"
+        }
+      ],
+      "type": "double",
+      "allowOverlappingConditions": true,
+      "metadata": {
+        "other": {
+          "validated": "true"
+        }
+      }
+    },
+    {
+      "name": "feat_low_cqi_with_fine_pusch_sinr",
+      "enabled": true,
+      "classes": [
+        {
+          "condition": "kpis_4g_cell_hour__4g_ul_sinr_pusch > 6 and kpis_4g_cell_hour__4g_average_cqi < 7 ",
+          "color": "#ff0000",
+          "frequency": {
+            "count": "times >= 5",
+            "period": "48h"
+          },
+          "class": "2.0"
+        },
+        {
+          "condition": "kpis_4g_cell_hour__4g_ul_sinr_pusch > 6 and kpis_4g_cell_hour__4g_average_cqi < 7 ",
+          "color": "#ffff00",
+          "frequency": {
+            "count": "times >= 2",
+            "period": "48h"
+          },
+          "class": "1.0"
+        },
+        {
+          "condition": "kpis_4g_cell_hour__4g_ul_sinr_pusch > 6 and kpis_4g_cell_hour__4g_average_cqi < 7 ",
+          "color": "#00ff00",
+          "frequency": {
+            "count": "times < 2",
+            "period": "48h"
+          },
+          "class": "0.0"
+        },
+        {
+          "condition": "otherwise",
+          "color": "#000",
+          "class": "-1.0"
+        }
+      ],
+      "type": "double",
+      "allowOverlappingConditions": true,
+      "metadata": {
+        "other": {
+          "validated": "true"
+        }
+      }
+    },
+    {
+      "name": "feat_low_pusch_sinr_with_fine_cqi",
+      "enabled": true,
+      "classes": [
+        {
+          "condition": "kpis_4g_cell_hour__4g_ul_sinr_pusch > -1000 and kpis_4g_cell_hour__4g_ul_sinr_pusch < 3.0 and kpis_4g_cell_hour__4g_average_cqi > 9 ",
+          "color": "#ff0000",
+          "frequency": {
+            "count": "times >= 5",
+            "period": "48h"
+          },
+          "class": "2.0"
+        },
+        {
+          "condition": "kpis_4g_cell_hour__4g_ul_sinr_pusch > -1000 and kpis_4g_cell_hour__4g_ul_sinr_pusch < 3.0 and kpis_4g_cell_hour__4g_average_cqi > 9 ",
+          "color": "#ffff00",
+          "frequency": {
+            "count": "times >= 2",
+            "period": "48h"
+          },
+          "class": "1.0"
+        },
+        {
+          "condition": "kpis_4g_cell_hour__4g_ul_sinr_pusch > -1000 and kpis_4g_cell_hour__4g_ul_sinr_pusch< 3.0 and kpis_4g_cell_hour__4g_average_cqi > 9 ",
+          "color": "#00ff00",
+          "frequency": {
+            "count": "times < 2",
+            "period": "48h"
+          },
+          "class": "0.0"
+        },
+        {
+          "condition": "otherwise",
+          "color": "#000",
+          "class": "-1.0"
+        }
+      ],
+      "type": "double",
+      "allowOverlappingConditions": true,
+      "metadata": {
+        "other": {
+          "validated": "true"
+        }
+      }
+    },
+    {
+      "name": "feat_low_ul_sinr_pusch_persistent",
+      "enabled": true,
+      "classes": [
+        {
+          "condition": "kpis_4g_cell_hour__4g_ul_sinr_pusch > -100 and kpis_4g_cell_hour__4g_ul_sinr_pusch <= 3.0",
+          "color": "#ff0000",
+          "frequency": {
+            "count": "times >= 5",
+            "period": "48h"
+          },
+          "class": "2.0"
+        },
+        {
+          "condition": "kpis_4g_cell_hour__4g_ul_sinr_pusch > -100 and kpis_4g_cell_hour__4g_ul_sinr_pusch <= 3.0",
+          "color": "#ffff00",
+          "frequency": {
+            "count": "times >= 2",
+            "period": "48h"
+          },
+          "class": "1.0"
+        },
+        {
+          "condition": "kpis_4g_cell_hour__4g_ul_sinr_pusch > -100 and kpis_4g_cell_hour__4g_ul_sinr_pusch <= 3.0",
+          "color": "#00ff00",
+          "frequency": {
+            "count": "times < 2",
+            "period": "48h"
+          },
+          "class": "0.0"
+        },
+        {
+          "condition": "otherwise",
+          "color": "#000",
+          "class": "-1.0"
+        }
+      ],
+      "type": "double",
+      "allowOverlappingConditions": true,
+      "metadata": {
+        "other": {
+          "validated": "true"
+        }
+      }
+    },
+    {
+      "name": "feat_users_on_low_cqi_rate_persistent",
+      "enabled": true,
+      "classes": [
+        {
+          "condition": "kpis_4g_cell_hour__4g_average_cqi_lower_than_7 > 40.0",
+          "color": "#ff0000",
+          "frequency": {
+            "count": "times >= 5",
+            "period": "48h"
+          },
+          "class": "2.0"
+        },
+        {
+          "condition": "kpis_4g_cell_hour__4g_average_cqi_lower_than_7 > 30.0",
+          "color": "#ffff00",
+          "frequency": {
+            "count": "times >= 2",
+            "period": "48h"
+          },
+          "class": "1.0"
+        },
+        {
+          "condition": "kpis_4g_cell_hour__4g_average_cqi_lower_than_7 > 30.0",
+          "color": "#00ff00",
+          "frequency": {
+            "count": "times < 2",
+            "period": "48h"
+          },
+          "class": "0.0"
+        },
+        {
+          "condition": "otherwise",
+          "color": "#000",
+          "class": "-1.0"
+        }
+      ],
+      "type": "double",
+      "allowOverlappingConditions": true,
+      "metadata": {
+        "other": {
+          "validated": "true"
+        }
+      }
+    }
+  ],
+  "forecastFeatures": [],
+  "defaultValues": {
+    "LOW_DL_USER_THROUGHPUT_THREHOLD": {
+      "value": "3320.0",
+      "variable": "?FE_LOW_DL_USER_THROUGHPUT_THREHOLD"
+    }
+  },
+  "alias": "ran_4g_net_cell_kpis_hour_hour_nwAdvisor",
+  "schemaVersion": "v1",
+  "docdb_id": "643fd604d5ccde38a24e7a08",
+  "createdAt": "2023-08-01T06:56:56.723Z",
+  "version_id": "50b8ef7f-c61e-4fc7-a65b-25168c2cf6d5"
+}

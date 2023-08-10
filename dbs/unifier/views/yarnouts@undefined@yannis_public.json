@@ -1,0 +1,31 @@
+{
+  "application": null,
+  "id": "yannis_public",
+  "_accessInfo": {
+    "owner": "yarnouts",
+    "share": [],
+    "sharedGroups": [
+      ".*"
+    ],
+    "sharedRoles": [
+      ".*"
+    ]
+  },
+  "appDomain": "RAN",
+  "fingerprint": null,
+  "icon": "fa fa-file",
+  "key": "yarnouts@undefined@yannis_public",
+  "layouts": {},
+  "minimizedWidgets": [],
+  "owner": "yannis.arnouts@tupl.com",
+  "priority": 1,
+  "title": "yannis_public",
+  "type": "dynamic-view",
+  "userMenu": false,
+  "version": null,
+  "visibility": "Public",
+  "widgets": [],
+  "createdAt": "2023-07-24T08:28:28.802Z",
+  "docdb_id": "yarnouts@undefined@yannis_public",
+  "version_id": "d93b1904-3ec4-48b3-aaa5-01c070497752"
+}

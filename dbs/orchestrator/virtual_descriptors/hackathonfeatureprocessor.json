@@ -1,0 +1,70 @@
+{
+  "processor_type": "HackathonFeatureProcessor",
+  "capabilities": [],
+  "generated_events": [
+    {
+      "type": "FeaturesProcessed",
+      "fields": [
+        "processorParams",
+        "callbackData",
+        "topologyId",
+        "startDate",
+        "endDate"
+      ]
+    }
+  ],
+  "meta_type": "InputOutput",
+  "parameters": [
+    {
+      "name": "topologyId",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "startDate",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "endDate",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "featureEditorApplication",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "featureEditorConfiguration",
+      "type": "str",
+      "optional": true
+    }
+  ],
+  "version_id": "357012f4-62a5-4c0c-9760-ee919198af51",
+  "virtual_adapter": {
+    "native_type": "HttpWithCallbackProcessor",
+    "parameter_mapping": {
+      "url": "http://tupl-streams-tupl-streams-manager/jobs",
+      "payload": "{ \"flowId\":\"features-cell-hour-and-day-6-days\", \"args\":{\"topologyId\":\"{{params.topologyId}}\", \"startDate\": \"{{params.startDate}}\", \"endDate\": \"{{params.endDate}}\", \"featureEditorApplication\": \"{{params.featureEditorApplication}}\", \"featureEditorConfiguration\": \"{{params.featureEditorConfiguration}}\"}, \"callback\": \"http://tupl-orchestrator:8080/v1/process-callback\" }",
+      "method": "post",
+      "headers": "{}",
+      "trackingIdField": "jobId",
+      "successStatusValue": "finished"
+    },
+    "event_mapping": {
+      "HttpRequestWithCallbackExecuted": {
+        "name": "FeaturesProcessed",
+        "data": {
+          "processorParams": "{{event.processorParams}}",
+          "callbackData": "{{event.callbackData}}",
+          "topologyId": "{{params.topologyId}}",
+          "startDate": "{{params.startDate}}",
+          "endDate": "{{params.endDate}}"
+        }
+      }
+    }
+  },
+  "docdb_id": "HackathonFeatureProcessor",
+  "createdAt": "2023-07-24T09:26:34.866Z"
+}

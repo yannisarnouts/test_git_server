@@ -1,0 +1,12 @@
+{
+  "id": "67d659d719a74a10b6fd8be3743973d8",
+  "label": "hackaton_y1",
+  "version_id": "87ac43e8-a232-4b8b-841a-c306a260b06f",
+  "access_control": {
+    "type": "public",
+    "owner": null,
+    "group": null
+  },
+  "docdb_id": "67d659d719a74a10b6fd8be3743973d8",
+  "createdAt": "2023-07-24T09:58:41.304Z"
+}

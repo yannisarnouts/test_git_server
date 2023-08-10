@@ -1,0 +1,48 @@
+{
+  "formulas": [
+    {
+      "formula": "DIVSAFE(SUM['pmactiveueulsum'],SUM['pmschedactivitycellul'],-1)",
+      "id": "4g_ul_active_users",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "ERICSSON"
+        }
+      }
+    }
+  ],
+  "id": "4g_ul_active_users",
+  "metadata": {
+    "accessControl": {
+      "effectivePermissions": [
+        "read",
+        "write"
+      ],
+      "permissions": {
+        "group": [],
+        "other": [
+          "read"
+        ],
+        "owner": [
+          "read",
+          "write"
+        ]
+      }
+    },
+    "labels": {
+      "domain": "RAN",
+      "element-type": "cell",
+      "technology": "LTE",
+      "type": "regular",
+      "datasource": "pm"
+    },
+    "ownership": {
+      "group": "",
+      "owner": "manuel.estepa@tupl.com"
+    }
+  },
+  "name": "Active Users UL",
+  "docdb_id": "4g_ul_active_users",
+  "createdAt": "2023-07-21T09:12:30.463Z",
+  "version_id": "e03f0e37-3299-4af8-95ec-1580b9abcef2"
+}

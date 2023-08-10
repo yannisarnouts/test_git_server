@@ -1,0 +1,26 @@
+{
+  "type": "KPI",
+  "classifiers": {
+    "source": "KPIS",
+    "category": "KPI",
+    "element-type": "meterg",
+    "test": "---",
+    "teamG": "devG"
+  },
+  "legend": {
+    "type": "dynamic",
+    "ascending": true,
+    "size": true,
+    "border": true,
+    "fill": true,
+    "range": []
+  },
+  "additionalFields": {},
+  "preferred": false,
+  "uuid": "test_kpi",
+  "name": "test_kpi",
+  "label": "test_kpi",
+  "docdb_id": "test_kpi",
+  "createdAt": "2023-08-08T08:08:19.165Z",
+  "version_id": "0fe08b9a-3c30-47ae-802c-a794f92a7b38"
+}

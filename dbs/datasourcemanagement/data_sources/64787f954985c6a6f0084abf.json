@@ -1,0 +1,17 @@
+{
+  "_id": {
+    "$oid": "64787f954985c6a6f0084abf"
+  },
+  "name": "instance_topology_yannis",
+  "path": "/upload/datasources/instance_topology_yannis",
+  "storageType": "wizard",
+  "type": "topology_instance",
+  "classifiers": {
+    "date": "20230601"
+  },
+  "docdb_id": "64787f954985c6a6f0084abf",
+  "createdAt": "2023-06-05T10:06:33.524Z",
+  "version_id": "aa97c99f-b654-4b47-8ef6-e16ed61d6d36",
+  "tagId": "Wizard20230601",
+  "updatedAt": "2023-06-26T09:42:48.011Z"
+}

@@ -1,0 +1,22 @@
+{
+  "baseWidgetId": "metricTrendGroup",
+  "id": "metricTrendGroup@KpiTrendGroup",
+  "wrappedWidgetId": "KpiTrendGroup",
+  "fixedInputs": {
+    "baseMetricFilters": {
+      "source": "KPIS"
+    }
+  },
+  "options": {
+    "title": "KPI Trend Group",
+    "description": "Show KPI Trends",
+    "labels": {
+      "metricsAsSeries": "Show KPIs as Series",
+      "visibleMetricsInfo": "Selected KPIs",
+      "selectedElementsInfo": "Selected Elements"
+    }
+  },
+  "createdAt": "2023-07-24T08:28:28.798Z",
+  "docdb_id": "metricTrendGroup@KpiTrendGroup",
+  "version_id": "ff597bd3-e443-4741-8669-e7f00a0c2f13"
+}

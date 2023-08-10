@@ -1,0 +1,15 @@
+{
+  "uuid": "counter3Test",
+  "name": null,
+  "label": "counter3Test",
+  "classifiers": {
+    "source": "KPIS",
+    "technology": "GSM",
+    "domain": "RAN",
+    "category": "KPIS"
+  },
+  "type": "GENERIC",
+  "docdb_id": "c6450119-c90a-4ee0-bbe2-ee5c5bfedd81",
+  "createdAt": "2023-07-07T09:14:31.277Z",
+  "version_id": "ba15b612-7c09-4fa9-9003-a34f8e643a88"
+}

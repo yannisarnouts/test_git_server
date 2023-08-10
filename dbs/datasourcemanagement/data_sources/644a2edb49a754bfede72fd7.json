@@ -1,0 +1,15 @@
+{
+  "_id": "644a2edb49a754bfede72fd7",
+  "name": "HACKATON",
+  "path": "/upload/pm_data/",
+  "storageType": "sftp",
+  "classifiers": {
+    "team": "dev"
+  },
+  "tagId": "SftpDev",
+  "docdb_id": "644a2edb49a754bfede72fd7",
+  "createdAt": "2023-06-05T10:06:24.390Z",
+  "version_id": "cd76a196-cf2a-4022-a96e-109966c035cd",
+  "type": "external",
+  "updatedAt": "2023-06-01T08:34:31.044Z"
+}

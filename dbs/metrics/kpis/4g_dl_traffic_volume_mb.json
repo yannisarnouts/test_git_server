@@ -1,0 +1,68 @@
+{
+  "formulas": [
+    {
+      "formula": "SUM['L_Thrp_bits_DL' / (8.0 * 1000.0 * 1000.0)]",
+      "id": "4g_dl_traffic_volume_mb",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "HUAWEI"
+        }
+      }
+    },
+    {
+      "formula": "#agg.value [NVL0('M8012C20',0)] / 1000000",
+      "id": "4g_dl_traffic_volume_mb",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "NOKIA"
+        }
+      }
+    },
+    {
+      "formula": "SUM['pmPdcpVolDlDrb'+'pmPdcpVolDlSrb']/ (8.0*1024.0)",
+      "id": "4g_dl_traffic_volume_mb",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "ERICSSON"
+        }
+      }
+    }
+  ],
+  "id": "4g_dl_traffic_volume_mb",
+  "metadata": {
+    "accessControl": {
+      "effectivePermissions": [
+        "read",
+        "write"
+      ],
+      "permissions": {
+        "group": [],
+        "other": [
+          "read"
+        ],
+        "owner": [
+          "read",
+          "write"
+        ]
+      }
+    },
+    "labels": {
+      "domain": "RAN",
+      "element-type": "cell",
+      "technology": "LTE",
+      "type": "regular",
+      "datasource": "pm"
+    },
+    "ownership": {
+      "group": "",
+      "owner": "manuel.estepa@tupl.com"
+    }
+  },
+  "name": "LTE DL Traffic Volume",
+  "docdb_id": "4g_dl_traffic_volume_mb",
+  "createdAt": "2023-08-07T12:41:16.479Z",
+  "version_id": "92b1b54f-796f-4e49-9cba-10f6127a821f"
+}

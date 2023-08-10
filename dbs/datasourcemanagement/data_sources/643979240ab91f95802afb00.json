@@ -1,0 +1,15 @@
+{
+  "_id": "643979240ab91f95802afb00",
+  "name": "testRelease",
+  "path": "/datasources/testRelease",
+  "storageType": "webdav",
+  "classifiers": {
+    "test": "test"
+  },
+  "tagId": "WebdavTest",
+  "docdb_id": "643979240ab91f95802afb00",
+  "createdAt": "2023-06-05T10:06:24.390Z",
+  "version_id": "917d85eb-f2f9-4e2c-8142-f4bb54365184",
+  "type": "external",
+  "updatedAt": "2023-06-01T08:32:42.354Z"
+}

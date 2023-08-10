@@ -1,0 +1,27 @@
+{
+  "type": "KPI",
+  "classifiers": {
+    "source": "KPIS",
+    "category": "KPI",
+    "domain": "RAN",
+    "element-type": "cell",
+    "technology": "LTE",
+    "datasource": "pm"
+  },
+  "legend": {
+    "type": "dynamic",
+    "ascending": true,
+    "size": true,
+    "border": true,
+    "fill": true,
+    "range": []
+  },
+  "additionalFields": {},
+  "preferred": false,
+  "uuid": "4g_dl_prb_utilization",
+  "name": "4g_dl_prb_utilization",
+  "label": "LTE DL PRB Utilization Rate",
+  "docdb_id": "ec207d62-3f87-45ac-b771-8b5065703b85",
+  "createdAt": "2023-07-07T09:09:39.713Z",
+  "version_id": "720e0c60-2fa7-4145-967e-82238775215f"
+}

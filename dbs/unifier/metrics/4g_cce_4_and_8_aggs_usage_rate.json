@@ -1,0 +1,27 @@
+{
+  "type": "KPI",
+  "classifiers": {
+    "source": "KPIS",
+    "category": "KPI",
+    "domain": "RAN",
+    "element-type": "cell",
+    "technology": "LTE",
+    "datasource": "pm"
+  },
+  "legend": {
+    "type": "dynamic",
+    "ascending": true,
+    "size": true,
+    "border": true,
+    "fill": true,
+    "range": []
+  },
+  "additionalFields": {},
+  "preferred": false,
+  "uuid": "4g_cce_4_and_8_aggs_usage_rate",
+  "name": "4g_cce_4_and_8_aggs_usage_rate",
+  "label": "LTE CCE 4 and 8 AGGS Usage Rate",
+  "docdb_id": "4g_cce_4_and_8_aggs_usage_rate",
+  "createdAt": "2023-08-07T12:35:43.692Z",
+  "version_id": "fa6a71c1-ce83-4a6e-a3bb-2b1190aa75a1"
+}

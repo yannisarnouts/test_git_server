@@ -1,0 +1,76 @@
+{
+  "processor_type": "HackathonIncidenceGenerator",
+  "capabilities": [
+    "DryRun"
+  ],
+  "generated_events": [
+    {
+      "type": "IncidencesGenerated",
+      "fields": [
+        "processorParams",
+        "callbackData",
+        "startDate",
+        "endDate",
+        "topologyId",
+        "incidenceCondition",
+        "incidenceTable"
+      ]
+    }
+  ],
+  "meta_type": "InputOutput",
+  "parameters": [
+    {
+      "name": "startDate",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "endDate",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "topologyId",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "incidenceCondition",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "incidenceTable",
+      "type": "str",
+      "optional": true
+    }
+  ],
+  "version_id": "1e93ff23-0cd9-4edc-ac6f-ad2c9d26eeec",
+  "virtual_adapter": {
+    "native_type": "HttpWithCallbackProcessor",
+    "parameter_mapping": {
+      "payload": "{ \"flowId\":\"incidences\", \"args\":{\n    \"topologyId\": \"{{params.topologyId}}\",\n    \"startDate\": \"{{params.startDate}}\",\n    \"endDate\": \"{{params.endDate}}\",\n    \"incidencesTable\": \"{{params.incidenceTable}}\",\n    \"incidencesCondition\": \"{{params.incidenceCondition}}\"\n  }, \"callback\": \"http://tupl-orchestrator:8080/v1/process-callback\" }",
+      "url": "http://tupl-streams-tupl-streams-manager/jobs",
+      "method": "post",
+      "headers": "{}",
+      "trackingIdField": "jobId",
+      "successStatusValue": "finished"
+    },
+    "event_mapping": {
+      "HttpRequestWithCallbackExecuted": {
+        "name": "IncidencesGenerated",
+        "data": {
+          "processorParams": "{{event.processorParams}}",
+          "callbackData": "{{event.callbackData}}",
+          "startDate": "{{params.startDate}}",
+          "endDate": "{{params.endDate}}",
+          "topologyId": "{{params.topologyId}}",
+          "incidenceCondition": "{{params.incidenceCondition}}",
+          "incidenceTable": "{{params.incidenceTable}}"
+        }
+      }
+    }
+  },
+  "docdb_id": "HackathonIncidenceGenerator",
+  "createdAt": "2023-07-24T09:26:34.865Z"
+}

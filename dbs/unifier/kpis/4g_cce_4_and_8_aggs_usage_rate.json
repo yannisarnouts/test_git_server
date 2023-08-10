@@ -1,0 +1,68 @@
+{
+  "formulas": [
+    {
+      "formula": "100.0 * DIVSAFE(SUM['L_ChMeas_PDCCH_AggLvl4Num' + 'L_ChMeas_PDCCH_AggLvl8Num'],SUM['L_ChMeas_PDCCH_AggLvl1Num' + 'L_ChMeas_PDCCH_AggLvl2Num' + 'L_ChMeas_PDCCH_AggLvl4Num' + 'L_ChMeas_PDCCH_AggLvl8Num' ], -0.01)",
+      "id": "4g_cce_4_and_8_aggs_usage_rate",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "HUAWEI"
+        }
+      }
+    },
+    {
+      "formula": "DECODE(SUM[ 'M8011C39' + 'M8011C40' + 'M8011C41' + 'M8011C42' ],0.0,-1.0,100.0 * DIVIDE(SUM[ 'M8011C41' + 'M8011C42' ] ,SUM[ 'M8011C39' + 'M8011C40' + 'M8011C41' + 'M8011C42' ]))",
+      "id": "4g_cce_4_and_8_aggs_usage_rate",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "NOKIA"
+        }
+      }
+    },
+    {
+      "formula": "DECODE(SUM['pmpdcchcceaggregationdistr_0'+'pmpdcchcceaggregationdistr_1'+'pmpdcchcceaggregationdistr_2'+'pmpdcchcceaggregationdistr_3'],0.0,-1.0,100 * DIVIDE(SUM['pmpdcchcceaggregationdistr_2'+'pmpdcchcceaggregationdistr_3'],SUM['pmpdcchcceaggregationdistr_0'+'pmpdcchcceaggregationdistr_1'+'pmpdcchcceaggregationdist_2'+'pmpdcchcceaggregationdistr_3']))",
+      "id": "4g_cce_4_and_8_aggs_usage_rate",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "ERICSSON"
+        }
+      }
+    }
+  ],
+  "id": "4g_cce_4_and_8_aggs_usage_rate",
+  "metadata": {
+    "accessControl": {
+      "effectivePermissions": [
+        "read",
+        "write"
+      ],
+      "permissions": {
+        "group": [],
+        "other": [
+          "read"
+        ],
+        "owner": [
+          "read",
+          "write"
+        ]
+      }
+    },
+    "labels": {
+      "domain": "RAN",
+      "element-type": "cell",
+      "technology": "LTE",
+      "type": "regular",
+      "datasource": "pm"
+    },
+    "ownership": {
+      "group": "",
+      "owner": "manuel.estepa@tupl.com"
+    }
+  },
+  "name": "LTE CCE 4 and 8 AGGS Usage Rate",
+  "docdb_id": "4g_cce_4_and_8_aggs_usage_rate",
+  "createdAt": "2023-07-21T09:12:30.463Z",
+  "version_id": "66d5170b-690b-4708-98ca-96b2a720901a"
+}

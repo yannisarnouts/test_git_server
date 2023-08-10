@@ -1,0 +1,29 @@
+{
+  "name": "topology_shared",
+  "path": "",
+  "storageType": "sftp",
+  "type": "external",
+  "classifiers": {
+    "user": "yannis"
+  },
+  "metadata": {
+    "ownership": {
+      "owner": "Shared",
+      "group": "ds-admins"
+    },
+    "permissions": {
+      "owner": [
+        "read",
+        "write"
+      ],
+      "group": [
+        "read",
+        "write"
+      ],
+      "other": []
+    }
+  },
+  "docdb_id": "topology_shared",
+  "createdAt": "2023-07-24T08:49:33.307Z",
+  "version_id": "8b576e4b-f890-4b69-b647-21611a04c507"
+}

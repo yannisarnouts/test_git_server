@@ -1,0 +1,32 @@
+{
+  "application": null,
+  "id": "newview/test",
+  "visibility": "Private",
+  "_accessInfo": {
+    "owner": null,
+    "share": [],
+    "sharedGroups": [
+      ".*"
+    ],
+    "sharedRoles": [
+      ".*"
+    ]
+  },
+  "appDomain": "RAN",
+  "description": "description of view",
+  "fingerprint": null,
+  "icon": "fa fa-file",
+  "key": "undefined@undefined@newview",
+  "layouts": {},
+  "minimizedWidgets": [],
+  "owner": "yannisarnouts",
+  "priority": 1,
+  "title": "newView",
+  "type": "dynamic-view",
+  "userMenu": false,
+  "version": null,
+  "widgets": [],
+  "createdAt": "2023-07-24T08:28:28.801Z",
+  "docdb_id": "undefined@undefined@newview",
+  "version_id": "a85c0472-9861-4a16-aedc-678934af729c"
+}

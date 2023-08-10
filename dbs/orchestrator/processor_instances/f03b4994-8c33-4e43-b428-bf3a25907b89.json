@@ -1,0 +1,76 @@
+{
+  "id": "f03b4994-8c33-4e43-b428-bf3a25907b89",
+  "label": "IncidenceGenerator",
+  "type": "HackathonIncidenceGenerator",
+  "settings": {
+    "trigger_events": [
+      {
+        "condition": "True",
+        "parameters": [
+          {
+            "name": "startDate",
+            "value": "{{event.startDate}}"
+          },
+          {
+            "name": "endDate",
+            "value": "{{event.endDate}}"
+          },
+          {
+            "name": "topologyId",
+            "value": "{{event.topologyId}}"
+          },
+          {
+            "name": "incidenceCondition",
+            "value": "feat_low_user_throughput_persistent == 2"
+          },
+          {
+            "name": "incidenceTable",
+            "value": "DETECTED_ISSUES_TYPE1"
+          }
+        ],
+        "processor_id": "48ad6187-2b8d-4807-b776-18c73b152dc2",
+        "event_type": "FeaturesProcessed"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "startDate",
+        "value": ""
+      },
+      {
+        "name": "endDate",
+        "value": ""
+      },
+      {
+        "name": "topologyId",
+        "value": ""
+      },
+      {
+        "name": "incidenceCondition",
+        "value": ""
+      },
+      {
+        "name": "incidenceTable",
+        "value": ""
+      }
+    ],
+    "cron_info": null
+  },
+  "metadata": {
+    "layout": {
+      "x": 790,
+      "y": -410
+    }
+  },
+  "version_id": "5560273c-0971-4828-912b-22f037f4be3a",
+  "registration_timestamp": "2023-04-04T07:24:06.319Z",
+  "flow_id": "553b97c5-5a0d-406f-b092-27a5af0069af",
+  "state": "active",
+  "processing_status": {
+    "failing": 0,
+    "in_progress": 0,
+    "succeeded": 0
+  },
+  "docdb_id": "f03b4994-8c33-4e43-b428-bf3a25907b89",
+  "createdAt": "2023-07-24T10:25:27.270Z"
+}

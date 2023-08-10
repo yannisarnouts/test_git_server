@@ -1,0 +1,36 @@
+{
+  "_id": "6447c22232843320c72408c4",
+  "name": "topology_telco",
+  "path": "/datasources/topology_telco",
+  "storageType": "webdav",
+  "classifiers": {
+    "user": "telco"
+  },
+  "tagId": "WebdavTelco",
+  "docdb_id": "6447c22232843320c72408c4",
+  "createdAt": "2023-06-05T10:06:24.390Z",
+  "version_id": "4525b635-e293-4076-902d-cc644b0922db",
+  "updatedAt": "2023-06-16T10:30:03.662Z",
+  "type": "external",
+  "metadata": {
+    "ownership": {
+      "owner": "yarnouts",
+      "group": "public",
+      "type": "public"
+    },
+    "permissions": {
+      "owner": [
+        "read",
+        "write"
+      ],
+      "group": [
+        "read",
+        "write"
+      ],
+      "other": [
+        "read",
+        "write"
+      ]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "KPI",
+  "classifiers": {
+    "source": "KPIS",
+    "category": "KPI",
+    "domain": "RAN",
+    "element-type": "cell",
+    "technology": "LTE",
+    "datasource": "pm"
+  },
+  "legend": {
+    "type": "dynamic",
+    "ascending": true,
+    "size": true,
+    "border": true,
+    "fill": true,
+    "range": []
+  },
+  "additionalFields": {},
+  "preferred": false,
+  "uuid": "4g_average_cqi_lower_than_7",
+  "name": "4g_average_cqi_lower_than_7",
+  "label": "LTE AVG CQI Lower Than 7",
+  "docdb_id": "42c50717-ef1e-4cc7-9e63-36b226f7d2e2",
+  "createdAt": "2023-07-07T09:14:08.655Z",
+  "version_id": "e56abc42-4ea4-403a-80e4-729063ad2524"
+}

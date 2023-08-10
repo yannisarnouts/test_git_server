@@ -1,0 +1,12 @@
+{
+  "name": "topology_test2",
+  "path": "/upload/datasources/test/2",
+  "storageType": "sftp",
+  "classifiers": {
+    "ingestion": "ingestion"
+  },
+  "tagId": "SftpIngestion",
+  "docdb_id": "786fd40d-a4bf-43b2-a7aa-834a483c0437",
+  "updatedAt": "2023-08-10T12:36:31.379Z",
+  "version_id": "33976e33-ebd4-4285-9b84-dbf5e0b65b7f"
+}

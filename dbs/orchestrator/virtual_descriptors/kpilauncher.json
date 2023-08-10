@@ -1,0 +1,48 @@
+{
+  "processor_type": "KpiLauncher",
+  "capabilities": [
+    "DryRun"
+  ],
+  "generated_events": [
+    {
+      "type": "KpiLauncherExecuted",
+      "fields": [
+        "eventFields",
+        "endDate",
+        "topologyId"
+      ]
+    }
+  ],
+  "meta_type": "EventGenerator",
+  "parameters": [
+    {
+      "name": "endDate",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "topologyId",
+      "type": "str",
+      "optional": true
+    }
+  ],
+  "version_id": "77728348-25e2-4ac2-89d9-b057fd6f38c2",
+  "virtual_adapter": {
+    "native_type": "SyntheticEventGenerator",
+    "parameter_mapping": {
+      "eventFields": "{}"
+    },
+    "event_mapping": {
+      "EventGenerated": {
+        "name": "KpiLauncherExecuted",
+        "data": {
+          "eventFields": "{{event.eventFields}}",
+          "endDate": "{{params.endDate}}",
+          "topologyId": "{{params.topologyId}}"
+        }
+      }
+    }
+  },
+  "docdb_id": "KpiLauncher",
+  "createdAt": "2023-07-24T09:26:34.867Z"
+}

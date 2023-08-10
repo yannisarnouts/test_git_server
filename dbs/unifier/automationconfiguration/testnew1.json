@@ -1,0 +1,89 @@
+{
+  "enrichments": [
+    {
+      "dependencies": [],
+      "type": "httpProcess",
+      "finishJob": false,
+      "runCondition": "",
+      "skipCondition": "",
+      "finishJobCondition": "",
+      "errorResilencied": false,
+      "triggerFailureBeforeExecution": "",
+      "delayInfo": {
+        "delayTime": "",
+        "pollingMS": 0
+      },
+      "configuration": {
+        "url": "http://automation-engine:8080/run",
+        "method": "GET",
+        "additionalConfig": {
+          "maxConcurrentRequests": 0,
+          "enableRequestCache": false,
+          "groupJobsAmount": 0,
+          "groupWithinMS": 0,
+          "retries": 3
+        }
+      },
+      "id": "1"
+    },
+    {
+      "dependencies": [],
+      "type": "httpProcess",
+      "finishJob": false,
+      "runCondition": "",
+      "skipCondition": "",
+      "finishJobCondition": "",
+      "errorResilencied": false,
+      "triggerFailureBeforeExecution": "",
+      "delayInfo": {
+        "delayTime": "",
+        "pollingMS": 0
+      },
+      "configuration": {
+        "url": "http://automation-engine:8080/run",
+        "method": "GET",
+        "additionalConfig": {
+          "maxConcurrentRequests": 0,
+          "enableRequestCache": false,
+          "groupJobsAmount": 0,
+          "groupWithinMS": 0,
+          "retries": 3
+        }
+      },
+      "id": "2"
+    },
+    {
+      "dependencies": [],
+      "type": "httpProcess",
+      "finishJob": false,
+      "runCondition": "",
+      "skipCondition": "",
+      "finishJobCondition": "",
+      "errorResilencied": false,
+      "triggerFailureBeforeExecution": "",
+      "delayInfo": {
+        "delayTime": "",
+        "pollingMS": 0
+      },
+      "configuration": {
+        "url": "http://automation-engine:8080/run",
+        "method": "GET",
+        "additionalConfig": {
+          "maxConcurrentRequests": 0,
+          "enableRequestCache": false,
+          "groupJobsAmount": 0,
+          "groupWithinMS": 0,
+          "retries": 3
+        }
+      },
+      "id": "3"
+    }
+  ],
+  "id": "testNew1",
+  "label": "testNew1",
+  "enabled": false,
+  "createdDate": "2023-04-21 11:16",
+  "docdb_id": "testNew1",
+  "createdAt": "2023-04-21T09:16:33.555Z",
+  "version_id": "4e4f303a-4186-4d01-9d00-3185f28df0d1"
+}

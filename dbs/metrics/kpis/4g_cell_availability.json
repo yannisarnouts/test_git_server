@@ -1,0 +1,68 @@
+{
+  "formulas": [
+    {
+      "formula": "100.0 * (1.0 - DIVSAFE(SUM['L_Cell_Unavail_Dur_Sys'+'L_Cell_Unavail_Dur_Manual'],SUM['period_duration'],1.01))",
+      "id": "4g_cell_availability",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "HUAWEI"
+        }
+      }
+    },
+    {
+      "formula": "DECODE(SUM['M8020C6'],0.0,-1.0,100.0 * DIVIDE(SUM['M8020C3'], SUM['M8020C6'] ))",
+      "id": "4g_cell_availability",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "NOKIA"
+        }
+      }
+    },
+    {
+      "formula": "100.0 * DIVIDE(SUM['period_duration' - 'pmcelldowntimeman' - 'pmcelldowntimeauto'], SUM['period_duration'])",
+      "id": "4g_cell_availability",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "ERICSSON"
+        }
+      }
+    }
+  ],
+  "id": "4g_cell_availability",
+  "metadata": {
+    "accessControl": {
+      "effectivePermissions": [
+        "read",
+        "write"
+      ],
+      "permissions": {
+        "group": [],
+        "other": [
+          "read"
+        ],
+        "owner": [
+          "read",
+          "write"
+        ]
+      }
+    },
+    "labels": {
+      "domain": "RAN",
+      "element-type": "cell",
+      "technology": "LTE",
+      "type": "regular",
+      "datasource": "pm"
+    },
+    "ownership": {
+      "group": "",
+      "owner": "manuel.estepa@tupl.com"
+    }
+  },
+  "name": "LTE RAN Operability",
+  "docdb_id": "4g_cell_availability",
+  "createdAt": "2023-08-07T12:41:16.479Z",
+  "version_id": "be93260d-316b-4239-b4de-d30d90333377"
+}

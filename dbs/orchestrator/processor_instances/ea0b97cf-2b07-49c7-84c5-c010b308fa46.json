@@ -1,0 +1,63 @@
+{
+  "id": "ea0b97cf-2b07-49c7-84c5-c010b308fa46",
+  "label": "Incidences",
+  "type": "IncidencesProcessor",
+  "settings": {
+    "trigger_events": [
+      {
+        "condition": "False",
+        "parameters": [
+          {
+            "name": "datasource",
+            "value": "{{event.datasource}}"
+          },
+          {
+            "name": "classifiers",
+            "value": "{{event.classifiers}}"
+          },
+          {
+            "name": "startDate",
+            "value": ""
+          },
+          {
+            "name": "endDate",
+            "value": ""
+          },
+          {
+            "name": "incidenceCriteria",
+            "value": ""
+          },
+          {
+            "name": "topology",
+            "value": "{{event.topology}}"
+          },
+          {
+            "name": "element",
+            "value": "{{event.element}}"
+          },
+          {
+            "name": "timeAggregation",
+            "value": "{{event.timeAggregation}}"
+          }
+        ],
+        "processor_id": "ad1bb219-a020-4ac0-b706-3a782f10f00b",
+        "event_type": "FeatureGenerated"
+      }
+    ],
+    "parameters": [],
+    "cron_info": null
+  },
+  "metadata": {},
+  "version_id": "fb186920-fb08-4b93-8f22-cd42eafa95d9",
+  "registration_timestamp": "2023-06-26T14:44:55.119Z",
+  "flow_id": "4c92fb67-239c-4d29-b015-b256281224e7",
+  "state": "active",
+  "processing_status": {
+    "failing": 0,
+    "in_progress": 0,
+    "waiting": 0,
+    "succeeded": 0
+  },
+  "docdb_id": "ea0b97cf-2b07-49c7-84c5-c010b308fa46",
+  "createdAt": "2023-07-24T10:25:27.273Z"
+}

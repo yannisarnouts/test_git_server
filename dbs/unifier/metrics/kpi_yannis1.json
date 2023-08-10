@@ -1,0 +1,36 @@
+{
+  "type": "KPI",
+  "classifiers": {
+    "source": "KPIS",
+    "category": "KPI",
+    "element-type": "cell"
+  },
+  "legend": {
+    "type": "dynamic",
+    "ascending": true,
+    "size": true,
+    "border": true,
+    "fill": true,
+    "range": []
+  },
+  "additionalFields": {
+    "selectedTopologies": [
+      {
+        "id": "HACKATON",
+        "label": "HACKATON",
+        "value": "HACKATON"
+      }
+    ]
+  },
+  "preferred": false,
+  "uuid": "kpi_yannis1",
+  "name": "kpi_yannis1",
+  "label": "KPI Yannis",
+  "docdb_id": "kpi_yannis1",
+  "createdAt": "2023-08-08T08:08:19.162Z",
+  "version_id": "42a90411-2540-44de-9a83-24b280826770",
+  "source": "KPIS",
+  "category": "KPI",
+  "element-type": "cell",
+  "updatedAt": "2023-08-08T08:42:36.545Z"
+}

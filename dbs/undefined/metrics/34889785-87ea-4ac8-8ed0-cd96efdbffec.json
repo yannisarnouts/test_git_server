@@ -1,0 +1,27 @@
+{
+  "type": "KPI",
+  "classifiers": {
+    "source": "KPIS",
+    "category": "KPI",
+    "domain": "RAN",
+    "element-type": "cell",
+    "technology": "LTE",
+    "datasource": "pm"
+  },
+  "legend": {
+    "type": "dynamic",
+    "ascending": true,
+    "size": true,
+    "border": true,
+    "fill": true,
+    "range": []
+  },
+  "additionalFields": {},
+  "preferred": false,
+  "uuid": "4g_cell_availability",
+  "name": "4g_cell_availability",
+  "label": "LTE RAN Operability",
+  "docdb_id": "34889785-87ea-4ac8-8ed0-cd96efdbffec",
+  "createdAt": "2023-07-07T09:14:08.655Z",
+  "version_id": "9ebf87fd-afbe-4d8a-992d-05b166f1e2be"
+}

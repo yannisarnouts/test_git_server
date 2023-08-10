@@ -1,0 +1,92 @@
+{
+  "docdb_id": "IncidencesProcessor",
+  "processor_type": "IncidencesProcessor",
+  "createdAt": "2023-04-04T08:10:28.792Z",
+  "meta_type": "InputOutput",
+  "parameters": [
+    {
+      "name": "startDate",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "endDate",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "incidenceCriteria",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "topology",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "element",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "timeAggregation",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "datasource",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "classifiers",
+      "type": "str",
+      "optional": true
+    }
+  ],
+  "generated_events": [
+    {
+      "type": "IncidencesExecuted",
+      "fields": [
+        "configPaths",
+        "variables",
+        "startDate",
+        "endDate",
+        "incidenceCriteria",
+        "topology",
+        "element",
+        "timeAggregation",
+        "datasource",
+        "classifiers"
+      ]
+    }
+  ],
+  "virtual_adapter": {
+    "native_type": "PipelineProcessor",
+    "parameter_mapping": {
+      "configPaths": "[\n\"es-requests/incidences/execution-service-request.conf\",\n\"es-requests/incidences/generate-incidences.conf\"\n]",
+      "variables": "{\n\"DETECT_INCIDENCES_FILTER\": \"{{params.incidenceCriteria}}\",\n\"DETECT_INCIDENCES_START_DATE\": \"{{params.startDate}}\",\n\"DETECT_INCIDENCES_END_DATE\": \"{{params.endDate}}\",\n\"HBASE_WRITER_INCIDENCES_TABLE_NAME\": \"DETECTED_ISSUES_TYPE6\",\n\"HBASE_FEATURES_TABLE_NAME\": \"FEATURES_{{params.topology.upper()}}_{{params.element.upper()}}_{{params.timeAggregation.upper()}}\"\n}"
+    },
+    "event_mapping": {
+      "PipelineExecuted": {
+        "name": "IncidencesExecuted",
+        "data": {
+          "configPaths": "{{event.configPaths}}",
+          "variables": "{{event.variables}}",
+          "startDate": "{{params.startDate}}",
+          "endDate": "{{params.endDate}}",
+          "incidenceCriteria": "{{params.incidenceCriteria}}",
+          "topology": "{{params.topology}}",
+          "element": "{{params.element}}",
+          "timeAggregation": "{{params.timeAggregation}}",
+          "datasource": "{{params.datasource}}",
+          "classifiers": "{{params.classifiers}}"
+        }
+      }
+    }
+  },
+  "capabilities": [],
+  "version_id": "9e96fea2-0c7b-4155-be7f-cb3e95eeb1f3",
+  "updatedAt": "2023-04-04T08:18:33.536Z"
+}

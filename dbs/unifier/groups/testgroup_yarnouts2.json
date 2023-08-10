@@ -1,0 +1,58 @@
+{
+  "name": "testGrou2p",
+  "topologyId": "cruzber",
+  "groupElement": {
+    "id": "testGroup22",
+    "nodeId": "testGroup22",
+    "nodeType": "__unifier_group__",
+    "label": "testGroup",
+    "leaf": false,
+    "children": {
+      "company": [
+        {
+          "id": "640887f736075ff937f1d134",
+          "nodeId": "42673a074b6d3b0122a35435f79f027e4fe3e63a",
+          "label": "Cruzber",
+          "nodeType": "company",
+          "ancestorNodeIds": [],
+          "parentNodeId": null,
+          "leaf": true,
+          "metadata": {
+            "path": "Cruzber",
+            "Empresa": "Cruzber",
+            "levels": "company",
+            "company": "Cruzber",
+            "idPath": "Cruzber"
+          },
+          "geoData": {
+            "actual": null,
+            "centre": null,
+            "polygon": []
+          },
+          "groupBelong": "testGroup"
+        }
+      ]
+    },
+    "geoData": {
+      "polygon": [],
+      "center": {
+        "latitude": null,
+        "longitude": null
+      }
+    },
+    "metadata": {
+      "polygon": [],
+      "center": {
+        "latitude": null,
+        "longitude": null
+      }
+    }
+  },
+  "owner": "yarnouts",
+  "type": "private",
+  "elementsNodeType": "company",
+  "id": "testGroup_yarnouts2",
+  "docdb_id": "testGroup_yarnouts2",
+  "createdAt": "2023-07-24T08:28:28.786Z",
+  "version_id": "8759f6a2-1e20-4752-a028-c3d70eff14ac"
+}

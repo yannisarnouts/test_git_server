@@ -1,0 +1,24 @@
+{
+  "type": "KPI",
+  "classifiers": {
+    "source": "KPIS",
+    "category": "KPI",
+    "element-type": "country"
+  },
+  "legend": {
+    "type": "dynamic",
+    "ascending": true,
+    "size": true,
+    "border": true,
+    "fill": true,
+    "range": []
+  },
+  "additionalFields": {},
+  "preferred": false,
+  "uuid": "kpi_69",
+  "name": "kpi_69",
+  "label": "kpi_69",
+  "docdb_id": "kpi_69",
+  "createdAt": "2023-08-08T08:08:19.162Z",
+  "version_id": "c3322651-57dd-4ac0-80df-ea115bdfef6f"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "test",
+  "label": "test",
+  "enabled": false,
+  "type": "httpPolling",
+  "settings": {
+    "automationEngineConfigurationId": "hackaton",
+    "url": "http://enrichment-service:8080/run",
+    "method": "GET",
+    "body": {
+      "version": 2,
+      "filters": [],
+      "fields": [
+        "id"
+      ]
+    },
+    "pollingInterval": "60000"
+  },
+  "version_id": "5d3429ad-8459-4ef5-80c0-fe9983da180d",
+  "docdb_id": "test",
+  "createdAt": "2023-07-24T08:19:01.579Z"
+}

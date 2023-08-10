@@ -1,0 +1,89 @@
+{
+  "docdb_id": "PredictionLauncher",
+  "processor_type": "PredictionLauncher",
+  "createdAt": "2023-04-04T08:10:28.803Z",
+  "meta_type": "InputOutput",
+  "parameters": [
+    {
+      "name": "startDate",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "endDate",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "globalModelId",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "user",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "projectId",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "datasource",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "classifiers",
+      "type": "str",
+      "optional": true
+    }
+  ],
+  "generated_events": [
+    {
+      "type": "PredictionExecuted",
+      "fields": [
+        "payload",
+        "url",
+        "response",
+        "startDate",
+        "endDate",
+        "globalModelId",
+        "user",
+        "projectId",
+        "datasource",
+        "classifiers"
+      ]
+    }
+  ],
+  "virtual_adapter": {
+    "native_type": "HttpProcessor",
+    "parameter_mapping": {
+      "url": "http://mltk-api:9001/mltk/v4/globalmodels/{{params.globalModelId}}/prediction/consistentTrigger?from={{params.startDate}}&to={{params.endDate}}&mode=continuous&sparkBatch=false&async=false&predictionDataSource=true&validationDataSource=false",
+      "method": "get",
+      "headers": "{\"X-Auth-Username\": \"{{params.user}}\",\"X-Auth-Userid\": \"{{params.user}}\"}",
+      "payload": "{}"
+    },
+    "event_mapping": {
+      "HttpRequestCompleted": {
+        "name": "PredictionExecuted",
+        "data": {
+          "payload": "{{event.payload}}",
+          "url": "{{event.url}}",
+          "response": "{{event.response}}",
+          "startDate": "{{params.startDate}}",
+          "endDate": "{{params.endDate}}",
+          "globalModelId": "{{params.globalModelId}}",
+          "user": "{{params.user}}",
+          "projectId": "{{params.projectId}}",
+          "datasource": "{{params.datasource}}",
+          "classifiers": "{{params.classifiers}}"
+        }
+      }
+    }
+  },
+  "capabilities": [],
+  "version_id": "092d3ccd-49a5-4f00-b5b5-aec1d1339508",
+  "updatedAt": "2023-04-04T08:18:33.548Z"
+}

@@ -1,0 +1,68 @@
+{
+  "formulas": [
+    {
+      "formula": "DIVSAFE(SUM[('L_ChMeas_CQI_DL_1')+('L_ChMeas_CQI_DL_2'* 2.0)+('L_ChMeas_CQI_DL_3' * 3.0)+('L_ChMeas_CQI_DL_4' * 4.0)+('L_ChMeas_CQI_DL_5' * 5.0)+('L_ChMeas_CQI_DL_6' * 6.0)+('L_ChMeas_CQI_DL_7' * 7.0)+('L_ChMeas_CQI_DL_8' * 8.0)+('L_ChMeas_CQI_DL_9' * 9.0)+('L_ChMeas_CQI_DL_10' * 10.0)+('L_ChMeas_CQI_DL_11' * 11.0)+('L_ChMeas_CQI_DL_12' * 12.0)+('L_ChMeas_CQI_DL_13' * 13.0)+('L_ChMeas_CQI_DL_14' * 14.0)+('L_ChMeas_CQI_DL_15' * 15.0)],  SUM['L_ChMeas_CQI_DL_0'+'L_ChMeas_CQI_DL_1'+'L_ChMeas_CQI_DL_2'+'L_ChMeas_CQI_DL_3'+'L_ChMeas_CQI_DL_4'+'L_ChMeas_CQI_DL_5'+'L_ChMeas_CQI_DL_6'+'L_ChMeas_CQI_DL_7'+'L_ChMeas_CQI_DL_8'+'L_ChMeas_CQI_DL_9'+'L_ChMeas_CQI_DL_10'+'L_ChMeas_CQI_DL_11'+'L_ChMeas_CQI_DL_12'+'L_ChMeas_CQI_DL_13'+'L_ChMeas_CQI_DL_14'+'L_ChMeas_CQI_DL_15'],-1.0)",
+      "id": "4g_average_cqi",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "HUAWEI"
+        }
+      }
+    },
+    {
+      "formula": "DECODE(SUM[('M8010C36' + 'M8010C37' + 'M8010C38' + 'M8010C39' + 'M8010C40' + 'M8010C41' + 'M8010C42' + 'M8010C43' + 'M8010C44' + 'M8010C45' +'M8010C46' + 'M8010C47' + 'M8010C48' + 'M8010C49' + 'M8010C50' + 'M8010C51') ],0.0,-1.0,DIVIDE(SUM[('M8010C36' * 0  + 'M8010C37' * 1  + 'M8010C38' * 2  + 'M8010C39' * 3  + 'M8010C40' * 4  + 'M8010C41' * 5  + 'M8010C42' * 6+ 'M8010C43' * 7  + 'M8010C44' * 8  + 'M8010C45' * 9  + 'M8010C46' * 10 + 'M8010C47' * 11 + 'M8010C48' * 12 + 'M8010C49' * 13 + 'M8010C50' * 14 + 'M8010C51' * 15)], SUM[('M8010C36' + 'M8010C37' + 'M8010C38' + 'M8010C39' + 'M8010C40' + 'M8010C41' + 'M8010C42' + 'M8010C43' + 'M8010C44' + 'M8010C45' +'M8010C46' + 'M8010C47' + 'M8010C48' + 'M8010C49' + 'M8010C50' + 'M8010C51') ]))",
+      "id": "4g_average_cqi",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "NOKIA"
+        }
+      }
+    },
+    {
+      "formula": "DIVSAFE(SUM[0.0*'pmradiouerepcqidistr_0'+1.0*'pmradiouerepcqidistr_1'+2.0*'pmradiouerepcqidistr_2'+3.0*'pmradiouerepcqidistr_3'+4.0*'pmradiouerepcqidistr_4'+ 5.0*'pmradiouerepcqidistr_5'+6.0*'pmradiouerepcqidistr_6'+7.0*'pmradiouerepcqidistr_7'+8.0*'pmradiouerepcqidistr_8'+9.0*'pmradiouerepcqidistr_9'+10.0*'pmradiouerepcqidistr_10'+ 11.0*'pmradiouerepcqidistr_11'+12.0*'pmradiouerepcqidistr_12'+13.0*'pmradiouerepcqidistr_13'+ 14.0*'pmradiouerepcqidistr_14'+15.0*'pmradiouerepcqidistr_15'],SUM['pmradiouerepcqidistr_0' + 'pmradiouerepcqidistr_1' + 'pmradiouerepcqidistr_2'+ 'pmradiouerepcqidistr_3'+'pmradiouerepcqidistr_4'+'pmradiouerepcqidistr_5'+ 'pmradiouerepcqidistr_6'+'pmradiouerepcqidistr_7'+'pmradiouerepcqidistr_8'+ 'pmradiouerepcqidistr_9'+'pmradiouerepcqidistr_10'+'pmradiouerepcqidistr_11'+ 'pmradiouerepcqidistr_12'+'pmradiouerepcqidistr_13'+'pmradiouerepcqidistr_14'+ 'pmradiouerepcqidistr_15'],-1.0)",
+      "id": "4g_average_cqi",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "ERICSSON"
+        }
+      }
+    }
+  ],
+  "id": "4g_average_cqi",
+  "metadata": {
+    "accessControl": {
+      "effectivePermissions": [
+        "read",
+        "write"
+      ],
+      "permissions": {
+        "group": [],
+        "other": [
+          "read"
+        ],
+        "owner": [
+          "read",
+          "write"
+        ]
+      }
+    },
+    "labels": {
+      "domain": "RAN",
+      "element-type": "cell",
+      "technology": "LTE",
+      "type": "regular",
+      "datasource": "pm"
+    },
+    "ownership": {
+      "group": "",
+      "owner": "manuel.estepa@tupl.com"
+    }
+  },
+  "name": "LTE Average CQI",
+  "docdb_id": "4g_average_cqi",
+  "createdAt": "2023-07-21T09:12:30.463Z",
+  "version_id": "43854260-6238-468a-9cad-002b76a3ce8c"
+}

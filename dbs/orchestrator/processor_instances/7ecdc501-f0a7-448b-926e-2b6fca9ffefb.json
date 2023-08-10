@@ -1,0 +1,32 @@
+{
+  "id": "7ecdc501-f0a7-448b-926e-2b6fca9ffefb",
+  "label": "eventGen",
+  "type": "SyntheticEventGenerator",
+  "settings": {
+    "parameters": [
+      {
+        "name": "eventFields",
+        "value": ""
+      }
+    ],
+    "cron_info": null
+  },
+  "metadata": {
+    "layout": {
+      "x": -90,
+      "y": 180
+    }
+  },
+  "version_id": "09665f36-7f1a-42e0-bfb6-a33f5e643d25",
+  "registration_timestamp": "2023-07-04T10:53:00.586Z",
+  "flow_id": "a57a0ed0-22dc-4d3e-a539-d143cb6f28d7",
+  "state": "active",
+  "processing_status": {
+    "failing": 0,
+    "in_progress": 0,
+    "waiting": 0,
+    "succeeded": 1
+  },
+  "docdb_id": "7ecdc501-f0a7-448b-926e-2b6fca9ffefb",
+  "createdAt": "2023-07-24T10:25:27.275Z"
+}

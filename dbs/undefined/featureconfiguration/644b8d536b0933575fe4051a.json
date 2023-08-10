@@ -1,0 +1,38 @@
+{
+  "uuid": "644b8d536b0933575fe4051a",
+  "version": "v1",
+  "name": "ran_4g_net_cell_kpis_hour_day",
+  "application": "nwadvisor",
+  "sqlFeatures": [],
+  "rangeFeatures": [],
+  "timeFeatures": [
+    {
+      "name": "feat_users_on_low_cqi_rate_persistent",
+      "classes": [
+        {
+          "condition": "kpis_4g_cell_hour__4g_average_cqi_lower_than_7 > 40.0",
+          "color": "#ff0000",
+          "frequency": {
+            "count": "times >= 5",
+            "period": "48h"
+          },
+          "class": "2.0"
+        }
+      ],
+      "type": "double",
+      "allowOverlappingConditions": true,
+      "description": "test",
+      "metadata": {
+        "other": {
+          "validated": "false"
+        }
+      }
+    }
+  ],
+  "defaultValues": {},
+  "alias": "ran_4g_net_cell_kpis_hour_day_nwadvisor",
+  "schemaVersion": "v1",
+  "docdb_id": "644b8d536b0933575fe4051a",
+  "createdAt": "2023-08-01T06:59:38.377Z",
+  "version_id": "27236636-d78f-4672-b4a5-8877909d053f"
+}

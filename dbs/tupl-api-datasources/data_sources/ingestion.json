@@ -1,0 +1,12 @@
+{
+  "name": "ingestion",
+  "path": "/upload/datasources/ingestion",
+  "storageType": "sftp",
+  "type": "external",
+  "classifiers": {
+    "ingestion": "ingestion"
+  },
+  "docdb_id": "ingestion",
+  "createdAt": "2023-07-24T08:49:33.307Z",
+  "version_id": "e00a942e-f76d-4878-8464-1796ea414cde"
+}

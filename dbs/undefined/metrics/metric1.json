@@ -1,0 +1,34 @@
+{
+  "uuid": "metric1Clonetje",
+  "name": "metric1Clonetje",
+  "label": "metric1Clone1",
+  "type": "GENERIC",
+  "preferred": false,
+  "classifiers": {
+    "domain": "RAN"
+  },
+  "additionalFields": {
+    "comment": "metric1",
+    "description": "metric1",
+    "unit": "",
+    "metricWeight": "---",
+    "aggregationExpression": "metric1",
+    "tableFormatter": "default"
+  },
+  "legend": {
+    "type": "dynamic",
+    "ascending": true,
+    "fill": true,
+    "size": true,
+    "border": true,
+    "counterIcon": {},
+    "range": [],
+    "enableCounterIcon": false,
+    "colorPickerIndex": null,
+    "openPanel": false
+  },
+  "id": "metric1",
+  "createdAt": "2023-07-07T09:14:31.277Z",
+  "docdb_id": "metric1",
+  "version_id": "c22a52fc-ed01-4cbc-a102-dfba43d16737"
+}

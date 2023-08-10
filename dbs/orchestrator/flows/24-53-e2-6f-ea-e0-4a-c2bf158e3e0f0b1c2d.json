@@ -1,0 +1,12 @@
+{
+  "id": "24-53-e2-6f-ea-e0-4a-c2bf158e3e0f0b1c2d",
+  "label": "hackaton",
+  "version_id": "9ba62780-623f-48c7-8b0e-43aa8509b953",
+  "access_control": {
+    "type": "public",
+    "owner": null,
+    "group": null
+  },
+  "docdb_id": "24-53-e2-6f-ea-e0-4a-c2bf158e3e0f0b1c2d",
+  "createdAt": "2023-07-24T09:59:37.726Z"
+}

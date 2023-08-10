@@ -1,0 +1,13 @@
+{
+  "_id": "64787df94985c6a6f0084abe",
+  "name": "config_topology_yannis",
+  "path": "http://webdav.datix/datasources/topology_yannis/topology_anonymized.csv",
+  "storageType": "wizard",
+  "type": "topology_configuration",
+  "classifiers": {
+    "user": "yannis"
+  },
+  "docdb_id": "64787df94985c6a6f0084abe",
+  "createdAt": "2023-06-05T10:06:33.524Z",
+  "version_id": "00b462e5-cff8-4c98-a73a-690ac4ac6108"
+}

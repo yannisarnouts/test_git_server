@@ -1,0 +1,44 @@
+{
+  "id": "e7013c33-a8c2-4951-8387-f18502c1784f",
+  "label": "Ingestion Launcher",
+  "type": "IngestionEventGenerator",
+  "settings": {
+    "trigger_events": null,
+    "parameters": [
+      {
+        "name": "datasource",
+        "value": "hackaYannis"
+      },
+      {
+        "name": "classifiers",
+        "value": "{\"team\":\"citytrip.ai\"}"
+      },
+      {
+        "name": "topology",
+        "value": "topology_yannis"
+      },
+      {
+        "name": "hour",
+        "value": ""
+      },
+      {
+        "name": "day",
+        "value": ""
+      }
+    ],
+    "cron_info": null
+  },
+  "metadata": {},
+  "version_id": "c4d6859a-e4d6-4d8c-9c9f-a776f4928b63",
+  "registration_timestamp": "2023-06-26T14:51:46.120Z",
+  "flow_id": "a7fd89d5-c8a8-4223-b410-d5e44868dd86",
+  "state": "active",
+  "processing_status": {
+    "failing": 0,
+    "in_progress": 0,
+    "waiting": 0,
+    "succeeded": 0
+  },
+  "docdb_id": "e7013c33-a8c2-4951-8387-f18502c1784f",
+  "createdAt": "2023-07-24T10:25:27.274Z"
+}

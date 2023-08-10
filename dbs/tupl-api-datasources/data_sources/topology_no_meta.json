@@ -1,0 +1,26 @@
+{
+  "name": "topology_no_meta",
+  "path": "/yannis/path",
+  "storageType": "wizard",
+  "type": "topology_configuration",
+  "classifiers": {
+    "user": "yannis"
+  },
+  "metadata": {
+    "ownership": {
+      "owner": "yarnouts",
+      "group": ""
+    },
+    "permissions": {
+      "owner": [
+        "read",
+        "write"
+      ],
+      "group": [],
+      "other": []
+    }
+  },
+  "docdb_id": "topology_no_meta",
+  "createdAt": "2023-07-24T08:49:33.307Z",
+  "version_id": "cc8ec95c-afbe-4f98-8bc0-1eba29066bd3"
+}

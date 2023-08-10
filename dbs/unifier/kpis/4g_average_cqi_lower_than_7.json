@@ -1,0 +1,68 @@
+{
+  "formulas": [
+    {
+      "formula": "100.0 * DIVSAFE(SUM[('L_ChMeas_CQI_DL_0')+('L_ChMeas_CQI_DL_1')+('L_ChMeas_CQI_DL_2')+('L_ChMeas_CQI_DL_3')+('L_ChMeas_CQI_DL_4')+('L_ChMeas_CQI_DL_5')+('L_ChMeas_CQI_DL_6') ], SUM[('L_ChMeas_CQI_DL_0')+('L_ChMeas_CQI_DL_1')+('L_ChMeas_CQI_DL_2')+('L_ChMeas_CQI_DL_3')+('L_ChMeas_CQI_DL_4')+('L_ChMeas_CQI_DL_5')+('L_ChMeas_CQI_DL_6')+('L_ChMeas_CQI_DL_7')+('L_ChMeas_CQI_DL_8')+('L_ChMeas_CQI_DL_9')+('L_ChMeas_CQI_DL_10')+('L_ChMeas_CQI_DL_11')+('L_ChMeas_CQI_DL_12')+('L_ChMeas_CQI_DL_13')+('L_ChMeas_CQI_DL_14')+('L_ChMeas_CQI_DL_15')],-0.01)",
+      "id": "4g_average_cqi_lower_than_7",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "HUAWEI"
+        }
+      }
+    },
+    {
+      "formula": "DECODE(SUM[ 'M8010C36'+'M8010C37'+'M8010C38'+'M8010C39'+'M8010C40'+'M8010C41'+'M8010C42'+'M8010C43'+'M8010C44'+'M8010C45'+'M8010C46'+'M8010C47'+'M8010C48'+'M8010C49'+'M8010C50'+'M8010C51' ],0.0,-1.0, 100.0 * DIVIDE(SUM[ 'M8010C36'+'M8010C37'+'M8010C38'+'M8010C39'+'M8010C40'+'M8010C41'+'M8010C42'+'M8010C43' ],SUM[ 'M8010C36'+'M8010C37'+'M8010C38'+'M8010C39'+'M8010C40'+'M8010C41'+'M8010C42'+'M8010C43'+'M8010C44'+'M8010C45'+'M8010C46'+'M8010C47'+'M8010C48'+'M8010C49'+'M8010C50'+'M8010C51' ]))",
+      "id": "4g_average_cqi_lower_than_7",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "NOKIA"
+        }
+      }
+    },
+    {
+      "formula": "DIVSAFE(100.0 * SUM['pmradiouerepcqidistr_0'+ 'pmradiouerepcqidistr_1'+ 'pmradiouerepcqidistr_2'+ 'pmradiouerepcqidistr_3'+ 'pmradiouerepcqidistr_4'+ 'pmradiouerepcqidistr_5'+'pmradiouerepcqidistr_6'],SUM['pmradiouerepcqidistr_0'+'pmradiouerepcqidistr_1'+'pmradiouerepcqidistr_2'+ 'pmradiouerepcqidistr_3'+'pmradiouerepcqidistr_4'+'pmradiouerepcqidistr_5'+ 'pmradiouerepcqidistr_6'+'pmradiouerepcqidistr_7'+'pmradiouerepcqidistr_8'+ 'pmradiouerepcqidistr_9'+'pmradiouerepcqidistr_10'+'pmradiouerepcqidistr_11'+ 'pmradiouerepcqidistr_12'+'pmradiouerepcqidistr_13'+'pmradiouerepcqidistr_14'+ 'pmradiouerepcqidistr_15'],-1.0)",
+      "id": "4g_average_cqi_lower_than_7",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "ERICSSON"
+        }
+      }
+    }
+  ],
+  "id": "4g_average_cqi_lower_than_7",
+  "metadata": {
+    "accessControl": {
+      "effectivePermissions": [
+        "read",
+        "write"
+      ],
+      "permissions": {
+        "group": [],
+        "other": [
+          "read"
+        ],
+        "owner": [
+          "read",
+          "write"
+        ]
+      }
+    },
+    "labels": {
+      "domain": "RAN",
+      "element-type": "cell",
+      "technology": "LTE",
+      "type": "regular",
+      "datasource": "pm"
+    },
+    "ownership": {
+      "group": "",
+      "owner": "manuel.estepa@tupl.com"
+    }
+  },
+  "name": "LTE AVG CQI Lower Than 7",
+  "docdb_id": "4g_average_cqi_lower_than_7",
+  "createdAt": "2023-07-21T09:12:30.473Z",
+  "version_id": "23984df6-bb92-40df-8112-fc013297a6cb"
+}

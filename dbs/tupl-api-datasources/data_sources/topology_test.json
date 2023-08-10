@@ -1,0 +1,29 @@
+{
+  "name": "topology_test",
+  "path": "/test/path",
+  "storageType": "sftp",
+  "type": "external",
+  "classifiers": {
+    "user": "yannis"
+  },
+  "metadata": {
+    "ownership": {
+      "owner": "Shared",
+      "group": "ds-admins"
+    },
+    "permissions": {
+      "owner": [
+        "read",
+        "write"
+      ],
+      "group": [
+        "read",
+        "write"
+      ],
+      "other": []
+    }
+  },
+  "docdb_id": "topology_test",
+  "createdAt": "2023-07-24T08:49:33.307Z",
+  "version_id": "39cf4b63-3b16-45b3-afdb-1c4bb934e443"
+}

@@ -1,0 +1,34 @@
+{
+  "_id": "6477032426e9bf84b6dcd608",
+  "name": "topology_datasourcemanagement",
+  "path": "/datasources/topology_datasourcemanagement",
+  "storageType": "webdav",
+  "classifiers": {
+    "tech": "dsm",
+    "test": "test"
+  },
+  "tagId": "WebdavDsm",
+  "docdb_id": "6477032426e9bf84b6dcd608",
+  "createdAt": "2023-06-05T10:06:24.391Z",
+  "version_id": "641c4414-cfcd-4841-80e7-b8341d53eb40",
+  "type": "external",
+  "updatedAt": "2023-06-26T09:00:58.355Z",
+  "metadata": {
+    "ownership": {
+      "owner": "yarnouts",
+      "group": "admins",
+      "type": "group"
+    },
+    "permissions": {
+      "owner": [
+        "read",
+        "write"
+      ],
+      "group": [
+        "read",
+        "write"
+      ],
+      "other": []
+    }
+  }
+}

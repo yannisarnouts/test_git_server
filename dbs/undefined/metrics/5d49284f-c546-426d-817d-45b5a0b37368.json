@@ -1,0 +1,27 @@
+{
+  "type": "KPI",
+  "classifiers": {
+    "source": "KPIS",
+    "category": "KPI",
+    "domain": "RAN",
+    "element-type": "cell",
+    "technology": "LTE",
+    "datasource": "pm"
+  },
+  "legend": {
+    "type": "dynamic",
+    "ascending": true,
+    "size": true,
+    "border": true,
+    "fill": true,
+    "range": []
+  },
+  "additionalFields": {},
+  "preferred": false,
+  "uuid": "4g_volte_dcr",
+  "name": "4g_volte_dcr",
+  "label": "LTE VoLTE DCR",
+  "docdb_id": "5d49284f-c546-426d-817d-45b5a0b37368",
+  "createdAt": "2023-07-07T09:13:43.841Z",
+  "version_id": "9abaddb7-6715-4414-b347-e96879911168"
+}

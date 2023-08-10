@@ -1,0 +1,68 @@
+{
+  "formulas": [
+    {
+      "formula": "DIVSAFE(SUM['L_Thrp_bits_UL'],  SUM['L_Thrp_Time_UL'],-1.0)",
+      "id": "4g_ul_user_throughput_kbps",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "HUAWEI"
+        }
+      }
+    },
+    {
+      "formula": "DECODE(SUM['M8012C108'],0.0,-1.0,DIVIDE(SUM['M8012C107'], SUM['M8012C108']) )",
+      "id": "4g_ul_user_throughput_kbps",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "NOKIA"
+        }
+      }
+    },
+    {
+      "formula": "DIVSAFE(SUM['pmuethpvolul'],SUM['pmuethptimeul'/1000.0],-1000.0)",
+      "id": "4g_ul_user_throughput_kbps",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "ERICSSON"
+        }
+      }
+    }
+  ],
+  "id": "4g_ul_user_throughput_kbps",
+  "metadata": {
+    "accessControl": {
+      "effectivePermissions": [
+        "read",
+        "write"
+      ],
+      "permissions": {
+        "group": [],
+        "other": [
+          "read"
+        ],
+        "owner": [
+          "read",
+          "write"
+        ]
+      }
+    },
+    "labels": {
+      "domain": "RAN",
+      "element-type": "cell",
+      "technology": "LTE",
+      "type": "regular",
+      "datasource": "pm"
+    },
+    "ownership": {
+      "group": "",
+      "owner": "manuel.estepa@tupl.com"
+    }
+  },
+  "name": "LTE UL User Throughput",
+  "docdb_id": "4g_ul_user_throughput_kbps",
+  "createdAt": "2023-07-21T09:12:30.463Z",
+  "version_id": "6dda0d1e-6ae4-4949-a884-1560017684d8"
+}

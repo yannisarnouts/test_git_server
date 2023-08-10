@@ -1,0 +1,190 @@
+{
+  "id": "veon_configuration",
+  "adminGroup": "unifier_admins",
+  "ancestorToShowInMapWhenSearching": {
+    "cell": -2
+  },
+  "appDomains": [
+    {
+      "id": "RAN",
+      "filter": {
+        "domain": "RAN",
+        "technology": null
+      }
+    }
+  ],
+  "csvExport": {
+    "separator": ",",
+    "filename": "export.csv",
+    "decimalDot": "."
+  },
+  "defaults": {
+    "RAN": {
+      "dateRange": {
+        "startDate@date": "-2 days",
+        "endDate@date": "-1 days"
+      },
+      "timeAggregation": "DAY",
+      "view": {
+        "lat": 49.53590423149747,
+        "lon": 36.46362304687501,
+        "zoom": 7
+      }
+    }
+  },
+  "externalHosts": {
+    "tickets": "https://crm-api.anonymizer.clusters.tupl.tech",
+    "cdrs": "https://cdr-api.anonymizer.clusters.tupl.tech"
+  },
+  "homeView": "home",
+  "lastDataTime": {
+    "timeAggregation": "DAY",
+    "nodeType": "cell",
+    "checkTopology": "rootElement"
+  },
+  "layers": [
+    {
+      "id": "GSM_Coverage",
+      "label": "GSM Coverage",
+      "url": "/rasters/GSM_Coverage/latest/${z}/${x}/${y}.png",
+      "maxNativeZoom": 11,
+      "minZoom": 0,
+      "maxZoom": 18,
+      "legend": [
+        {
+          "from": null,
+          "to": -95,
+          "color": "#d7181c"
+        },
+        {
+          "from": -95,
+          "to": -75,
+          "color": "#ffffbf"
+        },
+        {
+          "from": -75,
+          "to": null,
+          "color": "#2b83ba"
+        }
+      ],
+      "tms": true
+    },
+    {
+      "id": "UMTS_Coverage",
+      "label": "UMTS Coverage",
+      "url": "/rasters/UMTS_Coverage/latest/${z}/${x}/${y}.png",
+      "maxNativeZoom": 11,
+      "minZoom": 0,
+      "maxZoom": 18,
+      "legend": [
+        {
+          "from": null,
+          "to": -110,
+          "color": "#d7181c"
+        },
+        {
+          "from": -110,
+          "to": -80,
+          "color": "#ffffbf"
+        },
+        {
+          "from": -80,
+          "to": null,
+          "color": "#2b83ba"
+        }
+      ],
+      "tms": true
+    },
+    {
+      "id": "LTE_Coverage",
+      "label": "LTE Coverage",
+      "url": "/rasters/LTE_Coverage/latest/${z}/${x}/${y}.png",
+      "maxNativeZoom": 11,
+      "minZoom": 0,
+      "maxZoom": 18,
+      "legend": [
+        {
+          "from": null,
+          "to": -110,
+          "color": "#d7181c"
+        },
+        {
+          "from": -110,
+          "to": -80,
+          "color": "#ffffbf"
+        },
+        {
+          "from": -80,
+          "to": null,
+          "color": "#2b83ba"
+        }
+      ],
+      "tms": true
+    }
+  ],
+  "maxNumberOfElementsInAGroup": 2000,
+  "nodeTypesShapes": {
+    "site": "CIRCLE",
+    "cell": "SECTOR"
+  },
+  "reports": [],
+  "shareMetricGroupsTopologies": true,
+  "timeAggregations": {
+    "15MIN": "15MIN",
+    "HOUR": "HOUR",
+    "DAY": "DAY"
+  },
+  "topology": {
+    "visibleNodeTypes": [
+      "vendor",
+      "region",
+      "market",
+      "tac",
+      "nc",
+      "bsc",
+      "rnc",
+      "site",
+      "cell",
+      "oblast",
+      "district"
+    ]
+  },
+  "topologyFields": {
+    "LTE": [
+      {
+        "id": "Equipment",
+        "label": "Equipment"
+      },
+      {
+        "id": "Height (m)",
+        "label": "Height (m)"
+      },
+      {
+        "id": "Pattern_Electrical_Tilt(°)",
+        "label": "E-Tilt (deg)"
+      },
+      {
+        "id": "Mechanical Downtilt (°)",
+        "label": "M-Tilt (deg)"
+      }
+    ]
+  },
+  "topologyLevelsConstrains": {
+    "site": -1,
+    "cell": -2
+  },
+  "zoomScale": 1,
+  "zoomToElements": {
+    "region": 5,
+    "market": 5,
+    "nc": 7,
+    "bsc": 7,
+    "tac": 7,
+    "rnc": 7,
+    "site": 10,
+    "cell": 10
+  },
+  "docdb_id": "veon_configuration",
+  "createdAt": "2023-07-24T08:28:28.820Z",
+  "version_id": "1c557720-bb12-4bea-9e14-5a50791d836d"
+}

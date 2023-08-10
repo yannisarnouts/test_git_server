@@ -1,0 +1,35 @@
+{
+  "id": "1f78e3ce-f565-45e8-8890-7eb20af1c9be",
+  "label": "KpiLauncher",
+  "type": "KpiLauncher",
+  "settings": {
+    "parameters": [
+      {
+        "name": "endDate",
+        "value": "2022-11-25"
+      },
+      {
+        "name": "topologyId",
+        "value": "HACKATHON"
+      }
+    ],
+    "cron_info": null
+  },
+  "metadata": {
+    "layout": {
+      "x": 330,
+      "y": -495
+    }
+  },
+  "version_id": "356335ce-fa64-4744-82a1-900e09bc063b",
+  "registration_timestamp": "2023-04-04T07:24:06.319Z",
+  "flow_id": "553b97c5-5a0d-406f-b092-27a5af0069af",
+  "state": "active",
+  "processing_status": {
+    "failing": 0,
+    "in_progress": 0,
+    "succeeded": 0
+  },
+  "docdb_id": "1f78e3ce-f565-45e8-8890-7eb20af1c9be",
+  "createdAt": "2023-07-24T10:25:27.270Z"
+}

@@ -1,0 +1,33 @@
+{
+  "uuid": "this_is_a_test_kpi",
+  "type": "KPI",
+  "classifiers": {
+    "source": "KPIS",
+    "category": "KPI",
+    "domain": "RAN",
+    "element-type": "cell",
+    "technology": "LTE",
+    "datasource": "pm"
+  },
+  "legend": {
+    "type": "dynamic",
+    "ascending": true,
+    "size": true,
+    "border": true,
+    "fill": true,
+    "range": []
+  },
+  "additionalFields": {},
+  "preferred": false,
+  "name": "this_is_a_test_kpi",
+  "label": "TEST KPI",
+  "createdAt": "2023-08-08T08:52:48.429Z",
+  "source": "KPIS",
+  "category": "KPI",
+  "domain": "RAN",
+  "element-type": "cell",
+  "technology": "LTE",
+  "datasource": "pm",
+  "docdb_id": "this_is_a_test_kpi",
+  "version_id": "b471c062-2d0f-46a8-b31f-2e5947702939"
+}

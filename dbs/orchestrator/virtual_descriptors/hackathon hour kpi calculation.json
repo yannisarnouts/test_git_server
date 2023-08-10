@@ -1,0 +1,62 @@
+{
+  "processor_type": "Hackathon Hour KPI Calculation",
+  "capabilities": [
+    "DryRun"
+  ],
+  "generated_events": [
+    {
+      "type": "HourKpisCalculated",
+      "fields": [
+        "processorParams",
+        "callbackData",
+        "topologyId",
+        "startDate",
+        "endDate"
+      ]
+    }
+  ],
+  "meta_type": "InputOutput",
+  "parameters": [
+    {
+      "name": "topologyId",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "startDate",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "endDate",
+      "type": "str",
+      "optional": true
+    }
+  ],
+  "version_id": "6eda1218-0cd9-4056-8e4b-933fdfcd3d53",
+  "virtual_adapter": {
+    "native_type": "HttpWithCallbackProcessor",
+    "parameter_mapping": {
+      "payload": "{ \"flowId\":\"hour-kpis-1-day\", \"args\":{\"topologyId\":\"{{params.topologyId}}\", \"startDate\": \"{{params.startDate}}\", \"endDate\": \"{{params.endDate}}\"}, \"callback\": \"http://tupl-orchestrator:8080/v1/process-callback\" }",
+      "url": "http://tupl-streams-tupl-streams-manager/jobs",
+      "method": "post",
+      "headers": "{}",
+      "trackingIdField": "jobId",
+      "successStatusValue": "finished"
+    },
+    "event_mapping": {
+      "HttpRequestWithCallbackExecuted": {
+        "name": "HourKpisCalculated",
+        "data": {
+          "processorParams": "{{event.processorParams}}",
+          "callbackData": "{{event.callbackData}}",
+          "topologyId": "{{params.topologyId}}",
+          "startDate": "{{params.startDate}}",
+          "endDate": "{{params.endDate}}"
+        }
+      }
+    }
+  },
+  "docdb_id": "Hackathon Hour KPI Calculation",
+  "createdAt": "2023-07-24T09:26:34.865Z"
+}

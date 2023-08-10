@@ -1,0 +1,12 @@
+{
+  "id": "9833b3e2-8821-46d8-af2f-209303e1be22",
+  "label": "ingestion_1",
+  "version_id": "2c07f419-450b-44c9-831a-7440579bda9e",
+  "access_control": {
+    "type": "public",
+    "owner": null,
+    "group": null
+  },
+  "docdb_id": "9833b3e2-8821-46d8-af2f-209303e1be22",
+  "createdAt": "2023-07-24T10:25:27.269Z"
+}

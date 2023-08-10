@@ -1,0 +1,53 @@
+{
+  "processor_type": "MultiDayLauncher",
+  "capabilities": [],
+  "generated_events": [
+    {
+      "type": "MultiDayLaunchExecuted",
+      "fields": [
+        "output",
+        "startDate",
+        "endDate",
+        "extraFields"
+      ]
+    }
+  ],
+  "meta_type": "InputOutput",
+  "parameters": [
+    {
+      "name": "startDate",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "endDate",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "extraFields",
+      "type": "str",
+      "optional": true
+    }
+  ],
+  "version_id": "0e0774ab-56ad-4a13-9dc8-6cb0927ac583",
+  "virtual_adapter": {
+    "native_type": "CustomLogicProcessor",
+    "parameter_mapping": {
+      "code": "start_date = datetime.strptime(\"{{params.startDate}}\", \"%Y-%m-%d\") \nend_date = datetime.strptime(\"{{params.endDate}}\", \"%Y-%m-%d\") \nfor day in range(start_date.day, end_date.day):\n    start_date_iso = start_date.replace(day=day).strftime(\"%Y-%m-%d\")\n    end_date_iso = start_date.replace(day=day+1).strftime(\"%Y-%m-%d\")\n    eventToSend = {\"startDate\": start_date_iso, \"endDate\": end_date_iso}\n    eventToSend.update({{params.extraFields}})\n    sendEvent(eventToSend)"
+    },
+    "event_mapping": {
+      "CustomLogicProcessed": {
+        "name": "MultiDayLaunchExecuted",
+        "data": {
+          "output": "{{event.output}}",
+          "startDate": "{{params.startDate}}",
+          "endDate": "{{params.endDate}}",
+          "extraFields": "{{params.extraFields}}"
+        }
+      }
+    }
+  },
+  "docdb_id": "MultiDayLauncher",
+  "createdAt": "2023-07-24T09:26:34.864Z"
+}

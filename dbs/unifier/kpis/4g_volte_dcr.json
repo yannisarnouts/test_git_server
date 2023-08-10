@@ -1,0 +1,68 @@
+{
+  "formulas": [
+    {
+      "formula": "100.0 * DIVSAFE(SUM['l_e_rab_abnormrel_enbtot_qci_1' + 'l_e_rab_abnormrel_mmetot_voip'], SUM['l_e_rab_abnormrel_enbtot_qci_1' + 'l_e_rab_abnormrel_mmetot_voip' + 'l_e_rab_normrel_qci_1'], -0.01)",
+      "id": "4g_volte_dcr",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "HUAWEI"
+        }
+      }
+    },
+    {
+      "formula": "DECODE(SUM['M8006C266' + 'M8006C273' + 'M8006C89' + 'M8006C98' + 'M8006C107' + 'M8006C116' +'M8006C278'],0.0,-1.0,100.0 * DIVIDE(SUM['M8006C273' + 'M8006C266' - 'M8006C267' - 'M8006C272' - 'M8006C152' + 'M8006C107' + 'M8006C116' - 'M8006C270'],SUM['M8006C266' + 'M8006C273' + 'M8006C89' + 'M8006C98' + 'M8006C107' + 'M8006C116' +'M8006C278']))",
+      "id": "4g_volte_dcr",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "NOKIA"
+        }
+      }
+    },
+    {
+      "formula": "DIVSAFE(100.0 * SUM['pmerabrelabnormalenbactqci_1' + 'pmerabrelabnormalmmeactqci_1'],SUM['pmerabrelabnormalenbqci_1' + 'pmerabrelnormalenbqci_1' + 'pmerabrelmmeqci_1'],-1.0)",
+      "id": "4g_volte_dcr",
+      "metadata": {
+        "labels": {
+          "formulaType": "main",
+          "vendor": "ERICSSON"
+        }
+      }
+    }
+  ],
+  "id": "4g_volte_dcr",
+  "metadata": {
+    "accessControl": {
+      "effectivePermissions": [
+        "read",
+        "write"
+      ],
+      "permissions": {
+        "group": [],
+        "other": [
+          "read"
+        ],
+        "owner": [
+          "read",
+          "write"
+        ]
+      }
+    },
+    "labels": {
+      "domain": "RAN",
+      "element-type": "cell",
+      "technology": "LTE",
+      "type": "regular",
+      "datasource": "pm"
+    },
+    "ownership": {
+      "group": "",
+      "owner": "manuel.estepa@tupl.com"
+    }
+  },
+  "name": "LTE VoLTE DCR",
+  "docdb_id": "4g_volte_dcr",
+  "createdAt": "2023-07-21T09:12:30.473Z",
+  "version_id": "5023daa5-798c-4b95-bbcb-f5af5aac8a90"
+}

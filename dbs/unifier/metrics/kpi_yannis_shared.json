@@ -1,0 +1,24 @@
+{
+  "type": "KPI",
+  "classifiers": {
+    "source": "KPIS",
+    "category": "KPI",
+    "element-type": "cell"
+  },
+  "legend": {
+    "type": "dynamic",
+    "ascending": true,
+    "size": true,
+    "border": true,
+    "fill": true,
+    "range": []
+  },
+  "additionalFields": {},
+  "preferred": false,
+  "uuid": "kpi_yannis_shared",
+  "name": "kpi_yannis_shared",
+  "label": "KPI Yannis Shared",
+  "docdb_id": "kpi_yannis_shared",
+  "createdAt": "2023-08-08T08:08:19.162Z",
+  "version_id": "23116340-ca87-499b-a8b1-a4c1531e2d90"
+}

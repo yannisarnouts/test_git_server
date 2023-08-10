@@ -1,0 +1,81 @@
+{
+  "processor_type": "HackathonPredictionAndTicketGeneration",
+  "capabilities": [],
+  "generated_events": [
+    {
+      "type": "TicketsGenerated",
+      "fields": [
+        "processorParams",
+        "callbackData",
+        "startDate",
+        "endDate",
+        "topologyId",
+        "globalModelId",
+        "incidencesTable",
+        "user"
+      ]
+    }
+  ],
+  "meta_type": "InputOutput",
+  "parameters": [
+    {
+      "name": "startDate",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "endDate",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "topologyId",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "globalModelId",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "incidencesTable",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "user",
+      "type": "str",
+      "optional": true
+    }
+  ],
+  "version_id": "596ef5bf-49ef-45d3-b8c9-482eb5f6117b",
+  "virtual_adapter": {
+    "native_type": "HttpWithCallbackProcessor",
+    "parameter_mapping": {
+      "payload": "{ \"flowId\":\"prediction-and-ticket-generation\", \"args\": {\"topologyId\": \"{{params.topologyId}}\",\n  \"startDate\": \"{{params.startDate}}\",\n  \"endDate\": \"{{params.endDate}}\",\n  \"globalModelId\": \"{{params.globalModelId}}\",\n  \"incidencesTable\": \"{{params.incidencesTable}}\",\n  \"user\": \"{{params.user}}\",\n  \"ticketType\": \"network_tickets\"\n}, \"callback\": \"http://tupl-orchestrator:8080/v1/process-callback\" }",
+      "url": "http://tupl-streams-tupl-streams-manager/jobs",
+      "method": "post",
+      "headers": "{}",
+      "trackingIdField": "jobId",
+      "successStatusValue": "finished"
+    },
+    "event_mapping": {
+      "HttpRequestWithCallbackExecuted": {
+        "name": "TicketsGenerated",
+        "data": {
+          "processorParams": "{{event.processorParams}}",
+          "callbackData": "{{event.callbackData}}",
+          "startDate": "{{params.startDate}}",
+          "endDate": "{{params.endDate}}",
+          "topologyId": "{{params.topologyId}}",
+          "globalModelId": "{{params.globalModelId}}",
+          "incidencesTable": "{{params.incidencesTable}}",
+          "user": "{{params.user}}"
+        }
+      }
+    }
+  },
+  "docdb_id": "HackathonPredictionAndTicketGeneration",
+  "createdAt": "2023-07-24T09:26:34.866Z"
+}

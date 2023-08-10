@@ -1,0 +1,13 @@
+{
+  "_id": "64784c799612f4cc0762279f",
+  "name": "config_HACKATON",
+  "path": "",
+  "storageType": "wizard",
+  "type": "topology_configuration",
+  "classifiers": {
+    "team": "dev"
+  },
+  "docdb_id": "64784c799612f4cc0762279f",
+  "createdAt": "2023-06-05T10:06:24.391Z",
+  "version_id": "6578a853-4e3a-45cb-b232-77b65b3ba122"
+}

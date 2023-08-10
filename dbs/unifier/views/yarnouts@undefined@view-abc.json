@@ -1,0 +1,31 @@
+{
+  "application": null,
+  "id": "view-abc",
+  "visibility": "Private",
+  "_accessInfo": {
+    "owner": "yarnouts",
+    "share": [],
+    "sharedGroups": [
+      ".*"
+    ],
+    "sharedRoles": [
+      ".*"
+    ]
+  },
+  "appDomain": "RAN",
+  "fingerprint": null,
+  "icon": "fa fa-file",
+  "key": "yarnouts@undefined@view-abc",
+  "layouts": {},
+  "minimizedWidgets": [],
+  "owner": "yannisarnouts",
+  "priority": 1,
+  "title": "view-abc",
+  "type": "dynamic-view",
+  "userMenu": false,
+  "version": null,
+  "widgets": [],
+  "createdAt": "2023-07-24T08:28:28.801Z",
+  "docdb_id": "yarnouts@undefined@view-abc",
+  "version_id": "8a56ec9f-0e05-4940-b530-b3683778da51"
+}

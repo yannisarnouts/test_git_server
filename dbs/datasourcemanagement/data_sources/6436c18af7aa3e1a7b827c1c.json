@@ -1,0 +1,15 @@
+{
+  "_id": "6436c18af7aa3e1a7b827c1c",
+  "name": "ingestion",
+  "path": "/upload/datasources/ingestion",
+  "storageType": "sftp",
+  "classifiers": {
+    "ingestion": "ingestion"
+  },
+  "tagId": "SftpIngestion",
+  "docdb_id": "6436c18af7aa3e1a7b827c1c",
+  "createdAt": "2023-06-05T10:06:24.387Z",
+  "version_id": "6fd7bf60-8455-4b77-8eef-e0366fcc9730",
+  "type": "external",
+  "updatedAt": "2023-06-01T08:29:56.589Z"
+}

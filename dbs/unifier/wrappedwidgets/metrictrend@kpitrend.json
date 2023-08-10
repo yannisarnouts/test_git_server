@@ -1,0 +1,22 @@
+{
+  "baseWidgetId": "metricTrend",
+  "id": "metricTrend@KpiTrend",
+  "wrappedWidgetId": "KpiTrend",
+  "fixedInputs": {
+    "baseMetricFilters": {
+      "source": "KPIS"
+    }
+  },
+  "options": {
+    "title": "KPI Trend",
+    "description": "Show KPI Trends",
+    "labels": {
+      "metricsAsSeries": "Show KPIs as Series",
+      "visibleMetricsInfo": "Selected KPI",
+      "selectedElementsInfo": "Selected Elements"
+    }
+  },
+  "createdAt": "2023-07-24T08:28:28.798Z",
+  "docdb_id": "metricTrend@KpiTrend",
+  "version_id": "c14a61fd-18f1-4c4b-9566-459bfe7aa8b0"
+}

@@ -1,0 +1,65 @@
+{
+  "ticketType": "realx_tickets",
+  "fields": [
+    {
+      "name": "status",
+      "label": "Status",
+      "editable": false,
+      "type": "status",
+      "params": null,
+      "autoFillCreateValue": "initialStatus()"
+    },
+    {
+      "name": "createdBy",
+      "sqlName": "created_by",
+      "label": "Created By",
+      "type": "user",
+      "params": null,
+      "editable": false
+    },
+    {
+      "name": "createdDate",
+      "label": "Created Date",
+      "editable": false,
+      "type": "datetime",
+      "params": null,
+      "autoFillCreateValue": "now()"
+    },
+    {
+      "name": "updatedBy",
+      "sqlName": "updated_by",
+      "label": "Updated By",
+      "type": "user",
+      "params": null,
+      "editable": false
+    },
+    {
+      "name": "updatedDate",
+      "label": "Updated Date",
+      "editable": false,
+      "type": "datetime",
+      "params": null,
+      "autoFillCreateValue": "now()"
+    }
+  ],
+  "actions": [],
+  "statuses": [],
+  "indexes": [
+    {
+      "fields": [
+        {
+          "field": "id",
+          "ascendent": false
+        }
+      ],
+      "options": {
+        "name": "Index by ID",
+        "unique": true
+      }
+    }
+  ],
+  "counter": 7,
+  "docdb_id": "realx_tickets",
+  "createdAt": "2023-08-07T12:37:59.433Z",
+  "version_id": "35048e97-ea4f-49a1-8e1e-cb3d3d464038"
+}

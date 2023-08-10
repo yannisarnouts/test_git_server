@@ -1,0 +1,60 @@
+{
+  "processor_type": "HackathonIngestion",
+  "capabilities": [],
+  "generated_events": [
+    {
+      "type": "HackathonIngestionProcessed",
+      "fields": [
+        "processorParams",
+        "callbackData",
+        "topologyId",
+        "startDate",
+        "endDate"
+      ]
+    }
+  ],
+  "meta_type": "InputOutput",
+  "parameters": [
+    {
+      "name": "topologyId",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "startDate",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "endDate",
+      "type": "str",
+      "optional": true
+    }
+  ],
+  "version_id": "d2ef1f71-b038-4045-b892-861a9e9b2813",
+  "virtual_adapter": {
+    "native_type": "HttpWithCallbackProcessor",
+    "parameter_mapping": {
+      "payload": "{ \"flowId\":\"rop-ingestion-1-day\", \"args\":{\"topologyId\":\"{{params.topologyId}}\", \"startDate\": \"{{params.startDate}}\", \"endDate\": \"{{params.endDate}}\"}, \"callback\": \"http://tupl-orchestrator:8080/v1/process-callback\" }",
+      "url": "http://tupl-streams-tupl-streams-manager/jobs",
+      "method": "post",
+      "headers": "{}",
+      "trackingIdField": "jobId",
+      "successStatusValue": "finished"
+    },
+    "event_mapping": {
+      "HttpRequestWithCallbackExecuted": {
+        "name": "HackathonIngestionProcessed",
+        "data": {
+          "processorParams": "{{event.processorParams}}",
+          "callbackData": "{{event.callbackData}}",
+          "topologyId": "{{params.topologyId}}",
+          "startDate": "{{params.startDate}}",
+          "endDate": "{{params.endDate}}"
+        }
+      }
+    }
+  },
+  "docdb_id": "HackathonIngestion",
+  "createdAt": "2023-07-24T09:26:34.864Z"
+}

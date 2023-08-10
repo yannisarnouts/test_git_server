@@ -1,0 +1,71 @@
+{
+  "id": "b366a080-9ccb-47b4-9cda-9ab60f68b27e",
+  "label": "Features",
+  "type": "FeaturesProcessor",
+  "settings": {
+    "trigger_events": [
+      {
+        "condition": "False",
+        "parameters": [
+          {
+            "name": "topology",
+            "value": "{{event.topology}}"
+          },
+          {
+            "name": "datasource",
+            "value": "{{event.datasource}}"
+          },
+          {
+            "name": "classifiers",
+            "value": "{{event.classifiers}}"
+          },
+          {
+            "name": "configName",
+            "value": ""
+          },
+          {
+            "name": "appName",
+            "value": ""
+          },
+          {
+            "name": "timeWindow",
+            "value": ""
+          },
+          {
+            "name": "element",
+            "value": "{{event.element}}"
+          },
+          {
+            "name": "day",
+            "value": "{{event.day}}"
+          },
+          {
+            "name": "timeAggregation",
+            "value": ""
+          },
+          {
+            "name": "nowMillis",
+            "value": ""
+          }
+        ],
+        "processor_id": "5e1b6cda-3669-48c4-86ff-e710cadf68ee",
+        "event_type": "KpisProcessed"
+      }
+    ],
+    "parameters": [],
+    "cron_info": null
+  },
+  "metadata": {},
+  "version_id": "162e3b7b-a27e-4c1d-9800-19eb04a0c49c",
+  "registration_timestamp": "2023-06-26T14:47:43.968Z",
+  "flow_id": "64becd36-bd5e-475d-8e80-71714d90eae8",
+  "state": "active",
+  "processing_status": {
+    "failing": 0,
+    "in_progress": 0,
+    "waiting": 0,
+    "succeeded": 0
+  },
+  "docdb_id": "b366a080-9ccb-47b4-9cda-9ab60f68b27e",
+  "createdAt": "2023-07-24T10:25:27.274Z"
+}

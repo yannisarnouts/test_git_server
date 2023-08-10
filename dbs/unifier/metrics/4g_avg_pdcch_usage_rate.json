@@ -1,0 +1,42 @@
+{
+  "type": "KPI",
+  "classifiers": {
+    "source": "KPIS",
+    "category": "KPI",
+    "domain": "RAN",
+    "element-type": "cell",
+    "technology": "LTE",
+    "datasource": "pm"
+  },
+  "legend": {
+    "type": "dynamic",
+    "ascending": true,
+    "size": true,
+    "border": true,
+    "fill": true,
+    "range": []
+  },
+  "additionalFields": {
+    "selectedTopologies": [
+      {
+        "id": "HACKATON",
+        "label": "HACKATON",
+        "value": "HACKATON"
+      }
+    ]
+  },
+  "preferred": false,
+  "uuid": "4g_avg_pdcch_usage_rate",
+  "name": "4g_avg_pdcch_usage_rate",
+  "label": "LTE AVG PDCCH Usage Rate",
+  "docdb_id": "4g_avg_pdcch_usage_rate",
+  "createdAt": "2023-08-07T12:35:43.692Z",
+  "version_id": "5cb9b047-8c24-443c-a8f0-1ef3dbab8fdc",
+  "source": "KPIS",
+  "category": "KPI",
+  "domain": "RAN",
+  "element-type": "cell",
+  "technology": "LTE",
+  "datasource": "pm",
+  "updatedAt": "2023-08-08T08:42:27.436Z"
+}
