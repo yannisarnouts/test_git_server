@@ -5,10 +5,10 @@
              {
                 "$and":[
                    {
-                      "metadata.ownership.owner":"yarnouts"
+                      "metadata.ownership.owner":"test"
                    },
                    {
-                      "metadata.accessControl.permissions.owner":"read"
+                      "metadata.accessControl.permissions.owner":"test"
                    }
                 ]
              },
@@ -22,10 +22,10 @@
                       }
                    },
                    {
-                      "metadata.ownership.owner":"Shared"
+                      "metadata.ownership.owner":"test"
                    },
                    {
-                      "metadata.accessControl.permissions.group":"read"
+                      "metadata.accessControl.permissions.group":"test"
                    }
                 ]
              }
