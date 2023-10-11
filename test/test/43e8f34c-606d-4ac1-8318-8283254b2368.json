@@ -1,6 +1,6 @@
 {
-  "name": "test3",
-  "path": "/upload/datasources/test/3",
+  "name": "test6",
+  "path": "/upload/datasources/test/6",
   "storageType": "sftp",
   "classifiers": {
     "ingestion": "ingestion"
@@ -8,6 +8,6 @@
   "tagId": "SftpIngestion",
   "docdb_id": "43e8f34c-606d-4ac1-8318-8283254b2368",
   "createdAt": "2023-08-10T12:46:41.438Z",
-  "version_id": "6452c300-7fe2-4b94-9657-61271292edd7",
-  "updatedAt": "2023-08-17T13:05:08.099Z"
+  "version_id": "972a7e17-cf29-4a2b-8618-23697ddc1ed5",
+  "updatedAt": "2023-10-11T09:05:48.901Z"
 }
