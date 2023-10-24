@@ -1,0 +1,12 @@
+{
+  "id": "253ffad6-7019-4708-b39c-3a5ac96748fe",
+  "label": "new_flow",
+  "version_id": "36ed1f03-6d3c-412b-bf64-d53f9dc1ddcb",
+  "access_control": {
+    "type": "public",
+    "owner": "sergio.cayuela@tupl.com",
+    "group": null
+  },
+  "docdb_id": "253ffad6-7019-4708-b39c-3a5ac96748fe",
+  "createdAt": "2023-09-20T09:35:28.117Z"
+}

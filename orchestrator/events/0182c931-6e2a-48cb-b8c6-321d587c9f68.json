@@ -1,0 +1,19 @@
+{
+  "processor_id": "037c1e8a-2fc1-4b1e-9515-f9d9c575c63e",
+  "processor_label": "HackathonPipelineLauncher",
+  "event_type": "HackathonPipelineLaunched",
+  "data": {
+    "eventFields": {},
+    "topologyId": "topology_telco",
+    "startDate": "2022-11-18",
+    "endDate": "2022-11-25"
+  },
+  "flow_id": "751552e3-9410-4da3-82a9-bb7ab1856c8c",
+  "id": "0182c931-6e2a-48cb-b8c6-321d587c9f68",
+  "completed": true,
+  "command_id": null,
+  "registration_timestamp": "2023-04-25 12:02:09.864134",
+  "docdb_id": "0182c931-6e2a-48cb-b8c6-321d587c9f68",
+  "createdAt": "2023-04-25T12:02:09.876Z",
+  "version_id": "22589d84-6873-48a9-b0e7-ebf4d715c062"
+}

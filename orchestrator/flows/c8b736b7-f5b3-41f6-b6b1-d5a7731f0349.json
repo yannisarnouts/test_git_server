@@ -1,0 +1,12 @@
+{
+  "id": "c8b736b7-f5b3-41f6-b6b1-d5a7731f0349",
+  "label": "hackaY1",
+  "version_id": "cc501ae6-1161-49a9-9048-624c126f1d2f",
+  "access_control": {
+    "type": "public",
+    "owner": null,
+    "group": null
+  },
+  "docdb_id": "c8b736b7-f5b3-41f6-b6b1-d5a7731f0349",
+  "createdAt": "2023-07-04T10:15:56.677Z"
+}

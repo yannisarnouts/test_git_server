@@ -1,0 +1,84 @@
+{
+  "docdb_id": "HackathonTicketGenerationNewMltk",
+  "processor_type": "HackathonTicketGenerationNewMltk",
+  "createdAt": "2023-04-25T12:01:23.469Z",
+  "meta_type": "InputOutput",
+  "parameters": [
+    {
+      "name": "startDate",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "endDate",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "topologyId",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "hierarchyName",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "projectName",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "incidencesTable",
+      "type": "str",
+      "optional": true
+    }
+  ],
+  "generated_events": [
+    {
+      "type": "TicketGenerated",
+      "fields": [
+        "processorParams",
+        "callbackData",
+        "startDate",
+        "endDate",
+        "topologyId",
+        "hierarchyName",
+        "projectName",
+        "incidencesTable"
+      ]
+    }
+  ],
+  "virtual_adapter": {
+    "native_type": "HttpWithCallbackProcessor",
+    "parameter_mapping": {
+      "payload": "{ \"flowId\":\"prediction-and-ticket-generation\", \"args\": {\"topologyId\": \"{{params.topologyId}}\",   \"startDate\": \"{{params.startDate}}\",   \"endDate\": \"{{params.endDate}}\",   \"hierarchyName\": \"{{params.hierarchyName}}\",   \"incidencesTable\": \"{{params.incidencesTable}}\",   \"projectName\": \"{{params.projectName}}\",   \"ticketType\": \"network_tickets\" }, \"callback\": \"http://tupl-orchestrator:8080/v1/process-callback\" }",
+      "url": "http://tupl-streams-tupl-streams-manager/jobs",
+      "method": "post",
+      "trackingIdField": "jobId",
+      "headers": "{}",
+      "successStatusValue": "finished"
+    },
+    "event_mapping": {
+      "HttpRequestWithCallbackExecuted": {
+        "name": "TicketGenerated",
+        "data": {
+          "processorParams": "{{event.processorParams}}",
+          "callbackData": "{{event.callbackData}}",
+          "startDate": "{{params.startDate}}",
+          "endDate": "{{params.endDate}}",
+          "topologyId": "{{params.topologyId}}",
+          "hierarchyName": "{{params.hierarchyName}}",
+          "projectName": "{{params.projectName}}",
+          "incidencesTable": "{{params.incidencesTable}}"
+        }
+      }
+    }
+  },
+  "capabilities": [
+    "DryRun"
+  ],
+  "version_id": "dacd5dc6-c700-45a3-8e75-fbdc00ea83f9",
+  "updatedAt": "2023-04-25T12:01:23.470Z"
+}

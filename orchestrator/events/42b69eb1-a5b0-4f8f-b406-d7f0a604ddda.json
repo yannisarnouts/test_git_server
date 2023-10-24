@@ -1,0 +1,20 @@
+{
+  "processor_id": "a93532f8-d78c-4b79-96af-29f769627747",
+  "processor_label": "MultiDayLauncher - Ingestion_virtual",
+  "event_type": "CustomLogicEventGenerated",
+  "data": {
+    "eventFields": {
+      "startDate": "2022-11-20",
+      "endDate": "2022-11-21",
+      "topologyId": "topology_telco"
+    }
+  },
+  "flow_id": "751552e3-9410-4da3-82a9-bb7ab1856c8c",
+  "id": "42b69eb1-a5b0-4f8f-b406-d7f0a604ddda",
+  "completed": true,
+  "command_id": null,
+  "registration_timestamp": "2023-04-25 12:33:01.468604",
+  "docdb_id": "42b69eb1-a5b0-4f8f-b406-d7f0a604ddda",
+  "createdAt": "2023-04-25T12:33:01.472Z",
+  "version_id": "474215d9-5d45-4392-b37f-714e91373fe1"
+}

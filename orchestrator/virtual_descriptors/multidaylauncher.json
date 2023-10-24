@@ -1,17 +1,7 @@
 {
+  "docdb_id": "MultiDayLauncher",
   "processor_type": "MultiDayLauncher",
-  "capabilities": [],
-  "generated_events": [
-    {
-      "type": "MultiDayLaunchExecuted",
-      "fields": [
-        "output",
-        "startDate",
-        "endDate",
-        "extraFields"
-      ]
-    }
-  ],
+  "createdAt": "2023-04-05T11:47:53.559Z",
   "meta_type": "InputOutput",
   "parameters": [
     {
@@ -30,7 +20,17 @@
       "optional": true
     }
   ],
-  "version_id": "0e0774ab-56ad-4a13-9dc8-6cb0927ac583",
+  "generated_events": [
+    {
+      "type": "MultiDayLaunchExecuted",
+      "fields": [
+        "output",
+        "startDate",
+        "endDate",
+        "extraFields"
+      ]
+    }
+  ],
   "virtual_adapter": {
     "native_type": "CustomLogicProcessor",
     "parameter_mapping": {
@@ -48,6 +48,7 @@
       }
     }
   },
-  "docdb_id": "MultiDayLauncher",
-  "createdAt": "2023-07-24T09:26:34.864Z"
+  "capabilities": [],
+  "version_id": "2a3603d5-4260-4dd2-b685-23f9492992a6",
+  "updatedAt": "2023-04-25T12:01:21.068Z"
 }

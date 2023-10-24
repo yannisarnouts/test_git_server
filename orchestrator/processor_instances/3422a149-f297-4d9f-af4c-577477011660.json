@@ -1,0 +1,77 @@
+{
+  "id": "3422a149-f297-4d9f-af4c-577477011660",
+  "label": "FeatureProcessor",
+  "type": "HackathonFeatureProcessor",
+  "settings": {
+    "trigger_events": [
+      {
+        "condition": "eventExists({\"processorLabel\": \"HourKpiProcessor\", \"data.endDate\": \"2022-11-19\"}) and eventExists({\"processorLabel\": \"HourKpiProcessor\", \"data.endDate\": \"2022-11-20\"}) and eventExists({\"processorLabel\": \"HourKpiProcessor\", \"data.endDate\": \"2022-11-21\"}) and eventExists({\"processorLabel\": \"HourKpiProcessor\", \"data.endDate\": \"2022-11-22\"}) and eventExists({\"processorLabel\": \"HourKpiProcessor\", \"data.endDate\": \"2022-11-23\"}) and eventExists({\"processorLabel\": \"HourKpiProcessor\", \"data.endDate\": \"2022-11-24\"}) and eventExists({\"processorLabel\": \"HourKpiProcessor\", \"data.endDate\": \"2022-11-25\"})",
+        "parameters": [
+          {
+            "name": "topologyId",
+            "value": "{{event.topologyId}}"
+          },
+          {
+            "name": "startDate",
+            "value": "2022-11-18"
+          },
+          {
+            "name": "endDate",
+            "value": "2022-11-25"
+          },
+          {
+            "name": "featureEditorApplication",
+            "value": "nwadvisor"
+          },
+          {
+            "name": "featureEditorConfiguration",
+            "value": "ran_4g_net_cell_kpis_hour_day"
+          }
+        ],
+        "processor_id": "120a9f92-61c0-43b9-aa17-1cbed12b1c45",
+        "event_type": "HourKpisCalculated"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "topologyId",
+        "value": ""
+      },
+      {
+        "name": "startDate",
+        "value": ""
+      },
+      {
+        "name": "endDate",
+        "value": ""
+      },
+      {
+        "name": "featureEditorApplication",
+        "value": ""
+      },
+      {
+        "name": "featureEditorConfiguration",
+        "value": ""
+      }
+    ],
+    "cron_info": null
+  },
+  "metadata": {
+    "layout": {
+      "x": 750,
+      "y": -540
+    }
+  },
+  "version_id": "e5063dc0-28a9-4a77-acda-551c226e5a01",
+  "registration_timestamp": "2023-04-25 12:01:24.555004",
+  "flow_id": "751552e3-9410-4da3-82a9-bb7ab1856c8c",
+  "state": "active",
+  "processing_status": {
+    "failing": 0,
+    "in_progress": 0,
+    "succeeded": 0
+  },
+  "docdb_id": "3422a149-f297-4d9f-af4c-577477011660",
+  "createdAt": "2023-04-25T12:01:24.578Z",
+  "updatedAt": "2023-10-10T08:34:23.580Z"
+}

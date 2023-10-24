@@ -1,0 +1,55 @@
+{
+  "id": "a93532f8-d78c-4b79-96af-29f769627747",
+  "label": "MultiDayLauncher - Ingestion",
+  "type": "MultiDayLauncher",
+  "settings": {
+    "trigger_events": [
+      {
+        "parameters": [
+          {
+            "name": "startDate",
+            "value": "{{event.startDate}}"
+          },
+          {
+            "name": "endDate",
+            "value": "{{event.endDate}}"
+          },
+          {
+            "name": "extraFields",
+            "value": "{\"topologyId\": \"{{event.topologyId}}\"}"
+          }
+        ],
+        "processor_id": "037c1e8a-2fc1-4b1e-9515-f9d9c575c63e",
+        "event_type": "HackathonPipelineLaunched"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "startDate",
+        "value": ""
+      },
+      {
+        "name": "endDate",
+        "value": ""
+      }
+    ]
+  },
+  "metadata": {
+    "layout": {
+      "x": 30,
+      "y": -480
+    }
+  },
+  "version_id": "57a2a03f-4588-4dbc-9872-644a8349a858",
+  "registration_timestamp": "2023-04-25 12:01:24.554760",
+  "flow_id": "751552e3-9410-4da3-82a9-bb7ab1856c8c",
+  "state": "active",
+  "processing_status": {
+    "failing": 0,
+    "in_progress": 0,
+    "succeeded": 32
+  },
+  "docdb_id": "a93532f8-d78c-4b79-96af-29f769627747",
+  "createdAt": "2023-04-25T12:01:24.578Z",
+  "updatedAt": "2023-09-29T10:31:31.649Z"
+}

@@ -1,0 +1,35 @@
+{
+  "processor_id": "175e90d6-2b50-4508-9e6c-ebcbbdfb520b",
+  "processor_label": "DataIngestionProcessor",
+  "event_type": "HackathonIngestionProcessed",
+  "data": {
+    "processorParams": {
+      "payload": {
+        "flowId": "rop-ingestion-1-day",
+        "args": {
+          "topologyId": "topology_telco",
+          "startDate": "2022-11-19",
+          "endDate": "2022-11-20"
+        },
+        "callback": "http://tupl-orchestrator:8080/v1/process-callback"
+      },
+      "url": "http://tupl-streams-tupl-streams-manager/jobs",
+      "method": "post",
+      "headers": {},
+      "tracking_id_field": "jobId",
+      "success_status_value": "finished"
+    },
+    "callbackData": "",
+    "topologyId": "topology_telco",
+    "startDate": "2022-11-19",
+    "endDate": "2022-11-20"
+  },
+  "flow_id": "751552e3-9410-4da3-82a9-bb7ab1856c8c",
+  "id": "88c50403-3163-4042-a19c-7bc55d3da3a2",
+  "completed": false,
+  "command_id": "ca0cc5c3-39b6-4183-a0ee-d37714e69964",
+  "registration_timestamp": "2023-04-25 12:32:57.939587",
+  "docdb_id": "88c50403-3163-4042-a19c-7bc55d3da3a2",
+  "createdAt": "2023-04-25T12:32:57.998Z",
+  "version_id": "0ffb9534-dd08-45c2-8c54-d0d8ac548184"
+}

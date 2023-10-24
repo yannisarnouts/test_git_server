@@ -1,0 +1,69 @@
+{
+  "id": "6da4ebf1-b0e6-40ed-85b0-65ab91b1f133",
+  "label": "Http Example",
+  "type": "HttpProcessor",
+  "settings": {
+    "trigger_events": [
+      {
+        "parameters": [
+          {
+            "name": "payload",
+            "value": "{}"
+          },
+          {
+            "name": "url",
+            "value": "http://example"
+          },
+          {
+            "name": "method",
+            "value": "post"
+          },
+          {
+            "name": "headers",
+            "value": "{}"
+          }
+        ],
+        "processor_id": "3422a149-f297-4d9f-af4c-577477011660",
+        "event_type": "FeaturesProcessed"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "payload",
+        "value": ""
+      },
+      {
+        "name": "url",
+        "value": ""
+      },
+      {
+        "name": "method",
+        "value": ""
+      },
+      {
+        "name": "headers",
+        "value": ""
+      }
+    ],
+    "cron_info": null
+  },
+  "metadata": {
+    "layout": {
+      "x": 810,
+      "y": -360
+    }
+  },
+  "version_id": "ad9964a0-e69b-4097-a3ae-fe0cd3ad811f",
+  "registration_timestamp": "2023-10-10 09:46:38.346379",
+  "flow_id": "751552e3-9410-4da3-82a9-bb7ab1856c8c",
+  "state": "active",
+  "processing_status": {
+    "failing": 0,
+    "in_progress": 0,
+    "waiting": 0,
+    "succeeded": 0
+  },
+  "docdb_id": "6da4ebf1-b0e6-40ed-85b0-65ab91b1f133",
+  "createdAt": "2023-10-10T09:46:38.397Z",
+  "updatedAt": "2023-10-10T09:47:03.290Z"
+}

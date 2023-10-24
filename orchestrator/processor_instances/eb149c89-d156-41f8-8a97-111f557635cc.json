@@ -1,0 +1,59 @@
+{
+  "id": "eb149c89-d156-41f8-8a97-111f557635cc",
+  "label": "underscore processor",
+  "type": "UnderscoreHttpProcessor",
+  "settings": {
+    "trigger_events": [
+      {
+        "parameters": [
+          {
+            "name": "my_param_1",
+            "value": ""
+          },
+          {
+            "name": "my_param2",
+            "value": ""
+          },
+          {
+            "name": "myParam1",
+            "value": ""
+          }
+        ],
+        "event_type": "EventGenerated"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "my_param_1",
+        "value": ""
+      },
+      {
+        "name": "my_param2",
+        "value": ""
+      },
+      {
+        "name": "myParam1",
+        "value": ""
+      }
+    ]
+  },
+  "metadata": {
+    "layout": {
+      "x": 180,
+      "y": 180
+    }
+  },
+  "version_id": "bdcee72d-fb15-474c-8dbb-e3edbbe5ee29",
+  "registration_timestamp": "2023-09-20 10:00:29.391734",
+  "flow_id": "253ffad6-7019-4708-b39c-3a5ac96748fe",
+  "state": "active",
+  "processing_status": {
+    "failing": 1,
+    "in_progress": 0,
+    "waiting": 0,
+    "succeeded": 0
+  },
+  "docdb_id": "eb149c89-d156-41f8-8a97-111f557635cc",
+  "createdAt": "2023-09-20T10:00:30.219Z",
+  "updatedAt": "2023-09-20T10:10:08.264Z"
+}

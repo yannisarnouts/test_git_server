@@ -1,0 +1,99 @@
+{
+  "id": "fbc1c44b-2c76-4fc6-872e-fe433d7bf177",
+  "label": "newIncidences",
+  "type": "IncidencesProcessor",
+  "settings": {
+    "trigger_events": [
+      {
+        "parameters": [
+          {
+            "name": "startDate",
+            "value": ""
+          },
+          {
+            "name": "endDate",
+            "value": ""
+          },
+          {
+            "name": "incidenceCriteria",
+            "value": ""
+          },
+          {
+            "name": "topology",
+            "value": ""
+          },
+          {
+            "name": "element",
+            "value": ""
+          },
+          {
+            "name": "timeAggregation",
+            "value": ""
+          },
+          {
+            "name": "datasource",
+            "value": ""
+          },
+          {
+            "name": "classifiers",
+            "value": ""
+          }
+        ],
+        "event_type": "LegacyOrchestratorEvent"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "startDate",
+        "value": ""
+      },
+      {
+        "name": "endDate",
+        "value": ""
+      },
+      {
+        "name": "incidenceCriteria",
+        "value": ""
+      },
+      {
+        "name": "topology",
+        "value": ""
+      },
+      {
+        "name": "element",
+        "value": ""
+      },
+      {
+        "name": "timeAggregation",
+        "value": ""
+      },
+      {
+        "name": "datasource",
+        "value": ""
+      },
+      {
+        "name": "classifiers",
+        "value": ""
+      }
+    ]
+  },
+  "metadata": {
+    "layout": {
+      "x": 150,
+      "y": -120
+    }
+  },
+  "version_id": "adfec66a-984a-47a4-8b76-421e88730e73",
+  "registration_timestamp": "2023-09-29 11:15:08.643026",
+  "flow_id": "c8b736b7-f5b3-41f6-b6b1-d5a7731f0349",
+  "state": "active",
+  "processing_status": {
+    "failing": 0,
+    "in_progress": 0,
+    "waiting": 0,
+    "succeeded": 0
+  },
+  "docdb_id": "fbc1c44b-2c76-4fc6-872e-fe433d7bf177",
+  "createdAt": "2023-09-29T11:15:09.148Z",
+  "updatedAt": "2023-09-29T11:15:59.167Z"
+}
