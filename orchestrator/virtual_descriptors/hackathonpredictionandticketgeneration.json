@@ -1,21 +1,7 @@
 {
+  "docdb_id": "HackathonPredictionAndTicketGeneration",
   "processor_type": "HackathonPredictionAndTicketGeneration",
-  "capabilities": [],
-  "generated_events": [
-    {
-      "type": "TicketsGenerated",
-      "fields": [
-        "processorParams",
-        "callbackData",
-        "startDate",
-        "endDate",
-        "topologyId",
-        "globalModelId",
-        "incidencesTable",
-        "user"
-      ]
-    }
-  ],
+  "createdAt": "2023-04-05T11:47:54.770Z",
   "meta_type": "InputOutput",
   "parameters": [
     {
@@ -49,7 +35,21 @@
       "optional": true
     }
   ],
-  "version_id": "596ef5bf-49ef-45d3-b8c9-482eb5f6117b",
+  "generated_events": [
+    {
+      "type": "TicketsGenerated",
+      "fields": [
+        "processorParams",
+        "callbackData",
+        "startDate",
+        "endDate",
+        "topologyId",
+        "globalModelId",
+        "incidencesTable",
+        "user"
+      ]
+    }
+  ],
   "virtual_adapter": {
     "native_type": "HttpWithCallbackProcessor",
     "parameter_mapping": {
@@ -76,6 +76,7 @@
       }
     }
   },
-  "docdb_id": "HackathonPredictionAndTicketGeneration",
-  "createdAt": "2023-07-24T09:26:34.866Z"
+  "capabilities": [],
+  "version_id": "b65d0cfc-5cfc-427d-8c68-dee1c4a5ae38",
+  "updatedAt": "2023-04-05T11:47:54.770Z"
 }

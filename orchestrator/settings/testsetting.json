@@ -1,0 +1,11 @@
+{
+  "docdb_id": "testSetting",
+  "name": "testSetting",
+  "createdAt": "2023-09-29T07:30:24.463Z",
+  "value": {
+    "test": true,
+    "debug": false
+  },
+  "updatedAt": "2023-10-06T11:55:55.800Z",
+  "version_id": "76c9eed2-af25-4121-999b-cec0213ece4c"
+}

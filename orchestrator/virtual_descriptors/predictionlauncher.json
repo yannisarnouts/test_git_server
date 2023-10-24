@@ -1,7 +1,7 @@
 {
   "docdb_id": "PredictionLauncher",
   "processor_type": "PredictionLauncher",
-  "createdAt": "2023-04-04T08:10:28.803Z",
+  "createdAt": "2023-04-10T14:52:30.269Z",
   "meta_type": "InputOutput",
   "parameters": [
     {
@@ -84,6 +84,6 @@
     }
   },
   "capabilities": [],
-  "version_id": "092d3ccd-49a5-4f00-b5b5-aec1d1339508",
-  "updatedAt": "2023-04-04T08:18:33.548Z"
+  "version_id": "5f7bec13-fe5d-4dfa-b915-8523064a9cf0",
+  "updatedAt": "2023-04-10T14:52:30.269Z"
 }

@@ -1,18 +1,7 @@
 {
+  "docdb_id": "HackathonDayKpiCalculation",
   "processor_type": "HackathonDayKpiCalculation",
-  "capabilities": [],
-  "generated_events": [
-    {
-      "type": "DayKpisCalculated",
-      "fields": [
-        "processorParams",
-        "callbackData",
-        "topologyId",
-        "startDate",
-        "endDate"
-      ]
-    }
-  ],
+  "createdAt": "2023-04-05T11:47:53.963Z",
   "meta_type": "InputOutput",
   "parameters": [
     {
@@ -29,9 +18,24 @@
       "name": "endDate",
       "type": "str",
       "optional": true
+    },
+    {
+      "name": "testParameter",
+      "type": "str",
+      "optional": true
     }
   ],
-  "version_id": "1fa3cf22-105a-4dda-933a-3985ab29075d",
+  "generated_events": [
+    {
+      "type": "DayKpisCalculated",
+      "fields": [
+        "processorParams",
+        "topologyId",
+        "startDate",
+        "endDate"
+      ]
+    }
+  ],
   "virtual_adapter": {
     "native_type": "HttpWithCallbackProcessor",
     "parameter_mapping": {
@@ -47,7 +51,6 @@
         "name": "DayKpisCalculated",
         "data": {
           "processorParams": "{{event.processorParams}}",
-          "callbackData": "{{event.callbackData}}",
           "topologyId": "{{params.topologyId}}",
           "startDate": "{{params.startDate}}",
           "endDate": "{{params.endDate}}"
@@ -55,6 +58,7 @@
       }
     }
   },
-  "docdb_id": "HackathonDayKpiCalculation",
-  "createdAt": "2023-07-24T09:26:34.864Z"
+  "capabilities": [],
+  "version_id": "5fc37fd2-ccee-4572-b2a7-11c952eaa6ff",
+  "updatedAt": "2023-10-10T14:22:16.638Z"
 }

@@ -1,18 +1,7 @@
 {
+  "docdb_id": "HackathonIngestion",
   "processor_type": "HackathonIngestion",
-  "capabilities": [],
-  "generated_events": [
-    {
-      "type": "HackathonIngestionProcessed",
-      "fields": [
-        "processorParams",
-        "callbackData",
-        "topologyId",
-        "startDate",
-        "endDate"
-      ]
-    }
-  ],
+  "createdAt": "2023-04-05T11:47:52.267Z",
   "meta_type": "InputOutput",
   "parameters": [
     {
@@ -31,7 +20,18 @@
       "optional": true
     }
   ],
-  "version_id": "d2ef1f71-b038-4045-b892-861a9e9b2813",
+  "generated_events": [
+    {
+      "type": "HackathonIngestionProcessed",
+      "fields": [
+        "processorParams",
+        "callbackData",
+        "topologyId",
+        "startDate",
+        "endDate"
+      ]
+    }
+  ],
   "virtual_adapter": {
     "native_type": "HttpWithCallbackProcessor",
     "parameter_mapping": {
@@ -55,6 +55,7 @@
       }
     }
   },
-  "docdb_id": "HackathonIngestion",
-  "createdAt": "2023-07-24T09:26:34.864Z"
+  "capabilities": [],
+  "version_id": "a683ae07-5cd5-412e-a10c-66f2675f5e8b",
+  "updatedAt": "2023-04-25T12:01:19.796Z"
 }

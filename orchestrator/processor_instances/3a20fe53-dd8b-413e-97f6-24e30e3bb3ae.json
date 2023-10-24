@@ -1,0 +1,85 @@
+{
+  "id": "3a20fe53-dd8b-413e-97f6-24e30e3bb3ae",
+  "label": "newFeatures",
+  "type": "FeaturesProcessor",
+  "settings": {
+    "parameters": [
+      {
+        "name": "topology",
+        "value": ""
+      },
+      {
+        "name": "datasource",
+        "value": ""
+      },
+      {
+        "name": "classifiers",
+        "value": ""
+      },
+      {
+        "name": "configName",
+        "value": ""
+      },
+      {
+        "name": "appName",
+        "value": ""
+      },
+      {
+        "name": "timeWindow",
+        "value": ""
+      },
+      {
+        "name": "element",
+        "value": ""
+      },
+      {
+        "name": "day",
+        "value": ""
+      },
+      {
+        "name": "timeAggregation",
+        "value": ""
+      },
+      {
+        "name": "nowMillis",
+        "value": ""
+      },
+      {
+        "name": "startDate",
+        "value": ""
+      },
+      {
+        "name": "endDate",
+        "value": ""
+      },
+      {
+        "name": "datePattern",
+        "value": ""
+      },
+      {
+        "name": "test",
+        "value": ""
+      }
+    ],
+    "cron_info": null
+  },
+  "metadata": {
+    "layout": {
+      "x": 930,
+      "y": -270
+    }
+  },
+  "version_id": "c9d5c4b1-2c72-4887-b757-162a3c388a7c",
+  "registration_timestamp": "2023-09-29 11:16:55.225854",
+  "flow_id": "c8b736b7-f5b3-41f6-b6b1-d5a7731f0349",
+  "state": "active",
+  "processing_status": {
+    "failing": 0,
+    "in_progress": 0,
+    "waiting": 0,
+    "succeeded": 0
+  },
+  "docdb_id": "3a20fe53-dd8b-413e-97f6-24e30e3bb3ae",
+  "createdAt": "2023-09-29T11:16:55.734Z",
+  "updatedAt": "2023-10-02T11:32:38.361Z"
+}

@@ -1,20 +1,7 @@
 {
+  "docdb_id": "Hackathon Hour KPI Calculation",
   "processor_type": "Hackathon Hour KPI Calculation",
-  "capabilities": [
-    "DryRun"
-  ],
-  "generated_events": [
-    {
-      "type": "HourKpisCalculated",
-      "fields": [
-        "processorParams",
-        "callbackData",
-        "topologyId",
-        "startDate",
-        "endDate"
-      ]
-    }
-  ],
+  "createdAt": "2023-04-05T11:47:53.168Z",
   "meta_type": "InputOutput",
   "parameters": [
     {
@@ -33,7 +20,17 @@
       "optional": true
     }
   ],
-  "version_id": "6eda1218-0cd9-4056-8e4b-933fdfcd3d53",
+  "generated_events": [
+    {
+      "type": "HourKpisCalculated",
+      "fields": [
+        "processorParams",
+        "topologyId",
+        "startDate",
+        "endDate"
+      ]
+    }
+  ],
   "virtual_adapter": {
     "native_type": "HttpWithCallbackProcessor",
     "parameter_mapping": {
@@ -49,7 +46,6 @@
         "name": "HourKpisCalculated",
         "data": {
           "processorParams": "{{event.processorParams}}",
-          "callbackData": "{{event.callbackData}}",
           "topologyId": "{{params.topologyId}}",
           "startDate": "{{params.startDate}}",
           "endDate": "{{params.endDate}}"
@@ -57,6 +53,7 @@
       }
     }
   },
-  "docdb_id": "Hackathon Hour KPI Calculation",
-  "createdAt": "2023-07-24T09:26:34.865Z"
+  "capabilities": [],
+  "version_id": "ad04805b-07a3-445a-a7a6-faefadfbdda4",
+  "updatedAt": "2023-10-10T14:15:30.933Z"
 }

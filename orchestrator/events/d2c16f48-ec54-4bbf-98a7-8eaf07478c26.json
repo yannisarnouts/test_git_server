@@ -1,0 +1,20 @@
+{
+  "processor_id": "15f9ad4c-8ac9-486c-aeff-c36b9faece7f",
+  "processor_label": "MultiDayLauncher - Ingestion_virtual",
+  "event_type": "CustomLogicEventGenerated",
+  "data": {
+    "eventFields": {
+      "startDate": "2022-11-24",
+      "endDate": "2022-11-25",
+      "topologyId": "HACKATHON"
+    }
+  },
+  "flow_id": "b219688a-e2d1-4cae-9239-b2807c13f5a0",
+  "id": "d2c16f48-ec54-4bbf-98a7-8eaf07478c26",
+  "completed": true,
+  "command_id": null,
+  "registration_timestamp": "2023-04-24 14:28:10.565935",
+  "docdb_id": "d2c16f48-ec54-4bbf-98a7-8eaf07478c26",
+  "createdAt": "2023-04-24T14:28:10.593Z",
+  "version_id": "69eb714c-82f3-40fb-bb4d-3fec57ae2158"
+}

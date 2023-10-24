@@ -1,0 +1,40 @@
+{
+  "id": "037c1e8a-2fc1-4b1e-9515-f9d9c575c63e",
+  "label": "HackathonPipelineLauncher",
+  "type": "Hackathon Ingestion Launcher",
+  "settings": {
+    "parameters": [
+      {
+        "name": "topologyId",
+        "value": "topology_telco"
+      },
+      {
+        "name": "startDate",
+        "value": "2022-11-18"
+      },
+      {
+        "name": "endDate",
+        "value": "2022-11-25"
+      }
+    ],
+    "cron_info": null
+  },
+  "metadata": {
+    "layout": {
+      "x": -180,
+      "y": -555
+    }
+  },
+  "version_id": "ca3441cd-a4b6-4df0-bd84-0e29034d2016",
+  "registration_timestamp": "2023-04-25 12:01:24.554304",
+  "flow_id": "751552e3-9410-4da3-82a9-bb7ab1856c8c",
+  "state": "active",
+  "processing_status": {
+    "failing": 0,
+    "in_progress": 0,
+    "succeeded": 4
+  },
+  "docdb_id": "037c1e8a-2fc1-4b1e-9515-f9d9c575c63e",
+  "createdAt": "2023-04-25T12:01:24.578Z",
+  "updatedAt": "2023-04-25T12:35:52.377Z"
+}

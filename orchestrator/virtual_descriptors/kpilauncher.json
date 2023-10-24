@@ -1,18 +1,7 @@
 {
+  "docdb_id": "KpiLauncher",
   "processor_type": "KpiLauncher",
-  "capabilities": [
-    "DryRun"
-  ],
-  "generated_events": [
-    {
-      "type": "KpiLauncherExecuted",
-      "fields": [
-        "eventFields",
-        "endDate",
-        "topologyId"
-      ]
-    }
-  ],
+  "createdAt": "2023-04-05T11:47:55.574Z",
   "meta_type": "EventGenerator",
   "parameters": [
     {
@@ -24,13 +13,34 @@
       "name": "topologyId",
       "type": "str",
       "optional": true
+    },
+    {
+      "name": "startDate",
+      "type": "str",
+      "optional": true
+    },
+    {
+      "name": "_tags",
+      "type": "str",
+      "optional": true
     }
   ],
-  "version_id": "77728348-25e2-4ac2-89d9-b057fd6f38c2",
+  "generated_events": [
+    {
+      "type": "KpiLauncherExecuted",
+      "fields": [
+        "eventFields",
+        "endDate",
+        "topologyId",
+        "startDate",
+        "_tags"
+      ]
+    }
+  ],
   "virtual_adapter": {
     "native_type": "SyntheticEventGenerator",
     "parameter_mapping": {
-      "eventFields": "{}"
+      "eventFields": "{\"tags\": \"{{params._tags}}\"}"
     },
     "event_mapping": {
       "EventGenerated": {
@@ -38,11 +48,14 @@
         "data": {
           "eventFields": "{{event.eventFields}}",
           "endDate": "{{params.endDate}}",
-          "topologyId": "{{params.topologyId}}"
+          "topologyId": "{{params.topologyId}}",
+          "startDate": "{{params.startDate}}",
+          "_tags": "{{params._tags}}"
         }
       }
     }
   },
-  "docdb_id": "KpiLauncher",
-  "createdAt": "2023-07-24T09:26:34.867Z"
+  "capabilities": [],
+  "version_id": "b66a0771-9420-469f-aa41-12ad6f66f226",
+  "updatedAt": "2023-10-10T08:46:41.443Z"
 }

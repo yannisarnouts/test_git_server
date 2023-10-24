@@ -1,0 +1,60 @@
+{
+  "id": "175e90d6-2b50-4508-9e6c-ebcbbdfb520b",
+  "label": "DataIngestionProcessor",
+  "type": "HackathonIngestion",
+  "settings": {
+    "trigger_events": [
+      {
+        "parameters": [
+          {
+            "name": "topologyId",
+            "value": "{{event.eventFields.topologyId}}"
+          },
+          {
+            "name": "startDate",
+            "value": "{{event.eventFields.startDate}}"
+          },
+          {
+            "name": "endDate",
+            "value": "{{event.eventFields.endDate}}123"
+          }
+        ],
+        "processor_id": "a93532f8-d78c-4b79-96af-29f769627747",
+        "event_type": "CustomLogicEventGenerated"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "topologyId",
+        "value": ""
+      },
+      {
+        "name": "startDate",
+        "value": ""
+      },
+      {
+        "name": "endDate",
+        "value": ""
+      }
+    ],
+    "cron_info": null
+  },
+  "metadata": {
+    "layout": {
+      "x": 210,
+      "y": -540
+    }
+  },
+  "version_id": "7e28d6b0-4b60-445d-97a1-095ac5f5153f",
+  "registration_timestamp": "2023-04-25 12:01:24.554822",
+  "flow_id": "751552e3-9410-4da3-82a9-bb7ab1856c8c",
+  "state": "active",
+  "processing_status": {
+    "failing": 0,
+    "in_progress": 5,
+    "succeeded": 2
+  },
+  "docdb_id": "175e90d6-2b50-4508-9e6c-ebcbbdfb520b",
+  "createdAt": "2023-04-25T12:01:24.578Z",
+  "updatedAt": "2023-10-02T11:07:09.259Z"
+}

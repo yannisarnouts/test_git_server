@@ -1,0 +1,61 @@
+{
+  "id": "7be75176-83f3-46cd-9c28-fa8d9f4b9d6a",
+  "label": "DayKpiProcessor",
+  "type": "HackathonDayKpiCalculation",
+  "settings": {
+    "trigger_events": [
+      {
+        "condition": "eventExists({\"processorLabel\": \"HourKpiProcessor\", \"data.endDate\": \"2022-11-19\"}) and eventExists({\"processorLabel\": \"HourKpiProcessor\", \"data.endDate\": \"2022-11-20\"}) and eventExists({\"processorLabel\": \"HourKpiProcessor\", \"data.endDate\": \"2022-11-21\"}) and eventExists({\"processorLabel\": \"HourKpiProcessor\", \"data.endDate\": \"2022-11-22\"}) and eventExists({\"processorLabel\": \"HourKpiProcessor\", \"data.endDate\": \"2022-11-23\"}) and eventExists({\"processorLabel\": \"HourKpiProcessor\", \"data.endDate\": \"2022-11-24\"}) and eventExists({\"processorLabel\": \"HourKpiProcessor\", \"data.endDate\": \"2022-11-25\"})",
+        "parameters": [
+          {
+            "name": "topologyId",
+            "value": "{{event.topologyId}}"
+          },
+          {
+            "name": "startDate",
+            "value": "2022-11-18"
+          },
+          {
+            "name": "endDate",
+            "value": "{{event.endDate}}"
+          }
+        ],
+        "processor_id": "120a9f92-61c0-43b9-aa17-1cbed12b1c45",
+        "event_type": "HourKpisCalculated"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "topologyId",
+        "value": ""
+      },
+      {
+        "name": "startDate",
+        "value": ""
+      },
+      {
+        "name": "endDate",
+        "value": ""
+      }
+    ],
+    "cron_info": null
+  },
+  "metadata": {
+    "layout": {
+      "x": 590,
+      "y": -430
+    }
+  },
+  "version_id": "69f951f9-81f2-4abd-87b7-59890da387ab",
+  "registration_timestamp": "2023-04-25 12:01:24.554956",
+  "flow_id": "751552e3-9410-4da3-82a9-bb7ab1856c8c",
+  "state": "active",
+  "processing_status": {
+    "failing": 0,
+    "in_progress": 0,
+    "succeeded": 0
+  },
+  "docdb_id": "7be75176-83f3-46cd-9c28-fa8d9f4b9d6a",
+  "createdAt": "2023-04-25T12:01:24.578Z",
+  "updatedAt": "2023-10-10T14:22:20.202Z"
+}
