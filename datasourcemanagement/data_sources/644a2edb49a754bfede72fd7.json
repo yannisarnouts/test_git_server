@@ -2,7 +2,7 @@
   "_id": "644a2edb49a754bfede72fd7",
   "name": "HACKATON",
   "path": "/upload/pm_data/",
-  "storageType": "webdav",
+  "storageType": "webdav_v1",
   "classifiers": {
     "team": "dev"
   },
