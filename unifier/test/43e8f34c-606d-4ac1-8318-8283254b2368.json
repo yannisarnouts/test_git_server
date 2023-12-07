@@ -1,0 +1,12 @@
+{
+  "name": "test6",
+  "path": "/upload/datasources/test/6",
+  "storageType": "sftp",
+  "classifiers": {
+    "ingestion": "ingestion"
+  },
+  "tagId": "SftpIngestion",
+  "docdb_id": "43e8f34c-606d-4ac1-8318-8283254b2368",
+  "updatedAt": "2023-11-17T16:16:46.229Z",
+  "version_id": "e4609027-35aa-4613-b18a-33ec5f4e6a06"
+}

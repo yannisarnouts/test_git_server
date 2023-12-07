@@ -1,7 +1,7 @@
 {
   "docdb_id": "TicketsGenerator",
   "processor_type": "TicketsGenerator",
-  "createdAt": "2023-04-04T08:10:28.812Z",
+  "createdAt": "2023-04-10T14:52:30.683Z",
   "meta_type": "InputOutput",
   "parameters": [
     {
@@ -98,6 +98,6 @@
     }
   },
   "capabilities": [],
-  "version_id": "78862b43-8bc1-4250-899c-c9dba692cf2e",
-  "updatedAt": "2023-04-04T08:18:33.564Z"
+  "version_id": "d367ebde-9b1b-4e80-a3e0-e239382c49dd",
+  "updatedAt": "2023-04-10T14:52:30.684Z"
 }

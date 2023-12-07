@@ -1,0 +1,61 @@
+{
+  "id": "120a9f92-61c0-43b9-aa17-1cbed12b1c45",
+  "label": "HourKpiProcessor",
+  "type": "Hackathon Hour KPI Calculation",
+  "settings": {
+    "trigger_events": [
+      {
+        "condition": null,
+        "parameters": [
+          {
+            "name": "topologyId",
+            "value": "{{event.eventFields.topologyId}}"
+          },
+          {
+            "name": "startDate",
+            "value": "{{event.eventFields.startDate}}"
+          },
+          {
+            "name": "endDate",
+            "value": "{{event.eventFields.endDate}}"
+          }
+        ],
+        "processor_id": "c5a3fbb9-78fa-4214-9319-08f5a17fb6d1",
+        "event_type": "CustomLogicEventGenerated"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "topologyId",
+        "value": ""
+      },
+      {
+        "name": "startDate",
+        "value": ""
+      },
+      {
+        "name": "endDate",
+        "value": ""
+      }
+    ],
+    "cron_info": null
+  },
+  "metadata": {
+    "layout": {
+      "x": 585,
+      "y": -555
+    }
+  },
+  "version_id": "32f3e044-3277-455a-9919-b4b6d03af940",
+  "registration_timestamp": "2023-04-25 12:01:24.554866",
+  "flow_id": "751552e3-9410-4da3-82a9-bb7ab1856c8c",
+  "state": "active",
+  "processing_status": {
+    "failing": 14,
+    "in_progress": 0,
+    "succeeded": 0
+  },
+  "docdb_id": "120a9f92-61c0-43b9-aa17-1cbed12b1c45",
+  "createdAt": "2023-04-25T12:01:24.578Z",
+  "updatedAt": "2023-10-10T14:15:36.826Z"
+}

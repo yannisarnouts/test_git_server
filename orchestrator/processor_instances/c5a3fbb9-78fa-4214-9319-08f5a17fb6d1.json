@@ -1,0 +1,79 @@
+{
+  "id": "c5a3fbb9-78fa-4214-9319-08f5a17fb6d1",
+  "label": "MultiDayLauncher - Kpis",
+  "type": "MultiDayLauncher",
+  "settings": {
+    "trigger_events": [
+      {
+        "condition": "eventExists({\"processorLabel\": \"DataIngestionProcessor\", \"data.endDate\": \"2022-11-19\"}) and eventExists({\"processorLabel\": \"DataIngestionProcessor\", \"data.endDate\": \"2022-11-20\"}) and eventExists({\"processorLabel\": \"DataIngestionProcessor\", \"data.endDate\": \"2022-11-21\"}) and eventExists({\"processorLabel\": \"DataIngestionProcessor\", \"data.endDate\": \"2022-11-22\"}) and eventExists({\"processorLabel\": \"DataIngestionProcessor\", \"data.endDate\": \"2022-11-23\"}) and eventExists({\"processorLabel\": \"DataIngestionProcessor\", \"data.endDate\": \"2022-11-24\"}) and eventExists({\"processorLabel\": \"DataIngestionProcessor\", \"data.endDate\": \"2022-11-25\"}) and False",
+        "parameters": [
+          {
+            "name": "startDate",
+            "value": "2022-11-18"
+          },
+          {
+            "name": "endDate",
+            "value": "2022-11-25"
+          },
+          {
+            "name": "extraFields",
+            "value": "{\"topologyId\": \"{{event.topologyId}}\"}"
+          }
+        ],
+        "processor_id": "175e90d6-2b50-4508-9e6c-ebcbbdfb520b",
+        "event_type": "HackathonIngestionProcessed"
+      },
+      {
+        "parameters": [
+          {
+            "name": "startDate",
+            "value": "{{event.startDate}}"
+          },
+          {
+            "name": "endDate",
+            "value": "{{event.endDate}}"
+          },
+          {
+            "name": "extraFields",
+            "value": "{\"topologyId\": \"{{event.topologyId}}\"}"
+          }
+        ],
+        "processor_id": "7ae4f545-977f-4eb7-9f8e-77cf9f49fcc2",
+        "event_type": "KpiLauncherExecuted"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "startDate",
+        "value": ""
+      },
+      {
+        "name": "endDate",
+        "value": ""
+      },
+      {
+        "name": "extraFields",
+        "value": ""
+      }
+    ],
+    "cron_info": null
+  },
+  "metadata": {
+    "layout": {
+      "x": 360,
+      "y": -450
+    }
+  },
+  "version_id": "0c8996ab-d635-4469-bd58-3545828c820f",
+  "registration_timestamp": "2023-04-25 12:01:24.554911",
+  "flow_id": "751552e3-9410-4da3-82a9-bb7ab1856c8c",
+  "state": "active",
+  "processing_status": {
+    "failing": 0,
+    "in_progress": 0,
+    "succeeded": 16
+  },
+  "docdb_id": "c5a3fbb9-78fa-4214-9319-08f5a17fb6d1",
+  "createdAt": "2023-04-25T12:01:24.578Z",
+  "updatedAt": "2023-10-10T08:51:24.722Z"
+}

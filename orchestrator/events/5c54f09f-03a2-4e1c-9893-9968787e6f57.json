@@ -1,0 +1,19 @@
+{
+  "processor_id": "51cc4852-084e-4251-a107-a66c01cb8bc2",
+  "processor_label": "HackathonPipelineLauncher",
+  "event_type": "HackathonPipelineLaunched",
+  "data": {
+    "eventFields": {},
+    "topologyId": "HACKATHON",
+    "startDate": "2022-11-18",
+    "endDate": "2022-11-25"
+  },
+  "flow_id": "b219688a-e2d1-4cae-9239-b2807c13f5a0",
+  "id": "5c54f09f-03a2-4e1c-9893-9968787e6f57",
+  "completed": true,
+  "command_id": null,
+  "registration_timestamp": "2023-04-24 14:27:40.520654",
+  "docdb_id": "5c54f09f-03a2-4e1c-9893-9968787e6f57",
+  "createdAt": "2023-04-24T14:27:40.542Z",
+  "version_id": "053ee028-1bdc-41c5-8330-903e7de4b9aa"
+}

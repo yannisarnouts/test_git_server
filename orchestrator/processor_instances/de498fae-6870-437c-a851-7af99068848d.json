@@ -1,0 +1,84 @@
+{
+  "id": "de498fae-6870-437c-a851-7af99068848d",
+  "label": "TicketGenerator",
+  "type": "HackathonTicketGenerationNewMltk",
+  "settings": {
+    "trigger_events": [
+      {
+        "parameters": [
+          {
+            "name": "startDate",
+            "value": "{{event.startDate}}"
+          },
+          {
+            "name": "endDate",
+            "value": "{{event.endDate}}"
+          },
+          {
+            "name": "topologyId",
+            "value": "{{event.topologyId}}"
+          },
+          {
+            "name": "hierarchyName",
+            "value": "classification_rca"
+          },
+          {
+            "name": "projectName",
+            "value": "ml_project_sergio"
+          },
+          {
+            "name": "incidencesTable",
+            "value": "DETECTED_ISSUES_TYPE1"
+          }
+        ],
+        "processor_id": "01cfc03d-7bef-4454-ad28-3b88cd1fd632",
+        "event_type": "IncidencesGenerated"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "startDate",
+        "value": ""
+      },
+      {
+        "name": "endDate",
+        "value": ""
+      },
+      {
+        "name": "topologyId",
+        "value": ""
+      },
+      {
+        "name": "hierarchyName",
+        "value": ""
+      },
+      {
+        "name": "projectName",
+        "value": ""
+      },
+      {
+        "name": "incidencesTable",
+        "value": ""
+      }
+    ],
+    "cron_info": null
+  },
+  "metadata": {
+    "layout": {
+      "x": 1110,
+      "y": -540
+    }
+  },
+  "version_id": "a504e275-68d8-4d32-8f86-818554eb7e62",
+  "registration_timestamp": "2023-04-25 12:01:24.555146",
+  "flow_id": "751552e3-9410-4da3-82a9-bb7ab1856c8c",
+  "state": "active",
+  "processing_status": {
+    "failing": 0,
+    "in_progress": 0,
+    "succeeded": 0
+  },
+  "docdb_id": "de498fae-6870-437c-a851-7af99068848d",
+  "createdAt": "2023-04-25T12:01:24.578Z",
+  "updatedAt": "2023-10-10T09:48:19.686Z"
+}
